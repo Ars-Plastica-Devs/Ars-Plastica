@@ -45,15 +45,10 @@ GameObject:
   - 143: {fileID: 14399320}
   - 54: {fileID: 5400150}
   - 82: {fileID: 8218850}
-  - 114: {fileID: 11485304}
-  - 114: {fileID: 11458178}
-  - 114: {fileID: 11432508}
-  - 114: {fileID: 11481392}
-  - 114: {fileID: 11454472}
   - 114: {fileID: 11442538}
-  - 114: {fileID: 11448920}
+  - 114: {fileID: 11436842}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player_OfflineTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.41, y: 7, z: -20.5}
+  m_LocalPosition: {x: -68.4, y: 18.4, z: -11.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 446914}
@@ -134,7 +129,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125590}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
@@ -261,7 +256,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125590}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!82 &8218850
 AudioSource:
   m_ObjectHideFlags: 1
@@ -336,7 +331,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11432508
+--- !u!114 &11436842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -344,19 +339,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 171830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b82f119311244fb0b9ce6e42031efaa, type: 3}
+  m_Script: {fileID: 11500000, guid: e1c14c80be71748f4b5a10972b4944f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 437540}
-  camTransform: {fileID: 446914}
-  lerpRate: 15
 --- !u!114 &11442538
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171830}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a7eb9b5c9f81426e9fdc6342993b10e, type: 3}
   m_Name: 
@@ -453,90 +445,6 @@ MonoBehaviour:
   m_AscendSpeed: 10
   m_DescendSpeed: 10
   m_FlySpeed: 15
---- !u!114 &11448920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92dba8fa1d4e4dbea68200151b1c1ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descriptionText: {fileID: 0}
-  panel: {fileID: 0}
---- !u!114 &11454472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e23b43a75fc74c309bdc732a7b2c334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerUniqueIdentity: 
-  rend: {fileID: 0}
---- !u!114 &11458178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00dddbddff32b40aa86d8a7cdd9fc7b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myTransform: {fileID: 437540}
-  lerpRate: 15
---- !u!114 &11481392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2ac7a013329a4b7a94712eb7707c308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPSCharacterCam: {fileID: 2047176}
-  audioListener: {fileID: 8163312}
---- !u!114 &11485304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 222
-    i1: 43
-    i2: 125
-    i3: 133
-    i4: 74
-    i5: 180
-    i6: 140
-    i7: 100
-    i8: 250
-    i9: 154
-    i10: 10
-    i11: 201
-    i12: 178
-    i13: 162
-    i14: 24
-    i15: 203
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!143 &14399320
 CharacterController:
   m_ObjectHideFlags: 1

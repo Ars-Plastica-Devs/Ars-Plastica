@@ -3,10 +3,15 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+/*
+For interacting with objects in the environment when we are looking at them.
+TODO: Consider renaming.  PlayerLookingAt, then have BeingLookedAt for objects that react to being looked at.
+*/
 public class Player_Interact : NetworkBehaviour
 {
 
 	public Text descriptionText;
+	public Image panel;
 
 	private Camera m_camera; 
 	private Transform lastTransformHit;
@@ -15,15 +20,15 @@ public class Player_Interact : NetworkBehaviour
 	void Start ()
 	{
 		m_camera = Camera.main;
-
-		descriptionText = GameObject.Find ("Canvas").GetComponentInChildren<Text>();
-	
+		if(descriptionText)
+			descriptionText = GameObject.Find ("Canvas").GetComponentInChildren<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (!isLocalPlayer)
+		
+		if (!isLocalPlayer || !descriptionText)
 			return;
 		
 		RaycastHit hit;
@@ -48,6 +53,7 @@ public class Player_Interact : NetworkBehaviour
 				}
 
 				SetText (lastTransformHit.name);
+
 			}
 
 		} else {
@@ -67,7 +73,7 @@ public class Player_Interact : NetworkBehaviour
 			lastTransformHit = null;
 		}
 
-		SetText ("Nothing");
+		SetText ("");
 
 	}
 
