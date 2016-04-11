@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class OfflinePlayerTest : MonoBehaviour {
 
@@ -12,7 +13,11 @@ public class OfflinePlayerTest : MonoBehaviour {
 		} else {
 			Debug.Log ("Offline");
 			this.gameObject.SetActive (true);
+			SceneManager.LoadScene ("Menu");
 		}
+
+
+
 	}
 	
 	// Update is called once per frame

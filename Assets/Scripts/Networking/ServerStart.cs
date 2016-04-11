@@ -18,8 +18,10 @@ public class ServerStart : NetworkBehaviour {
 
 	void InstantiateServerIdentities() {
 		foreach (NetworkIdentity nid in serverIdentities) {
-			nid.enabled = true;
-			nid.gameObject.SetActive (true);
+			if (nid != null) {
+				nid.enabled = true;
+				nid.gameObject.SetActive (true);
+			}
 		}
 	}
 

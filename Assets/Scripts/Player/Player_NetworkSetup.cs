@@ -7,11 +7,12 @@ public class Player_NetworkSetup : NetworkBehaviour {
 	[SerializeField] Camera FPSCharacterCam;
 	[SerializeField] AudioListener audioListener;
 
+	public TextMesh overheadName;
+
 
 	// Use this for initialization
 	public override void OnStartLocalPlayer ()
 	{
-		Debug.Log ("HELLO");
 
 		string ogName = this.name;
 
@@ -23,14 +24,10 @@ public class Player_NetworkSetup : NetworkBehaviour {
 		GetComponent<FirstPersonController>().enabled = true;
 		GetComponent<CharacterController>().enabled = true;
 
-		
+		overheadName.text = "";
 
 		FPSCharacterCam.enabled = true;
-
-
 		audioListener.enabled = true;
-
-		Debug.Log ("enabled " + FPSCharacterCam.enabled);
 
 	}
 

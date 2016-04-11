@@ -7995,80 +7995,6 @@ Transform:
   - {fileID: 1220899905}
   m_Father: {fileID: 1434498971}
   m_RootOrder: 11
---- !u!1 &1319126464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1319126466}
-  - 114: {fileID: 1319126465}
-  - 114: {fileID: 1319126467}
-  m_Layer: 0
-  m_Name: Server
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1319126465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319126464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5542d2c6d634589932eacb150161f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serverIdentities:
-  - {fileID: 2017146553}
---- !u!4 &1319126466
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319126464}
-  m_LocalRotation: {x: 0.0141615905, y: 0.3265725, z: -0.9428337, w: 0.06491895}
-  m_LocalPosition: {x: 0, y: 1000, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
---- !u!114 &1319126467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1319126464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
-  m_ServerOnly: 1
-  m_LocalPlayerAuthority: 0
 --- !u!1 &1434498970
 GameObject:
   m_ObjectHideFlags: 0
@@ -10452,7 +10378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1871553862
 Transform:
   m_ObjectHideFlags: 0
@@ -10788,9 +10714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7afaf5403d94b5dbf9554fa365caf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DayLength: 24
-  SunColor: {r: 0, g: 0, b: 0, a: 0}
-  LightIntensity: 0
 --- !u!114 &2017146553
 MonoBehaviour:
   m_ObjectHideFlags: 0
