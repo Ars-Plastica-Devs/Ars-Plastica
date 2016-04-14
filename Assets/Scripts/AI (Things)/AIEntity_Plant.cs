@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
 public class AIEntity_Plant : AIEntity
@@ -32,6 +33,8 @@ public class AIEntity_Plant : AIEntity
 	private bool releasedSporesToday = false;
 	private float lastDaySporesReleased = 0;
 
+	[SyncVar] public float DaysOld = 0f;
+	[SyncVar] public Vector3 scale;
 		
 	public void Start ()
 	{
@@ -49,13 +52,23 @@ public class AIEntity_Plant : AIEntity
 
 	void Update ()
 	{
-		
-		if (currentState != null) {
-			if (dayclock == null) {
-				dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
-			}
-			currentState.UpdateCallback ();
+
+		if (isClient) {
+			this.transform.localScale = scale;
 		}
+
+		if (isServer) {
+			if (currentState != null) {
+				currentState.UpdateCallback ();
+			}
+			DaysOld = dayclock.secondsToDays (Time.time - spawnTime);
+		}
+//		if (currentState != null) {
+//			if (dayclock == null) {
+//				dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
+//			}
+//			currentState.UpdateCallback ();
+//		}
 	}
 
 	void emitNodule() {
@@ -67,6 +80,7 @@ public class AIEntity_Plant : AIEntity
 			v3 = new Vector3 (this.transform.position.x, this.rend.bounds.center.y + this.rend.bounds.extents.y, this.transform.position.z); 
 			newObj = (Transform)Instantiate (nodules [0], v3, Quaternion.identity);
 
+			NetworkServer.Spawn (newObj.gameObject);
 		}
 	}
 		
@@ -85,6 +99,7 @@ public class AIEntity_Plant : AIEntity
 		this.transform.localScale = initialHeightScale;
 		currentGrowTime = 0f;
 		totalGrowTime = dayclock.DaysToSeconds (totalGrowDays);
+		scale = this.transform.localScale;
 	}
 
 	void GrowStateUpdate () {
@@ -97,7 +112,7 @@ public class AIEntity_Plant : AIEntity
 
 		}
 		float lerpProgress = currentGrowTime / totalGrowTime;
-		transform.localScale = Vector3.Lerp (initialHeightScale, finalHeightScale, lerpProgress);
+		scale = Vector3.Lerp (initialHeightScale, finalHeightScale, lerpProgress);
 	
 	}
 
@@ -117,7 +132,7 @@ public class AIEntity_Plant : AIEntity
 				SwitchState (deadState);
 			}
 			float lerpProgress = currentGrowTime / totalGrowTime;
-			transform.localScale = Vector3.Lerp (finalHeightScale, Vector3.zero, lerpProgress);
+			scale= Vector3.Lerp (finalHeightScale, Vector3.zero, lerpProgress);
 		} else {
 			//release spores
 			float today = Mathf.Floor (dayclock.secondsToDays (Time.time - this.spawnTime));

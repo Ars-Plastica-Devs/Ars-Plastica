@@ -72,8 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365e4742cab464764a93deffac150e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNumberPlants: 40
-  maxNumberHerbivores: 20
+  maxNumberPlants: 5
+  maxNumberHerbivores: 3
   maxNumberCarnivores: 8
   maxSpores: 200
   plants:

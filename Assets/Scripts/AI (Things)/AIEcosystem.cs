@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class AIEcosystem : MonoBehaviour
+public class AIEcosystem : NetworkBehaviour
 {
 	internal AIState currentState;
 
@@ -19,25 +19,34 @@ public class AIEcosystem : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		NetworkServer.SpawnObjects ();
 		if (!NetworkManager.singleton || !(DayClock) FindObjectOfType (typeof(DayClock)))
 			return;
-		int numPlants = Random.Range (20, 40);
+		if (!isServer)
+			return;
+		
+		NetworkServer.Spawn (this.gameObject);
+
+		int numPlants = Random.Range (maxNumberPlants/2, maxNumberPlants);
 		Transform newobj;
 		if (plants.Length > 0) {
 			for (int i = 0; i < numPlants; i++) {
 				newobj = (Transform) Instantiate (plants [0], new Vector3 (Random.Range (-20, 20), Random.Range (0, 5), Random.Range (-20, 20)), Quaternion.identity);
 				newobj.SetParent (this.transform);
+				NetworkServer.Spawn (newobj.gameObject);
 			}
 		}
 
-		int numHerbs = Random.Range (10, 20);
+		int numHerbs = Random.Range (maxNumberHerbivores / 2, maxNumberHerbivores);
 		if (herbivores.Length > 0) {
 			for (int i = 0; i < numHerbs; i++) {
 				newobj = (Transform) Instantiate (herbivores [0], new Vector3 (Random.Range (-10, 10), Random.Range (3, 10), Random.Range (-20, -10)), Quaternion.identity);
 				newobj.SetParent (this.transform);
+				NetworkServer.Spawn (newobj.gameObject);
 			}
 		}
-	
+
+
 	}
 
 

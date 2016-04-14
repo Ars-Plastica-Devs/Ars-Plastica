@@ -238,6 +238,14 @@ Prefab:
       propertyPath: m_AssetId.i15
       value: 255
       objectReference: {fileID: 0}
+    - target: {fileID: 11487652, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
+      propertyPath: m_SendInterval
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487652, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
+      propertyPath: m_RotationSyncCompression
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
   m_IsPrefabParent: 0
@@ -975,6 +983,10 @@ Prefab:
     - target: {fileID: 11479152, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
       propertyPath: m_AssetId.i15
       value: 201
+      objectReference: {fileID: 0}
+    - target: {fileID: 11479152, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
+      propertyPath: m_ServerOnly
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}

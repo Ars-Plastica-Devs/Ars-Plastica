@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 460148697}
   - 114: {fileID: 460148696}
-  - 114: {fileID: 460148698}
   - 114: {fileID: 460148699}
   - 114: {fileID: 460148700}
   m_Layer: 0
@@ -118,7 +117,7 @@ MonoBehaviour:
   m_NetworkPort: 7777
   m_ServerBindToIP: 0
   m_ServerBindAddress: 
-  m_NetworkAddress: 159.203.229.86
+  m_NetworkAddress: ps529225.dreamhostps.com
   m_DontDestroyOnLoad: 1
   m_RunInBackground: 1
   m_ScriptCRCCheck: 0
@@ -129,7 +128,12 @@ MonoBehaviour:
   m_PlayerSpawnMethod: 0
   m_OfflineScene: Menu
   m_OnlineScene: arsplastica
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 194740, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
+  - {fileID: 179206, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
+  - {fileID: 108212, guid: 066058efa17f64cd589686b750e8b82d, type: 2}
+  - {fileID: 145204, guid: 02c534b761f7449b2ba0cf2c8d80d2fe, type: 2}
+  - {fileID: 162850, guid: 2d317e8ac70d74c37a7de65e7c1d39b3, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 10
   m_ConnectionConfig:
@@ -181,21 +185,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &460148698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460148695}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 227461547, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  showGUI: 1
-  offsetX: 0
-  offsetY: 0
 --- !u!114 &460148699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +375,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &1029906815
 MonoBehaviour:
   m_ObjectHideFlags: 0

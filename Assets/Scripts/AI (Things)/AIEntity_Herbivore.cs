@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
 public class AIEntity_Herbivore : AIEntity
@@ -15,28 +16,32 @@ public class AIEntity_Herbivore : AIEntity
 	private AIState idleState;
 	private AIState deadState;
 
+	[SyncVar] public Vector3 scale;
 
+	[SyncVar] public float youngSize = 1f;
+	[SyncVar] public float teenSize = 2f;
+	[SyncVar] public float adultSizeMin = 3f;
+	[SyncVar] public float adultSizeMax = 3.5f;
 
-	public float youngSize = 1f;
-	public float teenSize = 2f;
-	public float adultSizeMin = 3f;
-	public float adultSizeMax = 3.5f;
+	[SyncVar] public float daysAsYoung = 5f;
+	[SyncVar] public float daysAsTeen = 3f;
+	[SyncVar] public float lifeSpan = 100f;	
 
-	public float daysAsYoung = 5f;
-	public float daysAsTeen = 3f;
-	public float lifeSpan = 100f;	
+	[SyncVar] private float finalAdultSize;
+	[SyncVar] private Vector3 adultScale;
+	[SyncVar] private Vector3 teenScale;
+	[SyncVar] private Vector3 initialHeightScale;
+	[SyncVar] private float currentGrowTime = 0f;
+	[SyncVar] private float totalGrowTime = 0f;
 
-	private float finalAdultSize;
-	private Vector3 adultScale;
-	private Vector3 teenScale;
-	private Vector3 initialHeightScale;
-	private float currentGrowTime = 0f;
-	private float totalGrowTime = 0f;
+	[SyncVar] public float DaysOld = 0f;
 
 	
 
 	public void Start ()
 	{
+		if (!isServer)
+			return;
 		spawnTime = Time.time;
 		dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
 
@@ -59,6 +64,7 @@ public class AIEntity_Herbivore : AIEntity
 			teenScale = Vector3.one * teenSize;
 			adultScale = Vector3.one * finalAdultSize;
 			this.transform.localScale = initialHeightScale;
+			scale = this.transform.localScale;
 		}
 
 		SwitchState (currentState);
@@ -66,10 +72,19 @@ public class AIEntity_Herbivore : AIEntity
 
 	void Update ()
 	{
-		if (currentState != null) {
-			currentState.UpdateCallback ();
+		if (isClient) {
+			this.transform.localScale = scale;
+		}
+
+		if (isServer) {
+			if (currentState != null) {
+				currentState.UpdateCallback ();
+
+			}
+			DaysOld = dayclock.secondsToDays (Time.time - spawnTime);
 		}
 	}
+		
 
 	/*
 	Young State
@@ -139,7 +154,8 @@ public class AIEntity_Herbivore : AIEntity
 		}
 
 		float lerpProgress = currentGrowTime / totalGrowTime;
-		transform.localScale = Vector3.Lerp (initialScale, endScale, lerpProgress);
+//		transform.localScale = Vector3.Lerp (initialScale, endScale, lerpProgress);
+		scale = Vector3.Lerp (initialScale, endScale, lerpProgress);
 		return true;
 	}
 

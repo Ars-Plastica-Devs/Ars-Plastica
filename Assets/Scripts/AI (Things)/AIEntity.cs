@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Networking;
 
 
-public abstract class AIEntity : MonoBehaviour {
+public abstract class AIEntity : NetworkBehaviour {
 
 	public float health = 100;
 	//don't want these in inspector but still accessible by other scripts
