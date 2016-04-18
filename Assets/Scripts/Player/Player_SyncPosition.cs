@@ -22,7 +22,7 @@ public class Player_SyncPosition : NetworkBehaviour {
 	private Text latencyText;
 
 	void Start() {
-		nClient = GameObject.Find ("NetworkManager").GetComponent<NetworkManager> ().client;
+//		nClient = GameObject.Find ("ArsNetworkManager").GetComponent<NetworkManager> ().client;
 //		latencyText = GameObject.Find ("Latency Text").GetComponent<Text> ();
 	}
 

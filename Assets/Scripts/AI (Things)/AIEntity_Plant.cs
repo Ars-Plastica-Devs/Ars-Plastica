@@ -3,161 +3,72 @@ using UnityEngine.Networking;
 using System.Collections;
 
 public class AIEntity_Plant : AIEntity
-{	
-
-	//Nodules to spawn
-	public Transform[] nodules;
-
-	//	Possible States for Plant
-	private AIState growState;
-	private AIState idleState;
-	private AIState deadState;
-
-	/*
-	GrowState vars.
-	*/
+{
+	//Grow State Vars
 	public float totalGrowDays = 3f;
 	public float finalGrowSizeMin = 25f;
 	public float finalGrowSizeMax = 55f;
 	public float lifeSpan = 20f;
 	public float totalShrinkTimeSeconds = 10f;
+	public bool scaleFromBottom = true; //rather than scale from the middle, grow 'up' rather than 'out'
+	public bool finishedGrowing = false;
+	internal Renderer rend;
 
 	private float totalGrowTime;
 	private float currentGrowTime;
-	private float pausedGrowTime; // Don't grow at night
 	private float growFinalSize;
 	private Vector3 initialHeightScale;
 	private Vector3 finalHeightScale;
-	private Renderer rend;
-	private DayClock dayclock;
-	private bool releasedSporesToday = false;
-	private float lastDaySporesReleased = 0;
 
-	[SyncVar] public float DaysOld = 0f;
 	[SyncVar] public Vector3 scale;
-		
-	public void Start ()
+
+	// Use this for initialization
+	override public void Start ()
 	{
-		spawnTime = Time.time;
-		dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
-
-		growState = new AIState ("grow", GrowStateStart, GrowStateUpdate, GrowStateEnd);
-		idleState = new AIState ("idle", IdleStateStart, IdleStateUpdate, IdleStateEnd);
-		deadState = new AIState ("adult", DeadStateStart, DeadStateUpdate, DeadStateEnd);
-
-		SwitchState (growState);
-	}
-
-	
-
-	void Update ()
-	{
-
-		if (isClient) {
-			this.transform.localScale = scale;
-		}
-
-		if (isServer) {
-			if (currentState != null) {
-				currentState.UpdateCallback ();
+		base.Start ();
+		//!isServer, because when we test, the client is a Host
+		if(isServer) {
+			growFinalSize = Random.Range (finalGrowSizeMin, finalGrowSizeMax);
+			rend = GetComponent<Renderer> ();
+			if (!rend) {
+				//	Hopefully this plant actually has a mesh to render
 			}
-			DaysOld = dayclock.secondsToDays (Time.time - spawnTime);
+			//calculate height at beginning for scaling to final scale
+			float currentHeight = rend.bounds.size.y;
+			float initialHeight = growFinalSize / (2 * totalGrowDays);
+			initialHeightScale = new Vector3 (1, initialHeight / currentHeight, 1);
+			finalHeightScale = new Vector3 (1, growFinalSize, 1);
+			this.transform.localScale = initialHeightScale;
+			currentGrowTime = 0f;
+			totalGrowTime = dayclock.DaysToSeconds (totalGrowDays);
+			scale = this.transform.localScale;
 		}
-//		if (currentState != null) {
-//			if (dayclock == null) {
-//				dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
-//			}
-//			currentState.UpdateCallback ();
-//		}
+	
+	}
+	
+	// Update is called once per frame
+	override public void Update ()
+	{
+		base.Update ();
+
+		this.transform.localScale = scale;
 	}
 
-	void emitNodule() {
-		if (nodules.Length < 1)
-			return;
-		Transform newObj;
-		Vector3 v3;
-		for (int i = 0; i < 3; i++) {
-			v3 = new Vector3 (this.transform.position.x, this.rend.bounds.center.y + this.rend.bounds.extents.y, this.transform.position.z); 
-			newObj = (Transform)Instantiate (nodules [0], v3, Quaternion.identity);
-
-			NetworkServer.Spawn (newObj.gameObject);
-		}
-	}
-		
-	void GrowStateStart() {
-//		Debug.Log ("GrowStateStart");
-
-		growFinalSize = Random.Range (finalGrowSizeMin, finalGrowSizeMax);
-		rend = GetComponent<Renderer>();
-		if (!rend) {
-			SwitchState (deadState);
-		}
-		float currentHeight = rend.bounds.size.y;
-		float initialHeight = growFinalSize / (2 * totalGrowDays);
-		initialHeightScale = new Vector3(1, initialHeight / currentHeight, 1);
-		finalHeightScale = new Vector3 (1, growFinalSize, 1);
-		this.transform.localScale = initialHeightScale;
-		currentGrowTime = 0f;
-		totalGrowTime = dayclock.DaysToSeconds (totalGrowDays);
-		scale = this.transform.localScale;
-	}
-
-	void GrowStateUpdate () {
-		currentGrowTime = Time.time - spawnTime;
+	//returns true if still growing, else false
+	public bool growLerp() {
+		currentGrowTime += Time.deltaTime;
 		if (currentGrowTime > totalGrowTime) {
 			currentGrowTime = totalGrowTime;
-			SwitchState (idleState);
+			return false;
 		}
-		if (dayclock.isDay ()) {
 
-		}
 		float lerpProgress = currentGrowTime / totalGrowTime;
 		scale = Vector3.Lerp (initialHeightScale, finalHeightScale, lerpProgress);
-	
+		return true;
 	}
 
-	void GrowStateEnd() {
-	}
-
-	void IdleStateStart () {
-//		Debug.Log ("IdleStateStart");
-
-	}
-
-	void IdleStateUpdate() {
-		if (dayclock.secondsToDays (Time.time - this.spawnTime) > lifeSpan) {
-			//shrink
-			currentGrowTime = Time.time - spawnTime;
-			if (currentGrowTime >= totalGrowTime) {
-				SwitchState (deadState);
-			}
-			float lerpProgress = currentGrowTime / totalGrowTime;
-			scale= Vector3.Lerp (finalHeightScale, Vector3.zero, lerpProgress);
-		} else {
-			//release spores
-			float today = Mathf.Floor (dayclock.secondsToDays (Time.time - this.spawnTime));
-			if (today > lastDaySporesReleased) {
-//				Debug.Log ("Release spores: Day " + today);
-				emitNodule ();
-				lastDaySporesReleased = today;
-			}
-		}
-	}
-
-	void IdleStateEnd() {
-	}
-
-	void DeadStateStart () {
-//		Debug.Log ("DeadStateStart");
-
-	}
-
-	void DeadStateUpdate() {
-
-	}
-
-	void DeadStateEnd() {
-//		Destroy (this);
+	override public bool isDead() {
+		return lifeSpan < dayclock.secondsToDays (Time.time - spawnTime);
 	}
 }
 

@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class ClientMenuHUD : MonoBehaviour {
 
-	public NetworkManager nm;
+	public ArsNetworkManager nm;
 	public Text playerName;
 	public GameObject[] possibleAvatars;
 	public GameObject playerAvatar;
@@ -16,9 +16,13 @@ public class ClientMenuHUD : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		nm = GetComponent<NetworkManager> ();
+		if(!nm)
+			nm = GetComponent<ArsNetworkManager> ();
 		ShowAvatars ();
 
+		if (nm.skipStartScreen) {
+			StartGame ();
+		}
 		
 	}
 	
@@ -54,7 +58,6 @@ public class ClientMenuHUD : MonoBehaviour {
 		}
 
 		playerAvatar = possibleAvatars [0];
-		Debug.Log ("setting player avatar " + playerAvatar);
 	}
 
 
@@ -69,7 +72,8 @@ public class ClientMenuHUD : MonoBehaviour {
 			}
 		}
 			
-		nm.StartClient ();
+		
+		nm.ArsStartClient ();
 		
 
 

@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &151538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486992}
+  - 114: {fileID: 11484966}
+  - 114: {fileID: 11445176}
+  m_Layer: 0
+  m_Name: ArsNetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486992
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3157375, y: 0.98, z: 3.6663175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11445176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64880adda45b94d28ba2f746be15f3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nm: {fileID: 11484966}
+  playerName: {fileID: 0}
+  possibleAvatars:
+  - {fileID: 193210, guid: b691371f1f8274088a159f75719c778d, type: 2}
+  - {fileID: 193210, guid: eea85eb4133a04b73950ffce33885db9, type: 2}
+  playerAvatar: {fileID: 193210, guid: b691371f1f8274088a159f75719c778d, type: 2}
+  characterToggleGroup: {fileID: 0}
+  togglePrefab: {fileID: 138432, guid: f8561a4a0959d4157ab46aa1ec2c2862, type: 2}
+--- !u!114 &11484966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6016f8f5d64ec484ba7945ec6c249c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NetworkPort: 7777
+  m_ServerBindToIP: 0
+  m_ServerBindAddress: 
+  m_NetworkAddress: localhost
+  m_DontDestroyOnLoad: 1
+  m_RunInBackground: 1
+  m_ScriptCRCCheck: 0
+  m_MaxDelay: 0.01
+  m_LogLevel: 2
+  m_PlayerPrefab: {fileID: 193442, guid: de2b7d854ab48c64fa9a0ac9b2a218cb, type: 2}
+  m_AutoCreatePlayer: 1
+  m_PlayerSpawnMethod: 0
+  m_OfflineScene: Menu
+  m_OnlineScene: arsplastica
+  m_SpawnPrefabs:
+  - {fileID: 194740, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
+  - {fileID: 179206, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
+  - {fileID: 108212, guid: 066058efa17f64cd589686b750e8b82d, type: 2}
+  - {fileID: 145204, guid: 981eb81d963e04e58a317bd66ac517d0, type: 2}
+  - {fileID: 162850, guid: 55806679212a64a7e92953fefee08090, type: 2}
+  m_CustomConfig: 0
+  m_MaxConnections: 4
+  m_ConnectionConfig:
+    m_PacketSize: 1500
+    m_FragmentSize: 500
+    m_ResendTimeout: 1200
+    m_DisconnectTimeout: 2000
+    m_ConnectTimeout: 2000
+    m_MinUpdateTimeout: 10
+    m_PingTimeout: 500
+    m_ReducedPingTimeout: 100
+    m_AllCostTimeout: 20
+    m_NetworkDropThreshold: 5
+    m_OverflowDropThreshold: 5
+    m_MaxConnectionAttempt: 10
+    m_AckDelay: 33
+    m_MaxCombinedReliableMessageSize: 100
+    m_MaxCombinedReliableMessageCount: 10
+    m_MaxSentMessageQueueSize: 128
+    m_IsAcksLong: 0
+    m_UsePlatformSpecificProtocols: 0
+    m_Channels: []
+  m_GlobalConfig:
+    m_ThreadAwakeTimeout: 1
+    m_ReactorModel: 0
+    m_ReactorMaximumReceivedMessages: 1024
+    m_ReactorMaximumSentMessages: 1024
+    m_MaxPacketSize: 2000
+  m_Channels: 
+  m_UseWebSockets: 0
+  m_UseSimulator: 0
+  m_SimulatedLatency: 1
+  m_PacketLossPercentage: 0
+  m_MatchHost: mm.unet.unity3d.com
+  m_MatchPort: 443
+  isNetworkActive: 0
+  matchMaker: {fileID: 0}
+  matchName: default
+  matchSize: 4
+  isDevelopment: 1
+  selfContainedHost: 0
+  skipStartScreen: 0
+  isProductionServer: 0
+  productionServerAddress: ps529225.dreamhostps.com
+  localServerAddress: localhost
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 151538}
+  m_IsPrefabParent: 1

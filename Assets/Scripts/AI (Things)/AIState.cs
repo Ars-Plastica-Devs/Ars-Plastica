@@ -3,13 +3,10 @@ using System.Collections;
 /*
 State that an AI can be in.  A class that uses AIState is responsible for creating it's own callbacks. 
 This class is just a way to keep track of what the current state is and which functions should be called.
-
 */
 public class AIState {
 	public string stateName;
 	public float startTime;
-	public float cyclesInState;
-
 	public DayClock dayclock;
 
 	public delegate void StateDelegate();
@@ -39,6 +36,11 @@ public class AIState {
 	{
 		AIState temp = (AIState)obj;
 		return temp.stateName == this.stateName;
+	}
+
+	public override int GetHashCode ()
+	{
+		return base.GetHashCode ();
 	}
 
 }

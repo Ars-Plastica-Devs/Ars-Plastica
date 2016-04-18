@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467a08c1b12c540198ad2c14cdff6ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daylength: 500
+  daylength: 10
   hour: 0
   startTime: 0
   fromRotation: {x: 0, y: 0, z: 0}

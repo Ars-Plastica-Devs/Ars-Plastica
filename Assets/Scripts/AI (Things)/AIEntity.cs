@@ -1,30 +1,48 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.Networking;
+using System.Collections;
 
+public abstract class AIEntity : NetworkBehaviour
+{
+	[SyncVar] public float health = 100;
+	[SyncVar] public float DaysOld = 0f;
 
-public abstract class AIEntity : NetworkBehaviour {
+	public DayClock dayclock;
 
-	public float health = 100;
-	//don't want these in inspector but still accessible by other scripts
+	[SerializeField]
 	internal float spawnTime;
-	internal AIState currentState;
 
-	public void SwitchState(AIState state) {
-		if (currentState != null) {
-			currentState.EndCallback ();
+
+	virtual public void Start ()
+	{
+		if (!isServer) {
+			GetComponentInChildren<RAIN.Core.AIRig> ().enabled = false;
+		} else {
+			dayclock = (DayClock)FindObjectOfType (typeof(DayClock));
+			spawnTime = Time.time;
 		}
-		currentState = state;
-		currentState.StartCallback ();
 	}
 
-	void Spawn(Vector3 coordinate) {
-		
+	virtual public void Update() {
+		if (isServer) {
+			DaysOld = dayclock.secondsToDays (Time.time - spawnTime);
+		}
 	}
 
-	void doDamage(float damage) {
-		health -= damage;	
+	virtual public void doDamage(float damage)
+	{
+		health -= damage;
+	}
+
+	/*
+	Returns true if AI should die.
+	*/
+	virtual public bool isDead() {
+		if (health <= 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 

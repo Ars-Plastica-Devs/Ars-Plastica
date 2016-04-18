@@ -10,7 +10,9 @@ public class AIEcosystem : NetworkBehaviour
 	public int maxNumberHerbivores = 20;
 	public int maxNumberCarnivores = 8;
 
-	public int maxSpores = 200;
+	public int maxNodules = 200;
+	[SerializeField]
+	private int totalNodules = 0;
 
 	public Transform[] plants;
 	public Transform[] herbivores;
@@ -49,37 +51,35 @@ public class AIEcosystem : NetworkBehaviour
 
 	}
 
+	/*
+	 * Returns true if a nodule can be added to the world. 
+	 * */
+	public bool addNodule() {
+		if (totalNodules + 1 > maxNodules)
+			return false;
 
+		totalNodules++;
+		return true;
+	}
+
+
+	public bool removeNodule() {
+		if (totalNodules - 1 < 0)
+			return false;
+
+		totalNodules--;
+		return true;
+	}
+
+	public int getTotalNodules() {
+		return totalNodules;
+	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 	
 	}
-
-	void StartStateStart() {
-
-	}
-
-	void StartStateUpdate() {
-
-	}
-
-	void StartStateEnd() {
-
-	}
-
-	void NeutralStateStart() {
-
-	}
 		
-
-	void NeutralStateUpdate() {
-
-	}
-
-	void NeutralStateEnd() {
-
-	}
 }
 

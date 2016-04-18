@@ -60,10 +60,8 @@ public class Player_ID : NetworkBehaviour {
 		NetworkManager nm = FindObjectOfType<NetworkManager> ();
 		if (nm != null) {
 			string setName = nm.GetComponent<ClientMenuHUD> ().playerName.text;
-			Debug.Log ("name " + setName);
 			if (!setName.Equals("")) {
 				uniqueName = setName;
-				Debug.Log (uniqueName);
 			}
 		} 
 
@@ -115,7 +113,6 @@ public class Player_ID : NetworkBehaviour {
 		if (_a == null) {
 			_a = cmh.possibleAvatars [0];
 		}
-		Debug.Log ("setting avatar" + _a);
 		_a = Instantiate (_a);
 		_a.transform.SetParent (this.transform);
 		_a.transform.localPosition = Vector3.zero;
