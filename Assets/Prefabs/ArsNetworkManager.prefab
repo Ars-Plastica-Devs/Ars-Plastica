@@ -79,6 +79,7 @@ MonoBehaviour:
   - {fileID: 108212, guid: 066058efa17f64cd589686b750e8b82d, type: 2}
   - {fileID: 145204, guid: 981eb81d963e04e58a317bd66ac517d0, type: 2}
   - {fileID: 162850, guid: 55806679212a64a7e92953fefee08090, type: 2}
+  - {fileID: 162850, guid: 7e86c9626c3734dbb86f388229c047da, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -119,9 +120,9 @@ MonoBehaviour:
   matchName: default
   matchSize: 4
   isDevelopment: 1
-  selfContainedHost: 0
+  selfContainedHost: 1
   skipStartScreen: 0
-  isProductionServer: 0
+  isServer: 0
   productionServerAddress: ps529225.dreamhostps.com
   localServerAddress: localhost
 --- !u!1001 &100100000

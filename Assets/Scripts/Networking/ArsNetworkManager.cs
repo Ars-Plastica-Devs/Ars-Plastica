@@ -29,8 +29,6 @@ public class ArsNetworkManager : NetworkManager {
 
 	public override void OnStartClient (NetworkClient client)
 	{
-		
-//		base.OnStartClient (client);
 
 	}
 
@@ -43,10 +41,7 @@ public class ArsNetworkManager : NetworkManager {
 	}
 
 	private void InstantiateServerIdentities() {
-//		foreach (NetworkIdentity nid in serverIdentities) {
-//			nid.enabled = true;
-//			nid.gameObject.SetActive (true);
-//		}
+
 	}
 
 	// Update is called once per frame

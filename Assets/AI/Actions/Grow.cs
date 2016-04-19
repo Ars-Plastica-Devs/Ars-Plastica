@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using RAIN.Action;
 using RAIN.Core;
 
+/*
+ * Grow continuously rather than in discrete steps (see GrowStep)
+ * */
 [RAINAction]
 public class Grow : RAINAction
 {

@@ -2,9 +2,16 @@
 using System.Collections;
 using UnityEngine.Networking;
 
+/*
+ * 
+ * The 'driver' class for spawning the networked AI stuff.
+ * Just spawns them at start of game.
+ * 
+ * Should keep track of number alive (like it does for nodules) and spawn more if we need more.
+ * 
+ * */
 public class AIEcosystem : NetworkBehaviour
 {
-	internal AIState currentState;
 
 	public int maxNumberPlants = 40;
 	public int maxNumberHerbivores = 20;
@@ -43,6 +50,15 @@ public class AIEcosystem : NetworkBehaviour
 		if (herbivores.Length > 0) {
 			for (int i = 0; i < numHerbs; i++) {
 				newobj = (Transform) Instantiate (herbivores [0], new Vector3 (Random.Range (-10, 10), Random.Range (3, 10), Random.Range (-20, -10)), Quaternion.identity);
+				newobj.SetParent (this.transform);
+				NetworkServer.Spawn (newobj.gameObject);
+			}
+		}
+
+		int numCarnivores = Random.Range (maxNumberCarnivores / 2, maxNumberCarnivores);
+		if (carnivores.Length > 0) {
+			for (int i = 0; i < numCarnivores; i++) {
+				newobj = (Transform) Instantiate (carnivores [0], new Vector3 (Random.Range (-100, 100), Random.Range (-20, 10), Random.Range (-100, 100)), Quaternion.identity);
 				newobj.SetParent (this.transform);
 				NetworkServer.Spawn (newobj.gameObject);
 			}

@@ -246,6 +246,10 @@ Prefab:
       propertyPath: m_RotationSyncCompression
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 194740, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cdd86e220f2c443b78dc383ef253c2ff, type: 2}
   m_IsPrefabParent: 0
@@ -560,6 +564,10 @@ Prefab:
       propertyPath: m_AssetId.i15
       value: 196
       objectReference: {fileID: 0}
+    - target: {fileID: 11480432, guid: 346f63c78f2774e0b89ae2353c4f4dc4, type: 2}
+      propertyPath: daylength
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346f63c78f2774e0b89ae2353c4f4dc4, type: 2}
   m_IsPrefabParent: 0
@@ -845,10 +853,6 @@ Prefab:
     - target: {fileID: 400636, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496914, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}
-      propertyPath: maxSpores
-      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cae9f81d4acc44e88a4f5fb8a7b3dc9, type: 2}

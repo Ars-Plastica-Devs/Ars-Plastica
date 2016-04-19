@@ -5,16 +5,16 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class EatNodule : RAINAction
+public class EatPrey : RAINAction
 {
-	GameObject noduleTarget;
+	GameObject preyTarget;
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-		Herbivore_001 herb = ai.Body.GetComponent<Herbivore_001> ();
-		noduleTarget = ai.WorkingMemory.GetItem<GameObject> ("noduleTarget");
-		if (noduleTarget != null && herb != null) {
-			herb.eat (noduleTarget);
+		AIEntity_Animal animal = ai.Body.GetComponent<AIEntity_Animal> ();
+		preyTarget = ai.WorkingMemory.GetItem<GameObject> ("preyTarget");
+		if (preyTarget != null && animal != null) {
+			animal.eat (preyTarget);
 		}
 	}
 

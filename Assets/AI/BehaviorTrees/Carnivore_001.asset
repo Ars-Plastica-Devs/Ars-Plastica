@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1227330239, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: Carnivore_001
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
+      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;Carnivore_001&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;running&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
+      repeatuntil=&quot;&quot; name=&quot;GrowStage&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;finishedGrowing==false&quot;&gt;&lt;action repeatuntil=&quot;&quot;
+      parametervalues=&quot;Mw==&quot; parameters=&quot;RGF5c1RvV2FpdA==&quot; namespace=&quot;&quot;
+      name=&quot;Wait 3 Days&quot; debugbreak=&quot;False&quot; classname=&quot;WaitDays&quot;
+      /&gt;&lt;action repeatuntil=&quot;success&quot; parametervalues=&quot;bWlk&quot;
+      parameters=&quot;R3Jvd3RoU3RhZ2U=&quot; namespace=&quot;(global)&quot; name=&quot;
+      Grow Into Adolescent&quot; debugbreak=&quot;False&quot; classname=&quot;GrowStep&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;NA==&quot; parameters=&quot;RGF5c1RvV2FpdA==&quot;
+      namespace=&quot;&quot; name=&quot;Wait 4 Days&quot; debugbreak=&quot;False&quot;
+      classname=&quot;WaitDays&quot; /&gt;&lt;action repeatuntil=&quot;success&quot;
+      parametervalues=&quot;ZmluYWw=&quot; parameters=&quot;R3Jvd3RoU3RhZ2U=&quot;
+      namespace=&quot;(global)&quot; name=&quot;Grow Into Adult&quot; debugbreak=&quot;False&quot;
+      classname=&quot;GrowStep&quot; /&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; name=&quot;finishedGrowing = true&quot; expression=&quot;finishedGrowing
+      = true&quot; debugbreak=&quot;False&quot; /&gt;&lt;/constraint&gt;&lt;action
+      repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;&quot; name=&quot;Check Health&quot; debugbreak=&quot;False&quot;
+      classname=&quot;CheckHealth&quot; /&gt;&lt;parallel tiebreaker=&quot;fail&quot;
+      succeed=&quot;all&quot; repeatuntil=&quot;&quot; name=&quot;Find Food&quot;
+      fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect sensor=&quot;&amp;quot;Prey
+      Sensor&amp;quot;&quot; repeatuntil=&quot;running&quot; name=&quot;Detect Prey&quot;
+      matchtype=&quot;best&quot; entityobjectvariable=&quot;preyTarget&quot; debugbreak=&quot;False&quot;
+      consistent=&quot;True&quot; aspectvariable=&quot;&quot; aspectobjectvariable=&quot;&quot;
+      aspect=&quot;&amp;quot;Herbivore001&amp;quot;&quot; /&gt;&lt;constraint repeatuntil=&quot;running&quot;
+      name=&quot;constraint&quot; debugbreak=&quot;False&quot; constraint=&quot;preyTarget
+      != null&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Move
+      To Prey&quot; movetarget=&quot;preyTarget&quot; movespeed=&quot;random(2,4)&quot;
+      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;1&quot;
+      closeenoughangle=&quot;&quot; /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;Eat Prey&quot;
+      debugbreak=&quot;False&quot; classname=&quot;EatPrey&quot; /&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;running&quot; name=&quot;constraint&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;preyTarget == null&quot;&gt;&lt;move turnspeed=&quot;&quot;
+      repeatuntil=&quot;&quot; name=&quot;Move to Home&quot; movetarget=&quot;home&quot;
+      movespeed=&quot;random(5,10)&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
+      closeenoughdistance=&quot;random(0,10)&quot; closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;/parallel&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
+      type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
+      elementtype="System.String" /></fields><references /></scriptableobject>
+    _serializedGameObjects: []
+    _serializedCustomData: []

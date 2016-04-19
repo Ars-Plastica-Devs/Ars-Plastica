@@ -2,12 +2,16 @@
 using System.Collections;
 using UnityEngine.Networking;
 
+/*
+ * Creates unique identity for client player.
+ * Syncs name and avatar prefab to use, then sets them.
+ * If this script is attached to the localPlayer (client's player), it tells the server it's identity.
+ * If !localPlayer (networked player, the other players in your world), it gets identity from server and changes its gameObject on the client accordingly (name, playerAvatar)
+ * */
 public class Player_ID : NetworkBehaviour {
 
 	[SyncVar] public string playerUniqueIdentity;
-	[SyncVar] public string playerAvatar;
-
-
+	[SyncVar] public string playerAvatar; //avatar is synced by name of prefab
 
 	private Renderer rend;
 	private NetworkInstanceId playerNetID;
@@ -35,6 +39,9 @@ public class Player_ID : NetworkBehaviour {
 		}
 	}
 
+	/*
+	 * Notify server of our identity.
+	 * */
 	[Client]
 	void GetNetIdentity() {
 		playerNetID = GetComponent<NetworkIdentity> ().netId;
@@ -83,10 +90,8 @@ public class Player_ID : NetworkBehaviour {
 		ClientMenuHUD cmh = nm.GetComponent<ClientMenuHUD> ();
 		if (cmh != null) {
 			avatarSelected = cmh.playerAvatar;
-			Debug.Log (avatarSelected + " ");
 		} else {
 			avatarSelected = nm.GetComponent<ClientMenuHUD> ().possibleAvatars [0];
-			Debug.Log ("Uhoh");
 		}
 
 		return avatarSelected.name;
@@ -94,7 +99,7 @@ public class Player_ID : NetworkBehaviour {
 	}
 
 	void SetAvatar() {
-		GameObject _a = null;
+		GameObject _avatar = null;
 		string prefab;
 		NetworkManager nm = FindObjectOfType<NetworkManager> ();
 		ClientMenuHUD cmh = nm.GetComponent<ClientMenuHUD> ();
@@ -106,16 +111,16 @@ public class Player_ID : NetworkBehaviour {
 
 		foreach (GameObject go in cmh.possibleAvatars) {
 			if (go.name == prefab) {
-				_a = go;
+				_avatar = go;
 			}
 		}
 
-		if (_a == null) {
-			_a = cmh.possibleAvatars [0];
+		if (_avatar == null) {
+			_avatar = cmh.possibleAvatars [0];
 		}
-		_a = Instantiate (_a);
-		_a.transform.SetParent (this.transform);
-		_a.transform.localPosition = Vector3.zero;
+		_avatar = Instantiate (_avatar);
+		_avatar.transform.SetParent (this.transform);
+		_avatar.transform.localPosition = Vector3.zero;
 	}
 		
 }

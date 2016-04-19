@@ -2,6 +2,9 @@
 using UnityEngine.Networking;
 using System.Collections;
 
+/*
+ * A basic plant AI
+ * */
 public class AIEntity_Plant : AIEntity
 {
 	//Grow State Vars
@@ -12,7 +15,7 @@ public class AIEntity_Plant : AIEntity
 	public float totalShrinkTimeSeconds = 10f;
 	public bool scaleFromBottom = true; //rather than scale from the middle, grow 'up' rather than 'out'
 	public bool finishedGrowing = false;
-	internal Renderer rend;
+	public Renderer rend;
 
 	private float totalGrowTime;
 	private float currentGrowTime;
@@ -29,9 +32,9 @@ public class AIEntity_Plant : AIEntity
 		//!isServer, because when we test, the client is a Host
 		if(isServer) {
 			growFinalSize = Random.Range (finalGrowSizeMin, finalGrowSizeMax);
-			rend = GetComponent<Renderer> ();
 			if (!rend) {
 				//	Hopefully this plant actually has a mesh to render
+				Debug.Log("No Renderer");
 			}
 			//calculate height at beginning for scaling to final scale
 			float currentHeight = rend.bounds.size.y;
@@ -67,7 +70,7 @@ public class AIEntity_Plant : AIEntity
 		return true;
 	}
 
-	override public bool isDead() {
+	override public bool checkHealth() {
 		return lifeSpan < dayclock.secondsToDays (Time.time - spawnTime);
 	}
 }

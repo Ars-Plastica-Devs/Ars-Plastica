@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * DayClock
+		• For keeping track of time.
+		• Can set length of a game 'day' in seconds (how long it takes for the directional light attached to rotate a full 360)
+		• Convert Days <-> Seconds.
+		• Currently attached to a Directional Light.
+
+	TODO: Could be attached to empty game object and hold references to multiple directional lights that rotate independently.
+
+ * */
 public class DayClock : MonoBehaviour
 {
 

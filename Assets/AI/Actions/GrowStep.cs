@@ -5,16 +5,19 @@ using RAIN.Action;
 using RAIN.Core;
 using RAIN.Representation;
 
+/*
+ * Grow in discrete steps rather than continuous (see Grow)
+ * */
 [RAINAction]
 public class GrowStep : RAINAction
 {
-	Herbivore_001 entity;
+	AIEntity_Animal entity;
 
 	public Expression GrowthStage;
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-		entity = ai.Body.GetComponent<Herbivore_001> ();
+		entity = ai.Body.GetComponent<AIEntity_Animal> ();
 		
     }
 

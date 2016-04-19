@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 
 /*
+ * Not used for anything at the moment.
 For interacting with objects in the environment when we are looking at them.
 TODO: Consider renaming.  PlayerLookingAt, then have BeingLookedAt for objects that react to being looked at.
 */

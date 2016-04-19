@@ -17,8 +17,8 @@ public class CheckHealth : RAINAction
 
 	public override ActionResult Execute(RAIN.Core.AI ai)
 	{
-
-		if (entity.isDead ()) {
+		
+		if (entity != null && entity.checkHealth ()) {
 			return ActionResult.FAILURE;
 		} else {
 			return ActionResult.SUCCESS;

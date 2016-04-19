@@ -1,7 +1,11 @@
 ﻿using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
-
+/*
+ * 
+ * Required by FirstPersonController.cs
+ * Taken from Unity StandardAssets.
+ * */
 [Serializable]
 public class MouseLook
 {

@@ -3,25 +3,22 @@ using System.Collections;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
+
+/*
+ * For development.
+ * When in online scene, check if online.
+ * If offline, switch to Menu scene to start a Host game (so we can test networked entities);
+ * */
 public class OfflinePlayerTest : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
 		if (NetworkManager.singleton && NetworkManager.singleton.isNetworkActive) {
 			Debug.Log ("Online");
-			this.gameObject.SetActive (false);
 		} else {
 			Debug.Log ("Offline");
-			this.gameObject.SetActive (true);
 			SceneManager.LoadScene ("Menu");
 		}
-
-
-
+		this.gameObject.SetActive (false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

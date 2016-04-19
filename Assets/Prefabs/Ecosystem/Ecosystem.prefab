@@ -72,15 +72,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365e4742cab464764a93deffac150e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNumberPlants: 10
-  maxNumberHerbivores: 3
-  maxNumberCarnivores: 8
-  maxSpores: 200
+  maxNumberPlants: 50
+  maxNumberHerbivores: 20
+  maxNumberCarnivores: 4
+  maxNodules: 200
+  totalNodules: 0
   plants:
   - {fileID: 404756, guid: 981eb81d963e04e58a317bd66ac517d0, type: 2}
   herbivores:
   - {fileID: 410204, guid: 55806679212a64a7e92953fefee08090, type: 2}
-  carnivores: []
+  carnivores:
+  - {fileID: 410204, guid: 7e86c9626c3734dbb86f388229c047da, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
