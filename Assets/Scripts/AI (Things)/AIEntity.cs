@@ -18,13 +18,12 @@ public abstract class AIEntity : NetworkBehaviour
 
 	virtual public void Start ()
 	{
-		if (!isServer) {
+		if (isServer) {
 			//only enable AI on server.
-			GetComponentInChildren<RAIN.Core.AIRig> ().enabled = false;
 			dayclock = (DayClock)FindObjectOfType (typeof(DayClock));
 			spawnTime = Time.time;
 		} else {
-			
+			GetComponentInChildren<RAIN.Core.AIRig> ().enabled = false;
 		}
 	}
 

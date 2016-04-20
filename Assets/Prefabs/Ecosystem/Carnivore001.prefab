@@ -151,12 +151,12 @@ MonoBehaviour:
   m_TransformSyncMode: 1
   m_SendInterval: 1
   m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
+  m_RotationSyncCompression: 1
   m_SyncSpin: 0
-  m_MovementTheshold: 1
+  m_MovementTheshold: 0.01
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
+  m_InterpolateMovement: 0.01
 --- !u!114 &11436506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   DaysOld: 0
-  dayclock: {fileID: 0}
   spawnTime: 0
+  dayclock: {fileID: 0}
   initialSize: 2
   midSize: 3
   finalSizeMin: 5

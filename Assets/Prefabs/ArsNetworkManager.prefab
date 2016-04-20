@@ -108,7 +108,7 @@ MonoBehaviour:
     m_ReactorMaximumReceivedMessages: 1024
     m_ReactorMaximumSentMessages: 1024
     m_MaxPacketSize: 2000
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -119,10 +119,10 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
-  isDevelopment: 1
-  selfContainedHost: 1
+  isDevelopment: 0
+  selfContainedHost: 0
   skipStartScreen: 0
-  isServer: 0
+  isServer: 1
   productionServerAddress: ps529225.dreamhostps.com
   localServerAddress: localhost
 --- !u!1001 &100100000
