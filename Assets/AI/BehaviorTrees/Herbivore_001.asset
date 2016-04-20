@@ -36,24 +36,25 @@ MonoBehaviour:
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;Check Health&quot; debugbreak=&quot;False&quot; classname=&quot;CheckHealth&quot;
       /&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;running&quot;
-      name=&quot;Find Food&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
-      sensor=&quot;&amp;quot;Nodule Sensor&amp;quot;&quot; repeatuntil=&quot;running&quot;
-      name=&quot;Detect Nodule&quot; matchtype=&quot;best&quot; entityobjectvariable=&quot;preyTarget&quot;
-      debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
-      aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Nodule&amp;quot;&quot;
-      /&gt;&lt;constraint repeatuntil=&quot;running&quot; name=&quot;constraint&quot;
-      debugbreak=&quot;False&quot; constraint=&quot;preyTarget != null&quot;&gt;&lt;move
-      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Move To Nodule&quot;
-      movetarget=&quot;preyTarget&quot; movespeed=&quot;random(8,12)&quot; facetarget=&quot;&quot;
-      debugbreak=&quot;False&quot; closeenoughdistance=&quot;1&quot; closeenoughangle=&quot;&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
-      namespace=&quot;(global)&quot; name=&quot;Eat Nodule&quot; debugbreak=&quot;False&quot;
-      classname=&quot;EatPrey&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;running&quot;
+      name=&quot;Find Food&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      repeatuntil=&quot;running&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;(global)&quot; name=&quot;Detect Nodule&quot; debugbreak=&quot;False&quot;
+      classname=&quot;DetectNodule&quot; /&gt;&lt;constraint repeatuntil=&quot;running&quot;
       name=&quot;constraint&quot; debugbreak=&quot;False&quot; constraint=&quot;preyTarget
-      == null&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Move
-      to Home&quot; movetarget=&quot;(0,0,0)&quot; movespeed=&quot;random(5,10)&quot;
-      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;random(0,10)&quot;
-      closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;/parallel&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
+      != null&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Move
+      To Nodule&quot; movetarget=&quot;preyTarget&quot; movespeed=&quot;random(8,12)&quot;
+      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;1&quot;
+      closeenoughangle=&quot;&quot; /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;(global)&quot; name=&quot;Eat Nodule&quot;
+      debugbreak=&quot;False&quot; classname=&quot;EatPrey&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;(global)&quot;
+      name=&quot;Reproduce&quot; debugbreak=&quot;False&quot; classname=&quot;Reproduce&quot;
+      /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;running&quot; name=&quot;constraint&quot;
+      debugbreak=&quot;False&quot; constraint=&quot;preyTarget == null&quot;&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Move to Home&quot;
+      movetarget=&quot;(0,0,0)&quot; movespeed=&quot;random(5,10)&quot; facetarget=&quot;&quot;
+      debugbreak=&quot;False&quot; closeenoughdistance=&quot;random(0,10)&quot; closeenoughangle=&quot;&quot;
+      /&gt;&lt;/constraint&gt;&lt;/parallel&gt;&lt;/parallel&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>
     _serializedGameObjects: []

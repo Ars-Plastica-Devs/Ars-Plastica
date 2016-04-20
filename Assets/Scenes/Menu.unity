@@ -258,7 +258,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484966, guid: 678d95f7f8e2a49739483d55cc27add1, type: 2}
       propertyPath: isDevelopment
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484966, guid: 678d95f7f8e2a49739483d55cc27add1, type: 2}
+      propertyPath: selfContainedHost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484966, guid: 678d95f7f8e2a49739483d55cc27add1, type: 2}
+      propertyPath: skipStartScreen
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 678d95f7f8e2a49739483d55cc27add1, type: 2}

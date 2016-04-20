@@ -37,6 +37,7 @@ public abstract class AIEntity : NetworkBehaviour
 	virtual public void doDamage(float damage)
 	{
 		health -= damage;
+		health = Mathf.Clamp (health, 0, 100);
 	}
 
 	/*
@@ -48,6 +49,10 @@ public abstract class AIEntity : NetworkBehaviour
 		} else {
 			return false;
 		}
+	}
+
+	virtual public void reproduce () {
+		
 	}
 }
 

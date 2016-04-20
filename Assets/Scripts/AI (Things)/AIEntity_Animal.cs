@@ -12,6 +12,10 @@ public class AIEntity_Animal : AIEntity
 	public float numDaysWithoutFood = 1f;
 	public float damageWithoutFood = 30f;
 	public float lifeSpanInDays = 100f;
+	public float daysOldUntilReproduction = 25f;
+	public float daysBetweenReproduction = 1f;
+	public int numberOffspringPerDay = 1;
+	public float timeOfLastReproduction = 0f;
 	public Renderer modelRenderer;
 
 	internal float lastTimeEaten;

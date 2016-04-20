@@ -232,8 +232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   DaysOld: 0
-  dayclock: {fileID: 0}
   spawnTime: 0
+  dayclock: {fileID: 0}
   totalGrowDays: 1
   finalGrowSizeMin: 25
   finalGrowSizeMax: 55

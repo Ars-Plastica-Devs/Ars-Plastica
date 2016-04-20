@@ -63,9 +63,63 @@ public class AIEcosystem : NetworkBehaviour
 				NetworkServer.Spawn (newobj.gameObject);
 			}
 		}
-
-
+			
 	}
+
+	/*
+	 * Spawn a plant that matches nameOfPrefab, return true if successful, false if could not spawn (prefab with name nameOfPrefab does not exist in plant array.)
+	 * */
+	public bool spawnPlant(string nameOfPrefab, Vector3 position, Quaternion rotation) {
+		if (plants.Length > 0) {
+			for (int i = 0; i < plants.Length; i++) {
+				if (plants [i].name == nameOfPrefab) {
+					Transform newobj = (Transform) Instantiate (plants [i], position, rotation);
+					newobj.SetParent (this.transform);
+					NetworkServer.Spawn (newobj.gameObject);
+					return true;
+				}
+			}
+		}
+		//no plant with name found
+		return false;
+	}
+
+	/*
+	 * Spawn a herbivore that matches nameOfPrefab, return true if successful, false if could not spawn (prefab with name nameOfPrefab does not exist in herbivore array.)
+	 * */
+	public bool spawnHerbivore(string nameOfPrefab, Vector3 position, Quaternion rotation) {
+		if (herbivores.Length > 0) {
+			for (int i = 0; i < herbivores.Length; i++) {
+				if (herbivores [i].name == nameOfPrefab) {
+					Transform newobj = (Transform) Instantiate (herbivores [i], position, rotation);
+					newobj.SetParent (this.transform);
+					NetworkServer.Spawn (newobj.gameObject);
+					return true;
+				}
+			}
+		}
+		//no herbivore with name found
+		return false;
+	}
+
+	/*
+	 * Spawn a carnivore that matches nameOfPrefab, return true if successful, false if could not spawn (prefab with name nameOfPrefab does not exist in carnivore array.)
+	 * */
+	public bool spawnCarnivore(string nameOfPrefab, Vector3 position, Quaternion rotation) {
+		if (carnivores.Length > 0) {
+			for (int i = 0; i < carnivores.Length; i++) {
+				if (carnivores [i].name == nameOfPrefab) {
+					Transform newobj = (Transform) Instantiate (carnivores [i], position, rotation);
+					newobj.SetParent (this.transform);
+					NetworkServer.Spawn (newobj.gameObject);
+					return true;
+				}
+			}
+		}
+		//no carnivore with name found
+		return false;
+	}
+		
 
 	/*
 	 * Returns true if a nodule can be added to the world. 
