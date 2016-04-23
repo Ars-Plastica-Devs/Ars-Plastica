@@ -1,29 +1,32 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Networking;
 
-public class Buoyancy : MonoBehaviour
+public class Buoyancy : NetworkBehaviour
 {
-	public float yAmount = 0f;
-	public float period = 5f;
-	public float amplitude = 10f;
+    private Vector3 m_StartPosition;
 
-	private Vector3 startPosition;
+    public float YAmount = 0f;
+	public float Period = 5f;
+	public float Amplitude = 10f;
 
-	// Use this for initialization
-	void Start ()
+	private void Start ()
 	{
-		startPosition = transform.position;
+	    enabled = isServer;
+
+	    if (!isServer) return;
+		m_StartPosition = transform.position;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void FixedUpdate ()
 	{
-		if (yAmount != 0) {  //floating up/down
-			transform.position += Vector3.up * yAmount;
-		} else { //null buoyancy
-			float theta = Time.timeSinceLevelLoad / period;
-			float distance = amplitude * (1 + Mathf.Sin(theta)); //always positive
-			transform.position = startPosition + Vector3.up * distance;
+	    if (!isServer) return;
+
+		if (YAmount != 0) {  //floating up/down
+			transform.position += Vector3.up * YAmount * Time.fixedDeltaTime;
+		} else { //periodic bouyancy
+			var theta = Time.timeSinceLevelLoad / Period;
+			var distance = Amplitude * (1 + Mathf.Sin(theta)); //always positive
+			transform.position = m_StartPosition + Vector3.up * distance * Time.fixedDeltaTime;
 		}
 
 	}

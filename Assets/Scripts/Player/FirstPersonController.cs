@@ -49,6 +49,7 @@ public class FirstPersonController : MonoBehaviour
 
 	private bool m_PreviouslyFlying;
 
+    public bool MouseOnly = false;
 
 	// Use this for initialization
 	private void Start()
@@ -73,6 +74,10 @@ public class FirstPersonController : MonoBehaviour
 	private void Update()
 	{
 		RotateView();
+
+	    if (MouseOnly)
+	        return;
+
 		// the jump state needs to read here to make sure it is not missed
 		if (!m_Jump)
 		{
@@ -121,7 +126,17 @@ public class FirstPersonController : MonoBehaviour
 	}
 
 
-	private void PlayLandingSound()
+    public Vector3 GetLookDirection()
+    {
+        return m_Camera.transform.forward;
+    }
+
+    public Vector3 GetCameraLocation()
+    {
+        return m_Camera.transform.position;
+    }
+
+    private void PlayLandingSound()
 	{
 		if (m_LandSound) {
 			m_AudioSource.clip = m_LandSound;
@@ -313,5 +328,15 @@ public class FirstPersonController : MonoBehaviour
 		}
 		body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
 	}
+
+    private void OnDisable()
+    {
+        m_MouseLook.SetCursorLock(false);
+    }
+
+    private void OnEnable()
+    {
+        m_MouseLook.SetCursorLock(true);
+    }
 }
 

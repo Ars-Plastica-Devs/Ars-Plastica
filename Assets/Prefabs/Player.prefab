@@ -53,9 +53,11 @@ GameObject:
   - 114: {fileID: 11429424}
   - 114: {fileID: 11481894}
   - 114: {fileID: 11420718}
+  - 114: {fileID: 11497674}
+  - 114: {fileID: 11401866}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.25, y: 1.73, z: -15.79}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494808}
@@ -275,6 +277,17 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &11401866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5196290eab3a214c96a51a818f81c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11420718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,8 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e23b43a75fc74c309bdc732a7b2c334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerUniqueIdentity: 
-  avatarSelected: {fileID: 0}
+  PlayerUniqueIdentity: 
+  PlayerAvatar: 
 --- !u!114 &11460570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,6 +487,7 @@ MonoBehaviour:
   m_AscendSpeed: 10
   m_DescendSpeed: 10
   m_FlySpeed: 15
+  MouseOnly: 0
 --- !u!114 &11493736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -488,6 +502,20 @@ MonoBehaviour:
   playerTransform: {fileID: 443394}
   camTransform: {fileID: 494808}
   lerpRate: 15
+--- !u!114 &11497674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c552611bd741fcb4da9aa77546223041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionsEnabled: 1
+  AttachedToConveyance: 0
+  InteractDistance: 3
 --- !u!143 &14312162
 CharacterController:
   m_ObjectHideFlags: 1

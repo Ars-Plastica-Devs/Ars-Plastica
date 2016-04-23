@@ -1,26 +1,27 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Networking;
 
-
-public class ClientMenuHUD : MonoBehaviour {
-
-	public ArsNetworkManager nm;
-	public Text playerName;
-	public GameObject[] possibleAvatars;
-	public GameObject playerAvatar;
-	public ToggleGroup characterToggleGroup;
-	public GameObject togglePrefab;
+public class ClientMenuHUD : MonoBehaviour
+{
+	public ArsNetworkManager NetworkManager;
+	public Text PlayerName;
+	public GameObject[] PossibleAvatars;
+	public GameObject PlayerAvatar;
+	public ToggleGroup CharacterToggleGroup;
+	public GameObject TogglePrefab;
 
 	
 	// Use this for initialization
-	void Start () {
-		if(!nm)
-			nm = GetComponent<ArsNetworkManager> ();
+	void Start ()
+    {
+		if(NetworkManager == null)
+			NetworkManager = GetComponent<ArsNetworkManager> ();
+
 		ShowAvatars ();
 
-		if (nm.skipStartScreen) {
+		if (NetworkManager.SkipStartScreen)
+        {
 			StartGame ();
 		}
 		
@@ -28,56 +29,55 @@ public class ClientMenuHUD : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (FindObjectOfType<ToggleGroup> () != null && Camera.main.transform.childCount == 0) {
+		if (FindObjectOfType<ToggleGroup> () != null 
+            && Camera.main.transform.childCount == 0)
+        {
 			ShowAvatars ();
 		}
 	}
 		
 
 	//show possible avatars for selection
-	void ShowAvatars() {
+	void ShowAvatars()
+    {
 		float x = -3;
-		ToggleGroup tg = FindObjectOfType<ToggleGroup> ();
-		int i = 0;
-		foreach (GameObject obj in possibleAvatars) {
-			GameObject _o = Instantiate (obj);
-			_o.transform.SetParent(Camera.main.transform);
-			_o.transform.localPosition = new Vector3 (0 + x, 1, 5);
-			_o.name = obj.name;
+		var tg = FindObjectOfType<ToggleGroup> ();
+		var i = 0;
+
+		foreach (var obj in PossibleAvatars)
+        {
+			var o = Instantiate (obj);
+			o.transform.SetParent(Camera.main.transform);
+			o.transform.localPosition = new Vector3 (0 + x, 1, 5);
+			o.name = obj.name;
 			x += 3;
 			
 			//Setup toggle
-			Vector2 _v = Camera.main.WorldToScreenPoint (_o.transform.position);
-			GameObject _t = (GameObject)Instantiate (togglePrefab);
-			_t.transform.localPosition = Vector3.zero;
-			_t.transform.position = new Vector3 (_v.x - 5, _v.y - 40, 0);
-			_t.transform.SetParent(tg.transform, true);
-			_t.GetComponent<Toggle> ().isOn = i++ == 0 ? true : false;
-			_t.GetComponentInChildren<Text> ().text = _o.name; 
-			_t.GetComponent<Toggle> ().group = characterToggleGroup;
+			Vector2 v = Camera.main.WorldToScreenPoint (o.transform.position);
+			var t = Instantiate (TogglePrefab);
+			t.transform.localPosition = Vector3.zero;
+			t.transform.position = new Vector3 (v.x - 5, v.y - 40, 0);
+			t.transform.SetParent(tg.transform, true);
+			t.GetComponent<Toggle> ().isOn = i++ == 0;
+			t.GetComponentInChildren<Text> ().text = o.name; 
+			t.GetComponent<Toggle> ().group = CharacterToggleGroup;
 		}
 
-		playerAvatar = possibleAvatars [0];
+		PlayerAvatar = PossibleAvatars [0];
 	}
 
 
-	public void StartGame() {
-		string _selectedAvatar = "";
-		foreach (Toggle t in characterToggleGroup.ActiveToggles ()) {
-			_selectedAvatar = t.GetComponentInChildren<Text> ().text;
+	public void StartGame()
+    {
+		var selectedAvatar = "";
+		foreach (var t in CharacterToggleGroup.ActiveToggles ()) {
+			selectedAvatar = t.GetComponentInChildren<Text> ().text;
 		}
-		foreach (GameObject av in possibleAvatars) {
-			if (av.name == _selectedAvatar) {
-				playerAvatar = av;
-			}
+		foreach (var av in PossibleAvatars.Where(av => av.name == selectedAvatar))
+		{
+		    PlayerAvatar = av;
 		}
 			
-		
-		nm.ArsStartClient ();
-		
-
-
+		NetworkManager.ArsStartClient ();
 	}
-
-
 }

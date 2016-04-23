@@ -1,121 +1,132 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.Networking;
 
-public class Player_ID : NetworkBehaviour {
+/*
+ * Creates unique identity for client player.
+ * Syncs name and avatar prefab to use, then sets them.
+ * If this script is attached to the localPlayer (client's player), it tells the server it's identity.
+ * If !localPlayer (networked player, the other players in your world), it gets identity from server and changes its gameObject on the client accordingly (name, playerAvatar)
+ * */
+public class Player_ID : NetworkBehaviour
+{
+    private NetworkInstanceId m_PlayerNetID;
 
-	[SyncVar] public string playerUniqueIdentity;
-	[SyncVar] public string playerAvatar;
+    [SyncVar]
+    public string PlayerUniqueIdentity;
+    [SyncVar]
+    public string PlayerAvatar; //avatar is synced by name of prefab
+
+    public override void OnStartLocalPlayer()
+    {
+        GetNetIdentity();
+        SetIdentity();
+
+    }
+
+    private void Start()
+    {
+        SetAvatar();
+    }
+
+    private void Update()
+    {
+        if (transform.name == "" || transform.name == "Player(Clone)")
+        {
+            SetIdentity();
+        }
+    }
+
+    /*
+	 * Notify server of our identity.
+	 * */
+    [Client]
+    void GetNetIdentity()
+    {
+        m_PlayerNetID = GetComponent<NetworkIdentity>().netId;
+        CmdTellServerMyIdentity(MakeUniqueIdentity(), GetAvatarIdentity());
+    }
+
+
+    void SetIdentity()
+    {
+        if (!isLocalPlayer)
+        {
+            transform.name = PlayerUniqueIdentity;
+            var t = transform.Find("Name");
+            if (t != null)
+            {
+                t.GetComponent<TextMesh>().text = transform.name;
+            }
+        }
+        else
+        {
+            transform.name = MakeUniqueIdentity();
+        }
+    }
+
+    string MakeUniqueIdentity()
+    {
+        var uniqueName = "Player " + m_PlayerNetID;
+
+        var nm = FindObjectOfType<NetworkManager>();
+        if (nm != null)
+        {
+            var setName = nm.GetComponent<ClientMenuHUD>().PlayerName.text;
+            if (!setName.Equals(""))
+            {
+                uniqueName = setName;
+            }
+        }
+
+        return uniqueName;
+    }
 
 
 
-	private Renderer rend;
-	private NetworkInstanceId playerNetID;
-	private Transform myTransform;
+    [Command]
+    void CmdTellServerMyIdentity(string name, string avatar)
+    {
+        PlayerUniqueIdentity = name;
+        PlayerAvatar = avatar;
+    }
 
-	public override void OnStartLocalPlayer() {
-		GetNetIdentity ();
-		SetIdentity ();
+    [Client]
+    string GetAvatarIdentity()
+    {
+        var nm = FindObjectOfType<NetworkManager>();
+        var cmh = nm.GetComponent<ClientMenuHUD>();
 
-	}
+        var avatarSelected = cmh != null 
+            ? cmh.PlayerAvatar 
+            : nm.GetComponent<ClientMenuHUD>().PossibleAvatars[0];
 
-	void Start() {
-		SetAvatar ();
-	}
+        return avatarSelected.name;
 
-	// Use this for initialization
-	void Awake () {
-		myTransform = transform;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(myTransform.name == "" || myTransform.name == "Player(Clone)") {
-			SetIdentity();
-		}
-	}
+    }
 
-	[Client]
-	void GetNetIdentity() {
-		playerNetID = GetComponent<NetworkIdentity> ().netId;
-		CmdTellServerMyIdentity (MakeUniqueIdentity(), GetAvatarIdentity());
-	}
+    void SetAvatar()
+    {
+        GameObject avatar = null;
+        var nm = FindObjectOfType<NetworkManager>();
+        var cmh = nm.GetComponent<ClientMenuHUD>();
+        var prefab = !isLocalPlayer 
+            ? PlayerAvatar 
+            : GetAvatarIdentity();
 
+        foreach (var go in cmh.PossibleAvatars.Where(go => go.name == prefab))
+        {
+            avatar = go;
+        }
 
-	void SetIdentity() {
-		if (!isLocalPlayer) {
-			myTransform.name = playerUniqueIdentity;
-			Transform t = transform.Find ("Name");
-			if (t != null) {
-				t.GetComponent<TextMesh> ().text = myTransform.name;
-			}
-		} else {
-			myTransform.name = MakeUniqueIdentity ();
-		}
-	}
+        if (avatar == null)
+        {
+            avatar = cmh.PossibleAvatars[0];
+        }
 
-	string MakeUniqueIdentity() {
-		string uniqueName = "Player " + playerNetID.ToString ();
+        avatar = Instantiate(avatar);
+        avatar.transform.SetParent(transform);
+        avatar.transform.localPosition = Vector3.zero;
+    }
 
-		NetworkManager nm = FindObjectOfType<NetworkManager> ();
-		if (nm != null) {
-			string setName = nm.GetComponent<ClientMenuHUD> ().playerName.text;
-			if (!setName.Equals("")) {
-				uniqueName = setName;
-			}
-		} 
-
-		return uniqueName;
- 	}
-
-		
-
-	[Command]
-	void CmdTellServerMyIdentity(string name, string avatar) {
-		playerUniqueIdentity = name;
-		playerAvatar = avatar;
-	}
-
-	[Client]
-	string GetAvatarIdentity() {
-		GameObject avatarSelected;
-		NetworkManager nm = FindObjectOfType<NetworkManager> ();
-		ClientMenuHUD cmh = nm.GetComponent<ClientMenuHUD> ();
-		if (cmh != null) {
-			avatarSelected = cmh.playerAvatar;
-			Debug.Log (avatarSelected + " ");
-		} else {
-			avatarSelected = nm.GetComponent<ClientMenuHUD> ().possibleAvatars [0];
-			Debug.Log ("Uhoh");
-		}
-
-		return avatarSelected.name;
-
-	}
-
-	void SetAvatar() {
-		GameObject _a = null;
-		string prefab;
-		NetworkManager nm = FindObjectOfType<NetworkManager> ();
-		ClientMenuHUD cmh = nm.GetComponent<ClientMenuHUD> ();
-		if (!isLocalPlayer) {
-			prefab = playerAvatar;
-		} else {
-			prefab = GetAvatarIdentity();
-		}
-
-		foreach (GameObject go in cmh.possibleAvatars) {
-			if (go.name == prefab) {
-				_a = go;
-			}
-		}
-
-		if (_a == null) {
-			_a = cmh.possibleAvatars [0];
-		}
-		_a = Instantiate (_a);
-		_a.transform.SetParent (this.transform);
-		_a.transform.localPosition = Vector3.zero;
-	}
-		
 }

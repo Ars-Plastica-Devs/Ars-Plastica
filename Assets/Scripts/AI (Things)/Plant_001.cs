@@ -21,7 +21,8 @@ public class Plant_001 : AIEntity_Plant {
 	public void emitNodule() {
 		if (nodules.Length < 1)
 			return;
-		if (ecosystem != null && ecosystem.addNodule ()) {
+        //TODO: if i use this, replace null in here ---> vvv
+		if (ecosystem != null && ecosystem.AddNodule (null)) {
 			Transform newObj;
 			Vector3 v3;
 			for (int i = 0; i < 1; i++) {

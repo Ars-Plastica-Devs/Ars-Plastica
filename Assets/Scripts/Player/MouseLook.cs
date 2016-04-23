@@ -53,7 +53,7 @@ public class MouseLook
 		UpdateCursorLock();
 	}
 
-	public void SetCursorLock(bool value)
+    public void SetCursorLock(bool value)
 	{
 		lockCursor = value;
 		if(!lockCursor)

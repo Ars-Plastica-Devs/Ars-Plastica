@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Herbivore
+  - Carnivore
+  - Plant
+  - Nodule
+  - Ecosystem
+  - Sculpture
+  - PathManager
+  - Conveyance
+  - MainUI
   layers:
   - Default
   - TransparentFX
@@ -13,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Nodules
+  - Unlit
   - 
   - 
   - 

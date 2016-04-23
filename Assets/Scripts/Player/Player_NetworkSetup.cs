@@ -13,9 +13,6 @@ public class Player_NetworkSetup : NetworkBehaviour {
 	// Use this for initialization
 	public override void OnStartLocalPlayer ()
 	{
-
-		string ogName = this.name;
-
 		foreach (Camera c in Camera.allCameras) {
 			c.enabled = false;
 		}

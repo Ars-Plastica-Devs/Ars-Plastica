@@ -1,31 +1,32 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Networking;
 
-public class Rotation : MonoBehaviour
+public class Rotation : NetworkBehaviour
 {
+    private float m_FullRotationTime;
+    private DayClock m_Dayclock;
 
-	public float daysForFullRotation = 4f;
-	public Vector3 fromRotation = new Vector3 (0, 0, 0);
-	public Vector3 toRotation = new Vector3 (0, 360, 0);
-
-	private float fullRotationTime;
-	private DayClock dayclock;
-
+    public float DaysForFullRotation = 4f;
+	public Vector3 FromRotation = new Vector3 (0, 0, 0);
+	public Vector3 ToRotation = new Vector3 (0, 360, 0);
 
 	void Start ()
 	{
-		dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
-		fullRotationTime = dayclock.DaysToSeconds (daysForFullRotation);
-		transform.rotation = Quaternion.Euler(fromRotation);
+	    if (!isServer) return;
+
+		m_Dayclock = (DayClock) FindObjectOfType (typeof(DayClock));
+		m_FullRotationTime = m_Dayclock.DaysToSeconds (DaysForFullRotation);
+		transform.rotation = Quaternion.Euler(FromRotation);
 	}
 
 	void Update ()
 	{
-		fullRotationTime = dayclock.DaysToSeconds (daysForFullRotation);
-		
-		Quaternion _r = Quaternion.AngleAxis ((Vector3.Distance(fromRotation, toRotation) / fullRotationTime) * Time.deltaTime, toRotation);
-		transform.rotation = transform.rotation * _r;
+	    if (!isServer) return;
 
+		m_FullRotationTime = m_Dayclock.DaysToSeconds (DaysForFullRotation);
+		
+		var r = Quaternion.AngleAxis ((Vector3.Distance(FromRotation, ToRotation) / m_FullRotationTime) * Time.deltaTime, ToRotation);
+		transform.rotation = transform.rotation * r;
 	}
 }
 

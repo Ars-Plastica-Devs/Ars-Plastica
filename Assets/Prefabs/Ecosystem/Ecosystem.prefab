@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 18.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,15 +72,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365e4742cab464764a93deffac150e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNumberPlants: 10
-  maxNumberHerbivores: 3
-  maxNumberCarnivores: 8
-  maxSpores: 200
-  plants:
-  - {fileID: 404756, guid: 981eb81d963e04e58a317bd66ac517d0, type: 2}
-  herbivores:
-  - {fileID: 410204, guid: 55806679212a64a7e92953fefee08090, type: 2}
-  carnivores: []
+  MaxNumberPlantsToSpawn: 400
+  MaxNumberHerbivoresToSpawn: 300
+  MaxNumberCarnivoresToSpawn: 100
+  NoduleLimit: 800
+  PlantLimit: 400
+  HerbivoreLimit: 300
+  CarnivoreLimit: 100
+  HerbivoresToSpawnOnExtinction: 150
+  CarnivoresToSpawnOnExtinction: 75
+  CreatureSpawnExtent: 1250
+  m_TotalNodules: 0
+  m_TotalPlants: 0
+  m_TotalHerbivores: 0
+  m_TotalCarnivores: 0
+  Plants:
+  - {fileID: 437188, guid: 0e5f8b0ff209e5d48b12f4125f1ba3f5, type: 2}
+  Herbivores:
+  - {fileID: 434888, guid: 0870272b84927dd41ac46f8b98527378, type: 2}
+  Carnivores:
+  - {fileID: 478900, guid: 8ebbec06cc1d00d47aa779585943ab9f, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

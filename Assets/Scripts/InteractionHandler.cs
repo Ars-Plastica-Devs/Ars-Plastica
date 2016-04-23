@@ -1,0 +1,27 @@
+﻿using UnityEngine;
+
+public abstract class InteractionHandler : MonoBehaviour
+{
+    private HUDManager _manager;
+    protected HUDManager HUDManager
+    {
+        get { return _manager 
+                ?? (_manager = GameObject.FindGameObjectWithTag("MainUI").GetComponent<HUDManager>()); }
+    }
+
+    private bool m_Active;
+    public bool Active
+    {
+        get { return m_Active; }
+        set
+        {
+            if (m_Active == value) return;
+
+            m_Active = value;
+            SetActive(m_Active);
+        }
+    }
+
+    public abstract void OnInteract(PlayerInteractionController controller);
+    protected abstract void SetActive(bool state);
+}
