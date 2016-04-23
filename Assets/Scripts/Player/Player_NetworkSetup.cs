@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.Networking;
 
+/*
+ * Set up our local player when we spawn.
+ * */
 public class Player_NetworkSetup : NetworkBehaviour {
 
 	[SerializeField] Camera FPSCharacterCam;
 	[SerializeField] AudioListener audioListener;
 
-	public TextMesh overheadName;
+	public TextMesh overheadName; //the name to billboard over our head.
 
-
-	// Use this for initialization
 	public override void OnStartLocalPlayer ()
 	{
-		foreach (Camera c in Camera.allCameras) {
+		foreach (var c in Camera.allCameras) {
 			c.enabled = false;
 		}
 		

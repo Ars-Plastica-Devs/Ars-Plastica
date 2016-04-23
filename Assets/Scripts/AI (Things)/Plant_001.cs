@@ -16,8 +16,10 @@ public class Plant_001 : AIEntity_Plant {
 		base.Start ();
 		ecosystem = FindObjectOfType<AIEcosystem> ();
 	}
-		
 
+	/*
+	 * Emit nodule. Check ecosystem.addNodule() to see whether we've reached the limit on nodules in the world. 
+	 * */
 	public void emitNodule() {
 		if (nodules.Length < 1)
 			return;

@@ -47,9 +47,6 @@ public class ArsNetworkManager : NetworkManager
 	}
 
 	private void InstantiateServerIdentities() {
-//		foreach (NetworkIdentity nid in serverIdentities) {
-//			nid.enabled = true;
-//			nid.gameObject.SetActive (true);
-//		}
+
 	}
 }

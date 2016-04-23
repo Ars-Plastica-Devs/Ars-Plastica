@@ -128,5 +128,4 @@ public class Player_ID : NetworkBehaviour
         avatar.transform.SetParent(transform);
         avatar.transform.localPosition = Vector3.zero;
     }
-
 }

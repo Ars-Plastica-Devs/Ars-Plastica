@@ -2,24 +2,28 @@
 using UnityEngine.Networking;
 using System.Collections;
 
+/*
+ * Base class for all networked AI.
+ * 
+ * 
+ * */
 public abstract class AIEntity : NetworkBehaviour
 {
 	[SyncVar] public float health = 100;
 	[SyncVar] public float DaysOld = 0f;
+	[SyncVar] public float spawnTime;
 
 	public DayClock dayclock;
-
-	[SerializeField]
-	internal float spawnTime;
 
 
 	virtual public void Start ()
 	{
-		if (!isServer) {
-			GetComponentInChildren<RAIN.Core.AIRig> ().enabled = false;
-		} else {
+		if (isServer) {
+			//only enable AI on server.
 			dayclock = (DayClock)FindObjectOfType (typeof(DayClock));
 			spawnTime = Time.time;
+		} else {
+			GetComponentInChildren<RAIN.Core.AIRig> ().enabled = false;
 		}
 	}
 
@@ -29,20 +33,26 @@ public abstract class AIEntity : NetworkBehaviour
 		}
 	}
 
+	//Reduces health by amount. (negative amount heals).
 	virtual public void doDamage(float damage)
 	{
 		health -= damage;
+		health = Mathf.Clamp (health, 0, 100);
 	}
 
 	/*
 	Returns true if AI should die.
 	*/
-	virtual public bool isDead() {
+	virtual public bool checkHealth() {
 		if (health <= 0) {
 			return true;
 		} else {
 			return false;
 		}
+	}
+
+	virtual public void reproduce () {
+		
 	}
 }
 

@@ -26,14 +26,10 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     public float CreatureSpawnExtent = 2500f;
 
-    [SerializeField]
-    private int m_TotalNodules;
-    [SerializeField]
-    private int m_TotalPlants;
-    [SerializeField]
-    private int m_TotalHerbivores;
-    [SerializeField]
-    private int m_TotalCarnivores;
+    [SerializeField] private int m_TotalNodules;
+    [SerializeField] private int m_TotalPlants;
+    [SerializeField] private int m_TotalHerbivores;
+    [SerializeField] private int m_TotalCarnivores;
 
     public Transform[] Plants;
     public Transform[] Herbivores;
@@ -43,7 +39,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     private void Start()
     {
         NetworkServer.SpawnObjects();
-        if (!NetworkManager.singleton || !(DayClock)FindObjectOfType(typeof(DayClock)))
+        if (!NetworkManager.singleton || !(DayClock) FindObjectOfType(typeof (DayClock)))
             return;
         if (!isServer)
             return;
@@ -87,7 +83,10 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     private void RegisterAsReceiver()
     {
-        GameObject.FindGameObjectsWithTag("Player").First(cp => cp.GetComponent<NetworkIdentity>().isLocalPlayer).GetComponent<CommandProcessor>().RegisterReceiver(gameObject);
+        GameObject.FindGameObjectsWithTag("Player")
+            .First(cp => cp.GetComponent<NetworkIdentity>().isLocalPlayer)
+            .GetComponent<CommandProcessor>()
+            .RegisterReceiver(gameObject);
     }
 
     public bool CanAddNodule()
@@ -135,7 +134,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     public void SpawnPlant(Vector3 pos)
     {
-        var plant = (Transform)Instantiate(Plants[0], pos, Quaternion.identity);
+        var plant = (Transform) Instantiate(Plants[0], pos, Quaternion.identity);
         plant.GetComponent<PlantAI>().Ecosystem = this;
         plant.SetParent(transform);
         NetworkServer.Spawn(plant.gameObject);
@@ -145,7 +144,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     public void SpawnHerbivore(Vector3 pos)
     {
-        var herb = (Transform)Instantiate(Herbivores[0], pos, Quaternion.identity);
+        var herb = (Transform) Instantiate(Herbivores[0], pos, Quaternion.identity);
         herb.GetComponent<HerbivoreAI>().Ecosystem = this;
         herb.SetParent(transform);
         NetworkServer.Spawn(herb.gameObject);
@@ -155,7 +154,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     public void SpawnCarnivore(Vector3 pos)
     {
-        var carn = (Transform)Instantiate(Carnivores[0], pos, Quaternion.identity);
+        var carn = (Transform) Instantiate(Carnivores[0], pos, Quaternion.identity);
         carn.GetComponent<CarnivoreAI>().Ecosystem = this;
         carn.SetParent(transform);
         NetworkServer.Spawn(carn.gameObject);
@@ -341,7 +340,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
                 }
             }
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             return e.Message;
         }

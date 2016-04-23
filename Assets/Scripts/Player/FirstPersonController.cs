@@ -4,6 +4,10 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 
+/*
+ * Modified Standard Asset FirstPersonController to add flying ability.
+ * Flying is accomplished by 'Ascend' and 'Descend' key bindings, make sure those are registered.
+ * */
 [RequireComponent(typeof (CharacterController))]
 [RequireComponent(typeof (AudioSource))]
 public class FirstPersonController : MonoBehaviour
@@ -25,6 +29,7 @@ public class FirstPersonController : MonoBehaviour
 	[SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
 	[SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
 	[SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
+	//Flying Stuff
 	[SerializeField] private bool m_flying;
 	[SerializeField] private bool m_ascending;
 	[SerializeField] private bool m_descending;
@@ -47,7 +52,7 @@ public class FirstPersonController : MonoBehaviour
 	private bool m_Jumping;
 	private AudioSource m_AudioSource;
 
-	private bool m_PreviouslyFlying;
+	private bool m_PreviouslyFlying; //were we flying last update
 
     public bool MouseOnly = false;
 
@@ -64,6 +69,7 @@ public class FirstPersonController : MonoBehaviour
 		m_Jumping = false;
 		m_AudioSource = GetComponent<AudioSource>();
 		m_MouseLook.Init(transform , m_Camera.transform);
+		//added flying flags
 		m_flying = false;
 		m_descending = false;
 		m_ascending = false;
@@ -94,11 +100,10 @@ public class FirstPersonController : MonoBehaviour
 			
 		//cancel flying
 		if (m_Jump) {
-//			m_flying = false;
 			m_PreviouslyFlying = false;
 		}
 
-		//reset jump to false if we weren't grounded (ie jump was pressed to cancel flight)
+		//reset jump to false if we weren't on the ground
 		if (!m_CharacterController.isGrounded) {
 			m_Jump = false;
 		} else {
@@ -115,13 +120,12 @@ public class FirstPersonController : MonoBehaviour
 			m_PreviouslyFlying = false;
 
 		}
+			
 		if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
 		{
 			m_MoveDir.y = 0f;
 		}
-
-
-
+			
 		m_PreviouslyGrounded = m_CharacterController.isGrounded;
 	}
 
@@ -163,7 +167,7 @@ public class FirstPersonController : MonoBehaviour
 		m_MoveDir.z = desiredMove.z*speed;
 
 
-
+		//Added flying check
 		if (m_CharacterController.isGrounded  && !m_ascending) {
 			
 			m_MoveDir.y = -m_StickToGroundForce;
@@ -175,6 +179,7 @@ public class FirstPersonController : MonoBehaviour
 				m_Jumping = true;
 			}
 		} else {
+			//Move in correct direction based on flags set.
 			if (m_ascending) {
 				if(m_MoveDir.y < 0) m_MoveDir.y = 0;
 				m_MoveDir += transform.up * m_AscendSpeed * Time.fixedDeltaTime;
@@ -183,6 +188,8 @@ public class FirstPersonController : MonoBehaviour
 			} else if (!m_PreviouslyFlying) {
 				m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
 			} else {
+				//if no flags set, we are flying, but not ascending/descending
+				//lerp to smooth stop (up/down only)
 				float diff = 0 - m_MoveDir.y;
 				if (Math.Abs (diff) < 1) {
 					m_MoveDir.y = 0f;

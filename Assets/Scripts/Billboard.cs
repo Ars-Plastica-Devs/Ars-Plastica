@@ -2,7 +2,8 @@
 using System.Collections;
 
 /*
- * Used to have text always face camera, aka billboarding. 
+ * Have the transform this is attached to always face the main camera.
+ * Used to have text in 3d world always appear facing the camera aka 'billboarding'
  * 
  */
 public class Billboard : MonoBehaviour {

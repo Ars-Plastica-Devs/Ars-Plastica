@@ -3,29 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using RAIN.Action;
 using RAIN.Core;
-using RAIN.Representation;
 
-/*
- * Grow in discrete steps rather than continuous (see Grow)
- * */
 [RAINAction]
-public class GrowStep : RAINAction
+public class Reproduce : RAINAction
 {
-	AIEntity_Animal entity;
-
-	public Expression GrowthStage;
+	AIEntity_Animal animal;
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-		entity = ai.Body.GetComponent<AIEntity_Animal> ();
-		
+		animal = ai.Body.GetComponent<AIEntity_Animal> ();
+		if (animal) {
+			animal.reproduce ();
+		}
+	
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		if (GrowthStage != null) {
-			entity.Grow (GrowthStage.ExpressionAsEntered);
-		}
         return ActionResult.SUCCESS;
     }
 
