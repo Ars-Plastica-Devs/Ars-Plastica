@@ -31,6 +31,10 @@ public class CarnivoreAI : Animal
     public int MaximumHerdSizeToAttack = 10;
     public float HerdApproachDistance = 40f;
 
+    public float HuntingPeriodSpeed;
+    public float HuntingPeriodStart = 12f;
+    public float HuntingPeriodEnd = 14.5f;
+
     public WanderParameters WanderParameters = new WanderParameters(1f, 10f, 40f);
 
     protected override void Start()
@@ -111,6 +115,11 @@ public class CarnivoreAI : Animal
     {
         TimeSinceEating += Time.deltaTime;
 
+        //Carnivores move faster at certain parts of the day
+        var speed = (Clock.Hour > HuntingPeriodStart && Clock.Hour < HuntingPeriodEnd) 
+            ? HuntingPeriodSpeed 
+            : BaseSpeed;
+
         var vel = Vector3.zero;
         m_ClosestHerbivore = GetClosestGameObject(m_HerbivoresInRange);
 
@@ -126,26 +135,26 @@ public class CarnivoreAI : Animal
                 vel += Steering.Wander(gameObject, ref WanderParameters);
 
                 var evadeFactor = dist < HerdApproachDistance / 2f ? 2f : .5f;
-                vel += Steering.Evade(gameObject, m_ClosestHerbivore, Speed) * evadeFactor;
+                vel += Steering.Evade(gameObject, m_ClosestHerbivore, speed) * evadeFactor;
             }
         }
-        else if (m_ClosestHerbivore == null || !PredationAllowed)
+        else if (m_ClosestHerbivore == null || !PredationAllowed || Clock.SecondsToDays(TimeSinceEating) < .4f)
         {
             vel += Steering.Wander(gameObject, ref WanderParameters);
         }
         else
         {
-            vel += Steering.Pursuit(gameObject, m_ClosestHerbivore, Speed);
+            vel += Steering.Pursuit(gameObject, m_ClosestHerbivore, speed);
         }
 
         //Use velocity so that physics continues to work
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(vel), 5f);
-        Rigidbody.velocity = vel.normalized * Speed;
+        Rigidbody.velocity = vel.normalized * speed;
     }
 
     private void StarvationCheck()
     {
-        if (Clock.secondsToDays(TimeSinceEating) - m_DaysOfStarvingDamageTaken > 1f)
+        if (Clock.SecondsToDays(TimeSinceEating) - m_DaysOfStarvingDamageTaken > 1f)
         {
             m_DaysOfStarvingDamageTaken++;
             Damage(StarvingDamageAmount);
@@ -235,7 +244,7 @@ public class CarnivoreAI : Animal
         }
         else if (coll.gameObject.tag == "Structure")
         {
-            GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * Speed;
+            GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * BaseSpeed;
             Damage(StructureCollisionDamageAmount);
         }
     }

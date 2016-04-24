@@ -43,7 +43,7 @@ public abstract class Animal : Creature
     public float DaysAsTeen = 4f;
     public float LifeSpan = 200f;
 
-    public float Speed;
+    public float BaseSpeed;
     [SyncVar]
     public Vector3 Scale;
     [SyncVar]
@@ -122,7 +122,7 @@ public abstract class Animal : Creature
     protected void GrowthUpdate()
     {
         CurrentGrowTime += Time.deltaTime;
-        DaysOld = Clock.secondsToDays(Time.time - BirthTime);
+        DaysOld = Clock.SecondsToDays(Time.time - BirthTime);
         Scale = Vector3.Lerp(StateStartScale, StateEndScale, CurrentGrowTime / TotalGrowTime);
         transform.localScale = Scale;
     }

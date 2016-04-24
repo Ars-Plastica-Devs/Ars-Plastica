@@ -86,14 +86,14 @@ public class PlantAI : Creature
         if (isServer)
         {
             m_GrowthBrain.Update(Time.deltaTime);
-            DaysOld = m_Clock.secondsToDays(Time.time - BirthTime);
+            DaysOld = m_Clock.SecondsToDays(Time.time - BirthTime);
         }
     }
 
     private void GrowingStart()
     {
         BirthTime = Time.time;
-        m_LastDaySporesReleased = Mathf.Floor(m_Clock.secondsToDays(Time.time - BirthTime));
+        m_LastDaySporesReleased = Mathf.Floor(m_Clock.SecondsToDays(Time.time - BirthTime));
         var rend = GetComponent<Renderer>();
 
         m_InitialHeight = rend.bounds.size.y;
@@ -136,9 +136,9 @@ public class PlantAI : Creature
 
     private void NoduleReleaseUpdate()
     {
-        var today = Mathf.Floor(m_Clock.secondsToDays(Time.time - BirthTime));
+        var today = Mathf.Floor(m_Clock.SecondsToDays(Time.time - BirthTime));
 
-        if (today > m_LastDaySporesReleased && m_Clock.isDay())
+        if (today > m_LastDaySporesReleased && m_Clock.IsDay())
         {
             m_LastDaySporesReleased = today;
             if (NodulePrefab == null)
@@ -161,7 +161,7 @@ public class PlantAI : Creature
 
     private void DeathUpdate()
     {
-        m_DaysDead += m_Clock.secondsToDays(Time.deltaTime);
+        m_DaysDead += m_Clock.SecondsToDays(Time.deltaTime);
 
         m_CurrentGrowTime += Time.deltaTime;
 

@@ -112,15 +112,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   CurrentGrowthState: 0
-  YoungSize: 2
-  TeenSize: 3
-  AdultSizeMin: 5
-  AdultSizeMax: 6
+  YoungSize: 6
+  TeenSize: 12
+  AdultSizeMin: 20
+  AdultSizeMax: 25
   DaysOld: 0
   DaysAsYoung: 3
   DaysAsTeen: 4
   LifeSpan: 200
-  Speed: 30
+  BaseSpeed: 18
   Scale: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   Ecosystem: {fileID: 0}
@@ -130,6 +130,9 @@ MonoBehaviour:
   StructureCollisionDamageAmount: 10
   MaximumHerdSizeToAttack: 10
   HerdApproachDistance: 40
+  HuntingPeriodSpeed: 23
+  HuntingPeriodStart: 12
+  HuntingPeriodEnd: 14.5
   WanderParameters:
     Jitter: 3
     Radius: 10

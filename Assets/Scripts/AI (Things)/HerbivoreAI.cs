@@ -160,7 +160,7 @@ public class HerbivoreAI : Animal
         }
 
         var toTarget = (m_TargetNodule.transform.position - transform.position);
-        var desiredVel = toTarget.normalized * Speed;
+        var desiredVel = toTarget.normalized * BaseSpeed;
 
         transform.rotation = Quaternion.LookRotation(desiredVel);
         Rigidbody.velocity = desiredVel;
@@ -168,7 +168,7 @@ public class HerbivoreAI : Animal
 
     private void StarvationCheck()
     {
-        if (Clock.secondsToDays(TimeSinceEating) - m_DaysOfStarvingDamageTaken > 1f)
+        if (Clock.SecondsToDays(TimeSinceEating) - m_DaysOfStarvingDamageTaken > 1f)
         {
             m_DaysOfStarvingDamageTaken++;
             Damage(StarvingDamageAmount);
@@ -208,7 +208,7 @@ public class HerbivoreAI : Animal
 
         //Use velocity so that physics continues to work
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(vel), 5f);
-        Rigidbody.velocity = vel.normalized * Speed;
+        Rigidbody.velocity = vel.normalized * BaseSpeed;
     }
 
     private void Reproduce()
@@ -312,7 +312,7 @@ public class HerbivoreAI : Animal
         }
         else if (coll.gameObject.tag == "Structure")
         {
-            GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * Speed;
+            GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * BaseSpeed;
             Damage(StructureCollisionDamageAmount);
         }
     }

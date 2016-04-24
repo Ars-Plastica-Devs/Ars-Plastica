@@ -29,7 +29,7 @@ public abstract class AIEntity : NetworkBehaviour
 
 	virtual public void Update() {
 		if (isServer) {
-			DaysOld = dayclock.secondsToDays (Time.time - spawnTime);
+			DaysOld = dayclock.SecondsToDays (Time.time - spawnTime);
 		}
 	}
 

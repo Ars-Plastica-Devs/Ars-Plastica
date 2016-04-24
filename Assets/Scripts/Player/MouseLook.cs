@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 /*
  * 
@@ -32,6 +33,8 @@ public class MouseLook
 
 	public void LookRotation(Transform character, Transform camera)
 	{
+	    if (!m_cursorIsLocked) return;
+
 		float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
 		float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
 
@@ -80,12 +83,13 @@ public class MouseLook
 		{
 			m_cursorIsLocked = false;
 		}
-		else if(Input.GetMouseButtonUp(0))
-		{
-			m_cursorIsLocked = true;
-		}
+        //NOTE: IsPointerOverGameObject only works on desktops.
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+	    {
+	        m_cursorIsLocked = true;
+	    }
 
-		if (m_cursorIsLocked)
+        if (m_cursorIsLocked)
 		{
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;

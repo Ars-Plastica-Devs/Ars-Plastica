@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 /*
  * DayClock
@@ -9,42 +8,48 @@ using System.Collections;
 		• Currently attached to a Directional Light.
 
 	TODO: Could be attached to empty game object and hold references to multiple directional lights that rotate independently.
+    NOTE: Multiple directional lights will not give us the binary star effect we are looking for - only one star will show in the sky.
 
  * */
 public class DayClock : MonoBehaviour
 {
+    private float m_DayStart;
+	public float Daylength = 24f; //aka time in seconds
+	public float Hour;
 
-	public float daylength = 24f; //aka time in seconds
-	public float hour = 0f;
-
-	public float startTime;
-
-	public Vector3 fromRotation = new Vector3 (0, 0, 0);
-	public Vector3 toRotation = new Vector3 (360, 0, 0);
+	public Vector3 FromRotation = new Vector3 (0, 0, 0);
+	public Vector3 ToRotation = new Vector3 (360, 0, 0);
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		startTime = Time.time;
-		transform.rotation = Quaternion.Euler(fromRotation);
+	    m_DayStart = Time.time;
+        transform.rotation = Quaternion.Euler(FromRotation);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		hour = Time.time - startTime;
-		if (hour > daylength) {
-			hour = 0f;
+		Hour = Time.time - m_DayStart;
+		if (Hour > Daylength) {
+			Hour = 0f;
+		    m_DayStart = Time.time;
 		}
 
-		Quaternion _r = Quaternion.AngleAxis ((toRotation.x / daylength) * Time.deltaTime, Vector3.right);
+		var r = Quaternion.AngleAxis((ToRotation.x / Daylength) * Time.deltaTime, Vector3.right);
 
-		transform.rotation = transform.rotation * _r;
+		transform.rotation = transform.rotation * r;
 	}
 
 
-	public bool isDay() {
+    public float GetTimeOfDay()
+    {
+        return Hour;
+    }
+
+    public bool IsDay()
+    {
 		return true;
 	}
 
@@ -52,9 +57,9 @@ public class DayClock : MonoBehaviour
 	 * Accepts float representation of seconds.
 	 * Returns number of days in given time period.
 	 * */
-	public float secondsToDays (float time) {
+	public float SecondsToDays (float time) {
 
-		return time / daylength;
+		return time / Daylength;
 	}
 
 	/*
@@ -62,7 +67,7 @@ public class DayClock : MonoBehaviour
 	 * Returns days in seconds.
 	 * */
 	public float DaysToSeconds(float days) {
-		return daylength * days;
+		return Daylength * days;
 	}
 
 

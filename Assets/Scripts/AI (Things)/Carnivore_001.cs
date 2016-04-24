@@ -30,7 +30,7 @@ public class Carnivore_001 : AIEntity_Animal
 
 	override public bool checkHealth() {
 
-		float daysSinceEaten = dayclock.secondsToDays (Time.time - lastTimeEaten);
+		float daysSinceEaten = dayclock.SecondsToDays (Time.time - lastTimeEaten);
 		if (daysSinceEaten > numDaysWithoutFood) {
 			doDamage (30);
 			daysSinceEaten = Time.time;

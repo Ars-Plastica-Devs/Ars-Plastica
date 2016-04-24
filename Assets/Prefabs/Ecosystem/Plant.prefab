@@ -112,8 +112,8 @@ MonoBehaviour:
   DaysBeforeRebirth: 3
   DaysToDoubleSize: 3
   DaysToDieInShade: 3
-  FullSizeMin: 10
-  FullSizeMax: 15
+  FullSizeMin: 11.5
+  FullSizeMax: 17.25
   NodulesPerDay: 20
   NoduleDispersalRange: 3
   DaysOld: 0

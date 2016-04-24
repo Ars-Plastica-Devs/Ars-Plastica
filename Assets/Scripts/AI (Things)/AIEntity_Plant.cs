@@ -71,7 +71,7 @@ public class AIEntity_Plant : AIEntity
 	}
 
 	override public bool checkHealth() {
-		return lifeSpan < dayclock.secondsToDays (Time.time - spawnTime);
+		return lifeSpan < dayclock.SecondsToDays (Time.time - spawnTime);
 	}
 }
 

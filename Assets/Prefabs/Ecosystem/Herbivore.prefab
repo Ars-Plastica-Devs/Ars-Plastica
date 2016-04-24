@@ -124,15 +124,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   CurrentGrowthState: 0
-  YoungSize: 1
-  TeenSize: 2
-  AdultSizeMin: 3
-  AdultSizeMax: 3.5
+  YoungSize: 2
+  TeenSize: 4
+  AdultSizeMin: 8
+  AdultSizeMax: 11
   DaysOld: 0
   DaysAsYoung: 5
   DaysAsTeen: 3
   LifeSpan: 100
-  Speed: 20
+  BaseSpeed: 20
   Scale: {x: 0, y: 0, z: 0}
   Velocity: {x: 0, y: 0, z: 0}
   Ecosystem: {fileID: 0}
