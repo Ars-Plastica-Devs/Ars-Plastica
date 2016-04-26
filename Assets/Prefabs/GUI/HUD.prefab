@@ -392,7 +392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &137358
 GameObject:
   m_ObjectHideFlags: 1
@@ -1114,6 +1114,7 @@ GameObject:
   - 114: {fileID: 11448790}
   - 114: {fileID: 11458362}
   - 114: {fileID: 11400866}
+  - 114: {fileID: 11437152}
   m_Layer: 5
   m_Name: PopulationControlPanel
   m_TagString: Untagged
@@ -1925,13 +1926,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11482976}
   m_TextComponent: {fileID: 11411972}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2145,13 +2146,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11481634}
   m_TextComponent: {fileID: 11415474}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2208,13 +2209,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11483006}
   m_TextComponent: {fileID: 11484772}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2370,13 +2371,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11412702}
   m_TextComponent: {fileID: 11466494}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2394,7 +2395,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &11437110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2428,6 +2429,29 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Toggles
+--- !u!114 &11437152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef0dcafcd193fa4faf0ebf5700b06ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Forwarder: {fileID: 11413680}
+  NoduleCurrentField: {fileID: 11436886}
+  NoduleMaxField: {fileID: 11442088}
+  PlantMinField: {fileID: 11427602}
+  PlantCurrentField: {fileID: 11448646}
+  PlantMaxField: {fileID: 11459064}
+  HerbivoreMinField: {fileID: 11475016}
+  HerbivoreCurrentField: {fileID: 11441672}
+  HerbivoreMaxField: {fileID: 11443076}
+  CarnivoreMinField: {fileID: 11490250}
+  CarnivoreCurrentField: {fileID: 11427328}
+  CarnivoreMaxField: {fileID: 11420116}
 --- !u!114 &11437730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2578,13 +2602,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11410474}
   m_TextComponent: {fileID: 11467710}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2641,13 +2665,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11406872}
   m_TextComponent: {fileID: 11485748}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2704,13 +2728,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11476326}
   m_TextComponent: {fileID: 11460450}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2923,13 +2947,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11449486}
   m_TextComponent: {fileID: 11432408}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -3148,13 +3172,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11416346}
   m_TextComponent: {fileID: 11453386}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -3686,13 +3710,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11483578}
   m_TextComponent: {fileID: 11413392}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -4279,13 +4303,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11416568}
   m_TextComponent: {fileID: 11448618}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
