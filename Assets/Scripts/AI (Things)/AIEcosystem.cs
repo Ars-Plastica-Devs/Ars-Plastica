@@ -12,30 +12,60 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     private readonly HashSet<GameObject> m_Nodules = new HashSet<GameObject>();
     private readonly HashSet<GameObject> m_Plants = new HashSet<GameObject>();
 
-    public int MaxNumberPlantsToSpawn = 70;
-    public int MaxNumberHerbivoresToSpawn = 40;
-    public int MaxNumberCarnivoresToSpawn = 20;
+    [SyncVar] private int m_SyncedNoduleCount;
+    [SyncVar] private int m_SyncedPlantCount;
+    [SyncVar] private int m_SyncedHerbivoreCount;
+    [SyncVar] private int m_SyncedCarnivoreCount;
+    private const float SYNC_COUNTS_RATE = 1f;
 
-    public int NoduleLimit = 200;
-    public int PlantLimit = 100;
-    public int HerbivoreLimit = 50;
-    public int CarnivoreLimit = 25;
+    [SyncVar] public int InitialPlantCount = 400;
+    [SyncVar] public int InitialHerbivoreCount = 300;
+    [SyncVar] public int InitialCarnivoreCount = 100;
 
-    public int HerbivoresToSpawnOnExtinction = 8;
-    public int CarnivoresToSpawnOnExtinction = 3;
+    [SyncVar] public int NoduleLimit = 800;
+    [SyncVar] public int PlantLimit = 400;
+    [SyncVar] public int HerbivoreLimit = 300;
+    [SyncVar] public int CarnivoreLimit = 100;
 
-    public float CreatureSpawnExtent = 2500f;
+    [SyncVar] public int HerbivoreMinimum = 50;
+    [SyncVar] public int CarnivoreMinimum = 25;
 
-    [SerializeField] private int m_TotalNodules;
-    [SerializeField] private int m_TotalPlants;
-    [SerializeField] private int m_TotalHerbivores;
-    [SerializeField] private int m_TotalCarnivores;
+    public float CreatureSpawnExtent = 1500f;
+
+    public int CurrentNoduleCount
+    {
+        get
+        {
+            return isServer ? m_Nodules.Count : m_SyncedNoduleCount;
+        }
+    }
+
+    public int CurrentPlantCount
+    {
+        get
+        {
+            return isServer ? m_Plants.Count : m_SyncedPlantCount;
+        }
+    }
+    public int CurrentHerbivoreCount
+    {
+        get
+        {
+            return isServer ? m_Herbivores.Count : m_SyncedHerbivoreCount;
+        }
+    }
+    public int CurrentCarnivoreCount
+    {
+        get
+        {
+            return isServer ? m_Carnivores.Count : m_SyncedCarnivoreCount;
+        }
+    }
 
     public Transform[] Plants;
     public Transform[] Herbivores;
     public Transform[] Carnivores;
 
-    // Use this for initialization
     private void Start()
     {
         NetworkServer.SpawnObjects();
@@ -46,9 +76,23 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
         NetworkServer.Spawn(gameObject);
 
+        HerbivoreMinimum = DataStore.GetInt("HerbivoreMinimum");
+        CarnivoreMinimum = DataStore.GetInt("CarnivoreMinimum");
+
+        InitialPlantCount = DataStore.GetInt("InitialPlantCount");
+        InitialHerbivoreCount = DataStore.GetInt("InitialHerbivoreCount");
+        InitialCarnivoreCount = DataStore.GetInt("InitialCarnivoreCount");
+
+        NoduleLimit = DataStore.GetInt("NoduleLimit");
+        PlantLimit = DataStore.GetInt("PlantLimit");
+        HerbivoreLimit = DataStore.GetInt("HerbivoreLimit");
+        CarnivoreLimit = DataStore.GetInt("CarnivoreLimit");
+
+        CreatureSpawnExtent = DataStore.GetFloat("CreatureSpawnExtent");
+
         if (Plants.Length > 0)
         {
-            for (var i = 0; i < MaxNumberPlantsToSpawn; i++)
+            for (var i = 0; i < InitialPlantCount; i++)
             {
                 var pos = Random.insideUnitSphere * CreatureSpawnExtent;
                 SpawnPlant(pos);
@@ -57,7 +101,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
         if (Herbivores.Length > 0)
         {
-            for (var i = 0; i < MaxNumberHerbivoresToSpawn; i++)
+            for (var i = 0; i < InitialHerbivoreCount; i++)
             {
                 var pos = Random.insideUnitSphere * CreatureSpawnExtent;
                 SpawnHerbivore(pos);
@@ -66,12 +110,14 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
         if (Carnivores.Length > 0)
         {
-            for (var i = 0; i < MaxNumberCarnivoresToSpawn; i++)
+            for (var i = 0; i < InitialCarnivoreCount; i++)
             {
                 var pos = Random.insideUnitSphere * CreatureSpawnExtent;
                 SpawnCarnivore(pos);
             }
         }
+
+        InvokeRepeating("SyncCounts", SYNC_COUNTS_RATE, SYNC_COUNTS_RATE);
     }
 
     public override void OnStartClient()
@@ -89,47 +135,55 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
             .RegisterReceiver(gameObject);
     }
 
+    /// <summary>
+    /// Sync counts across the network so that clients can display certain
+    /// UI elements with the correct values
+    /// </summary>
+    private void SyncCounts()
+    {
+        m_SyncedNoduleCount = m_Nodules.Count;
+        m_SyncedPlantCount = m_Plants.Count;
+        m_SyncedHerbivoreCount = m_Herbivores.Count;
+        m_SyncedCarnivoreCount = m_Carnivores.Count;
+    }
+
     public bool CanAddNodule()
     {
-        return m_TotalNodules < NoduleLimit;
+        return CurrentNoduleCount < NoduleLimit;
     }
 
     public bool AddNodule(GameObject nod)
     {
-        m_Nodules.Add(nod);
-
-        if (m_TotalNodules + 1 > NoduleLimit)
+        if (!CanAddNodule())
             return false;
 
-        m_TotalNodules++;
+        m_Nodules.Add(nod);
         return true;
     }
 
 
     public bool RemoveNodule(GameObject nod)
     {
-        m_Nodules.Remove(nod);
-
-        if (m_TotalNodules - 1 < 0)
+        if (m_Nodules.Count == 0)
             return false;
 
-        m_TotalNodules--;
+        m_Nodules.Remove(nod);
         return true;
     }
 
     public bool CanAddHerbivore()
     {
-        return m_TotalHerbivores < HerbivoreLimit;
+        return CurrentHerbivoreCount < HerbivoreLimit;
     }
 
     public bool CanAddCarnivore()
     {
-        return m_TotalCarnivores < CarnivoreLimit;
+        return CurrentCarnivoreCount < CarnivoreLimit;
     }
 
     public bool CanAddPlant()
     {
-        return m_TotalPlants < PlantLimit;
+        return CurrentPlantCount < PlantLimit;
     }
 
     public void SpawnPlant(Vector3 pos)
@@ -139,7 +193,6 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         plant.SetParent(transform);
         NetworkServer.Spawn(plant.gameObject);
         m_Plants.Add(plant.gameObject);
-        m_TotalPlants++;
     }
 
     public void SpawnHerbivore(Vector3 pos)
@@ -149,7 +202,6 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         herb.SetParent(transform);
         NetworkServer.Spawn(herb.gameObject);
         m_Herbivores.Add(herb.gameObject);
-        m_TotalHerbivores++;
     }
 
     public void SpawnCarnivore(Vector3 pos)
@@ -159,53 +211,112 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         carn.SetParent(transform);
         NetworkServer.Spawn(carn.gameObject);
         m_Carnivores.Add(carn.gameObject);
-        m_TotalCarnivores++;
     }
 
     public void KillPlant(GameObject plant)
     {
-        m_TotalPlants--;
-
         m_Plants.Remove(plant);
         NetworkServer.Destroy(plant);
-
-        if (m_TotalPlants <= 0)
-        {
-            m_TotalPlants = 0;
-        }
     }
 
     public void KillHerbivore(GameObject herb)
     {
-        m_TotalHerbivores--;
-
         m_Herbivores.Remove(herb);
         NetworkServer.Destroy(herb);
 
-        if (m_TotalHerbivores <= 0)
+        if (CurrentHerbivoreCount < HerbivoreMinimum)
         {
-            m_TotalHerbivores = 0;
             OnHerbivoreExtinction();
         }
     }
 
     public void KillCarnivore(GameObject carn)
     {
-        m_TotalCarnivores--;
-
         m_Carnivores.Remove(carn);
         NetworkServer.Destroy(carn);
 
-        if (m_TotalCarnivores <= 0)
+        if (CurrentCarnivoreCount < CarnivoreMinimum)
         {
-            m_TotalCarnivores = 0;
             OnCarnivoreExtinction();
+        }
+    }
+
+    private void SetHerbivoreMin(int min)
+    {
+        HerbivoreMinimum = min;
+        DataStore.Set("HerbivoreMinimum", HerbivoreMinimum);
+
+        if (CurrentHerbivoreCount < HerbivoreMinimum)
+        {
+            OnHerbivoreExtinction();
+        }
+    }
+
+    private void SetCarnivoreMin(int min)
+    {
+        CarnivoreMinimum = min;
+        DataStore.Set("CarnivoreMinimum", CarnivoreMinimum);
+
+        if (CurrentCarnivoreCount < CarnivoreMinimum)
+        {
+            OnCarnivoreExtinction();
+        }
+    }
+
+    private void SetPlantCount(int count)
+    {
+        while (count < CurrentPlantCount)
+        {
+            KillPlant(m_Plants.First());
+        }
+
+        while (count > CurrentPlantCount)
+        {
+            SpawnPlant(Random.insideUnitSphere * CreatureSpawnExtent);
+        }
+    }
+
+    private void SetHerbivoreCount(int count)
+    {
+        while (count < CurrentHerbivoreCount)
+        {
+            KillHerbivore(m_Herbivores.First());
+        }
+
+        while (count > CurrentHerbivoreCount)
+        {
+            SpawnHerbivore(Random.insideUnitSphere * CreatureSpawnExtent);
+        }
+    }
+
+    private void SetCarnivoreCount(int count)
+    {
+        while (count < CurrentCarnivoreCount)
+        {
+            KillCarnivore(m_Carnivores.First());
+        }
+
+        while (count > CurrentCarnivoreCount)
+        {
+            SpawnCarnivore(Random.insideUnitSphere * CreatureSpawnExtent);
+        }
+    }
+
+    private void SetNoduleLimit(int limit)
+    {
+        NoduleLimit = limit;
+        DataStore.Set("NoduleLimit", NoduleLimit);
+
+        while (m_Nodules.Count > NoduleLimit)
+        {
+            RemoveNodule(m_Carnivores.First());
         }
     }
 
     private void SetPlantLimit(int limit)
     {
         PlantLimit = limit;
+        DataStore.Set("PlantLimit", PlantLimit);
 
         while (m_Plants.Count > PlantLimit)
         {
@@ -216,6 +327,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     private void SetHerbivoreLimit(int limit)
     {
         HerbivoreLimit = limit;
+        DataStore.Set("HerbivoreLimit", HerbivoreLimit);
 
         while (m_Herbivores.Count > HerbivoreLimit)
         {
@@ -226,6 +338,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     private void SetCarnivoreLimit(int limit)
     {
         CarnivoreLimit = limit;
+        DataStore.Set("CarnivoreLimit", CarnivoreLimit);
 
         while (m_Carnivores.Count > CarnivoreLimit)
         {
@@ -233,19 +346,9 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         }
     }
 
-    private void SetNoduleLimit(int limit)
-    {
-        NoduleLimit = limit;
-
-        while (m_Nodules.Count > NoduleLimit)
-        {
-            RemoveNodule(m_Carnivores.First());
-        }
-    }
-
     private void OnHerbivoreExtinction()
     {
-        for (var i = 0; i < HerbivoresToSpawnOnExtinction; i++)
+        while (m_Herbivores.Count < HerbivoreMinimum)
         {
             var pos = Random.insideUnitSphere * CreatureSpawnExtent;
             SpawnHerbivore(pos);
@@ -254,7 +357,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
     private void OnCarnivoreExtinction()
     {
-        for (var i = 0; i < CarnivoresToSpawnOnExtinction; i++)
+        while (m_Carnivores.Count < CarnivoreMinimum)
         {
             var pos = Random.insideUnitSphere * CreatureSpawnExtent;
             SpawnCarnivore(pos);
@@ -318,6 +421,33 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
                                 return "Set nodule limit to " + limit;
                         }
                         return "Not a valid command segment: " + tokens[2];
+                    case "minimum":
+                        var min = int.Parse(tokens[3]);
+                        switch (tokens[2])
+                        {
+                            case "herbivores":
+                                SetHerbivoreMin(min);
+                                return "Set herbivore minimum to " + min;
+                            case "carnivores":
+                                SetCarnivoreMin(min);
+                                return "Set carnivore minimum to " + min;
+                        }
+                        return "Not a valid command segment: " + tokens[2];
+                    case "set-count":
+                        var count = int.Parse(tokens[3]);
+                        switch (tokens[2])
+                        {
+                            case "plants":
+                                SetPlantCount(count);
+                                return "Set plant count to " + count;
+                            case "herbivores":
+                                SetHerbivoreCount(count);
+                                return "Set herbivore count to " + count;
+                            case "carnivores":
+                                SetCarnivoreCount(count);
+                                return "Set carnivore count to " + count;
+                        }
+                        return "Not a valid command segment: " + tokens[2];
                     default:
                         return "Not a valid command segment: " + tokens[1];
                 }
@@ -346,6 +476,52 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         }
 
         return "Not a valid command";
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
+
+        if (HerbivoreMinimum != DataStore.GetInt("HerbivoreMinimum"))
+        {
+            DataStore.Set("HerbivoreMinimum", HerbivoreMinimum);
+        }
+        if (CarnivoreMinimum != DataStore.GetInt("CarnivoreMinimum"))
+        {
+            DataStore.Set("CarnivoreMinimum", CarnivoreMinimum);
+        }
+        if (InitialPlantCount != DataStore.GetInt("InitialPlantCount"))
+        {
+            DataStore.Set("InitialPlantCount", InitialPlantCount);
+        }
+        if (InitialHerbivoreCount != DataStore.GetInt("InitialHerbivoreCount"))
+        {
+            DataStore.Set("InitialHerbivoreCount", InitialHerbivoreCount);
+        }
+        if (InitialCarnivoreCount != DataStore.GetInt("InitialCarnivoreCount"))
+        {
+            DataStore.Set("InitialCarnivoreCount", InitialCarnivoreCount);
+        }
+        if (NoduleLimit != DataStore.GetInt("NoduleLimit"))
+        {
+            DataStore.Set("NoduleLimit", NoduleLimit);
+        }
+        if (PlantLimit != DataStore.GetInt("PlantLimit"))
+        {
+            DataStore.Set("PlantLimit", PlantLimit);
+        }
+        if (HerbivoreLimit != DataStore.GetInt("HerbivoreLimit"))
+        {
+            DataStore.Set("HerbivoreLimit", HerbivoreLimit);
+        }
+        if (CarnivoreLimit != DataStore.GetInt("CarnivoreLimit"))
+        {
+            DataStore.Set("CarnivoreLimit", InitialCarnivoreCount);
+        }
+        if (CreatureSpawnExtent != DataStore.GetFloat("CreatureSpawnExtent"))
+        {
+            DataStore.Set("CreatureSpawnExtent", CreatureSpawnExtent);
+        }
     }
 }
 

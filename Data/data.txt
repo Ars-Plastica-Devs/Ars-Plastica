@@ -1,0 +1,59 @@
+//Environment Options
+HerbivoreMinimum 50
+CarnivoreMinimum 25
+
+InitialPlantCount 400
+InitialHerbivoreCount 300
+InitialCarnivoreCount 100
+
+NoduleLimit 800
+PlantLimit 400
+HerbivoreLimit 300
+CarnivoreLimit 100
+
+CreatureSpawnExtent 1500
+
+//Nodule Options
+NoduleFloatSpeed 1
+
+//Plant Options
+PlantLifeSpan 10
+PlantDaysBeforeRebirth 3
+PlantDaysToDoubleSize 3
+PlantDaysToDieInShade 3
+PlantFullSizeMin 11.5
+PlantFullSizeMax 17.25
+PlantNodulesPerDay 20
+PlantNoduleDispersalRange 3
+
+//Herbivore Options
+HerbYoungSize 2
+HerbTeenSize 4
+HerbAdultSizeMin 8
+HerbAdultSizeMax 11
+HerbDaysAsYoung 5
+HerbDaysAsTeen 3
+HerbLifeSpan 100
+HerbBaseSpeed 20
+HerbDaysBeforeReproducing 5
+HerbDaysBetweenReproductions 3
+HerbStarvingDamageAmount 30
+HerbStructureCollisionDamageAmount 10
+HerbMinFlockDispersion 10
+HerbMaxFlockDispersion 80
+
+//Carnivore Options
+CarnYoungSize 6
+CarnTeenSize 12
+CarnAdultSizeMin 20
+CarnAdultSizeMax 25
+CarnDaysAsYoung 3
+CarnDaysAsTeen 4
+CarnLifeSpan 200
+CarnBaseSpeed 18
+CarnHuntingPeriodSpeed 23
+CarnDaysBetweenReproductions 3
+CarnStarvingDamageAmount 34
+CarnStructureCollisionDamageAmount 10
+CarnMaximumHerdSizeToAttack 10
+CarnHerdApproachDistance 40

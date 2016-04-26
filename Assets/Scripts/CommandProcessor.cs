@@ -14,7 +14,7 @@ public class CommandProcessor : NetworkBehaviour
 
     private void Start()
     {
-        //enabled = isLocalPlayer;
+        enabled = isLocalPlayer;
     }
 
     public void DeactivateGameInput()

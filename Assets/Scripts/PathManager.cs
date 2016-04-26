@@ -33,7 +33,7 @@ public class PathManager : NetworkBehaviour, ICommandReceiver
         if (!isServer)
             return;
 
-        m_TargetFile = new FileInfo("Paths/paths.txt");
+        m_TargetFile = new FileInfo("Data/paths.txt");
 
         if (m_TargetFile.Exists)
         {
@@ -62,19 +62,25 @@ public class PathManager : NetworkBehaviour, ICommandReceiver
     {
         var tokens = cmd.Split(' ');
 
-        switch (tokens[2])
+        if (tokens.Length > 2)
         {
-            case "show":
-                return DoShowCommand(tokens);
-            case "hide":
-                return DoHideCommand(tokens);
-            case "remove":
-                return DoRemoveCommand(tokens);
-            case "save-all":
-                SavePaths(m_TargetFile, Paths);
-                return "Saved all paths";
-            case "spawn":
-                return DoSpawnCommand(tokens[1]);
+            switch (tokens[2])
+            {
+                case "show":
+                    return DoShowCommand(tokens);
+                case "hide":
+                    return DoHideCommand(tokens);
+                case "remove":
+                    return DoRemoveCommand(tokens);
+                case "spawn":
+                    return DoSpawnCommand(tokens[1]);
+            }
+        }
+
+        if (tokens.Length > 1 && tokens[1] == "save-all")
+        {
+            SavePaths(m_TargetFile, Paths);
+            return "Saved all paths";
         }
 
         switch (m_State)
@@ -296,16 +302,16 @@ public class PathManager : NetworkBehaviour, ICommandReceiver
             string pathName = null;
             while ((line = reader.ReadLine()) != null)
             {
+                if (string.IsNullOrEmpty(line))
+                {
+                    pathName = null;
+                    continue;
+                }
+
                 if (pathName == null)
                 {
                     pathName = line;
                     paths.Add(pathName, new List<Vector3>());
-                    continue;
-                }
-
-                if (string.IsNullOrEmpty(line))
-                {
-                    pathName = null;
                     continue;
                 }
 

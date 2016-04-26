@@ -3,6 +3,18 @@ using UnityEngine;
 
 public class HUDManager : MonoBehaviour
 {
+    private GameObject _player;
+    private GameObject m_Player
+    {
+        get
+        {
+            if (_player != null) return _player;
+
+            _player = GameObject.FindGameObjectWithTag("Player");
+            return _player;
+        }
+    }
+
     public GameObject ConveyanceDialog;
     public GameObject InteractionText;
     public Action ConveyanceSitAction;
@@ -40,5 +52,15 @@ public class HUDManager : MonoBehaviour
     {
         if (ConveyanceCancelAction != null)
             ConveyanceCancelAction();
+    }
+
+    public void DisablePlayerInput()
+    {
+        m_Player.GetComponent<PlayerInteractionController>().DeactivateGameInput();
+    }
+
+    public void EnablePlayerInput()
+    {
+        m_Player.GetComponent<PlayerInteractionController>().EnableGameInput();
     }
 }

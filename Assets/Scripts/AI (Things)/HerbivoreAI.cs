@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -24,9 +25,12 @@ public class HerbivoreAI : Animal
     private int m_RefreshClosestNoduleCounter;
     private int m_RefreshClosestNoduleRate = 60;
 
+    private float m_SensingSphereStartRadius;
+    private SphereCollider m_SensingCollider;
+
     private readonly FSM<BehaviourState> m_BehaviourBrain = new FSM<BehaviourState>();
 
-    [SerializeField] [SyncVar]
+    [SerializeField]
     private BehaviourState m_CurrentBehaviourState;
 
     public float DaysBeforeReproducing = 25f;
@@ -42,16 +46,36 @@ public class HerbivoreAI : Animal
 
     protected override void Start()
     {
-        base.Start();
-
         if (!isServer)
+        {
+            base.Start();
             return;
+        }
+
+        YoungSize = DataStore.GetFloat("HerbYoungSize");
+        TeenSize = DataStore.GetFloat("HerbTeenSize");
+        AdultSizeMin = DataStore.GetFloat("HerbAdultSizeMin");
+        AdultSizeMax = DataStore.GetFloat("HerbAdultSizeMax");
+        DaysAsYoung = DataStore.GetFloat("HerbDaysAsYoung");
+        DaysAsTeen = DataStore.GetFloat("HerbDaysAsTeen");
+        LifeSpan = DataStore.GetFloat("HerbLifeSpan");
+        BaseSpeed = DataStore.GetFloat("HerbBaseSpeed");
+        DaysBeforeReproducing = DataStore.GetFloat("HerbDaysBeforeReproducing");
+        DaysBetweenReproductions = DataStore.GetFloat("HerbDaysBetweenReproductions");
+        StarvingDamageAmount = DataStore.GetFloat("HerbStarvingDamageAmount");
+        StructureCollisionDamageAmount = DataStore.GetFloat("HerbStructureCollisionDamageAmount");
+        MinFlockDispersion = DataStore.GetFloat("HerbMinFlockDispersion");
+        MaxFlockDispersion = DataStore.GetFloat("HerbMaxFlockDispersion");
+
+        base.Start();
 
         m_MaxFlockDispersionSquared = MaxFlockDispersion * MaxFlockDispersion;
         m_MinFlockDispersionSquared = MinFlockDispersion * MinFlockDispersion;
 
+        m_SensingCollider = GetComponents<SphereCollider>().First(sc => sc.isTrigger);
+        m_SensingSphereStartRadius = m_SensingCollider.radius;
 
-        var collidersInRangeNow = Physics.OverlapSphere(transform.position, GetComponent<SphereCollider>().radius);
+        var collidersInRangeNow = Physics.OverlapSphere(transform.position, m_SensingSphereStartRadius);
         foreach (var coll in collidersInRangeNow)
         {
             if (coll.tag == "Nodule")
@@ -111,6 +135,9 @@ public class HerbivoreAI : Animal
 
         if (isServer)
         {
+            //Keep the sensing collider from growing as the object grows
+            m_SensingCollider.radius = m_SensingSphereStartRadius / Scale.x;
+
             m_HerbivoresInRange.RemoveWhere(go => go == null);
             m_CarnivoresInRange.RemoveWhere(go => go == null);
             m_NodulesInRange.RemoveWhere(go => go == null);
@@ -314,6 +341,68 @@ public class HerbivoreAI : Animal
         {
             GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * BaseSpeed;
             Damage(StructureCollisionDamageAmount);
+        }
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
+
+        if (YoungSize != DataStore.GetFloat("HerbYoungSize"))
+        {
+            DataStore.Set("HerbYoungSize", YoungSize);
+        }
+        if (TeenSize != DataStore.GetFloat("HerbTeenSize"))
+        {
+            DataStore.Set("HerbTeenSize", TeenSize);
+        }
+        if (AdultSizeMin != DataStore.GetFloat("HerbAdultSizeMin"))
+        {
+            DataStore.Set("HerbAdultSizeMin", AdultSizeMin);
+        }
+        if (AdultSizeMax != DataStore.GetFloat("HerbAdultSizeMax"))
+        {
+            DataStore.Set("HerbAdultSizeMax", AdultSizeMax);
+        }
+        if (DaysAsYoung != DataStore.GetFloat("HerbDaysAsYoung"))
+        {
+            DataStore.Set("HerbDaysAsYoung", DaysAsYoung);
+        }
+        if (DaysAsTeen != DataStore.GetFloat("HerbDaysAsTeen"))
+        {
+            DataStore.Set("HerbDaysAsTeen", DaysAsTeen);
+        }
+        if (LifeSpan != DataStore.GetFloat("HerbLifeSpan"))
+        {
+            DataStore.Set("HerbLifeSpan", LifeSpan);
+        }
+        if (BaseSpeed != DataStore.GetFloat("HerbBaseSpeed"))
+        {
+            DataStore.Set("HerbBaseSpeed", BaseSpeed);
+        }
+        if (DaysBeforeReproducing != DataStore.GetFloat("HerbDaysBeforeReproducing"))
+        {
+            DataStore.Set("HerbDaysBeforeReproducing", DaysBeforeReproducing);
+        }
+        if (DaysBetweenReproductions != DataStore.GetFloat("HerbDaysBetweenReproductions"))
+        {
+            DataStore.Set("HerbDaysBetweenReproductions", DaysBetweenReproductions);
+        }
+        if (StarvingDamageAmount != DataStore.GetFloat("HerbStarvingDamageAmount"))
+        {
+            DataStore.Set("HerbStarvingDamageAmount", StarvingDamageAmount);
+        }
+        if (StructureCollisionDamageAmount != DataStore.GetFloat("HerbStructureCollisionDamageAmount"))
+        {
+            DataStore.Set("HerbStructureCollisionDamageAmount", StructureCollisionDamageAmount);
+        }
+        if (MinFlockDispersion != DataStore.GetFloat("HerbMinFlockDispersion"))
+        {
+            DataStore.Set("HerbMinFlockDispersion", MinFlockDispersion);
+        }
+        if (MaxFlockDispersion != DataStore.GetFloat("HerbMaxFlockDispersion"))
+        {
+            DataStore.Set("HerbMaxFlockDispersion", MaxFlockDispersion);
         }
     }
 }

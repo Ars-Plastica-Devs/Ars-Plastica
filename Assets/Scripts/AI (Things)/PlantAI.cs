@@ -48,8 +48,18 @@ public class PlantAI : Creature
     protected override void Start()
     {
         base.Start();
+
         if (!isServer)
             return;
+
+        LifeSpan = DataStore.GetFloat("PlantLifeSpan");
+        DaysBeforeRebirth = DataStore.GetFloat("PlantDaysBeforeRebirth");
+        DaysToDoubleSize = DataStore.GetFloat("PlantDaysToDoubleSize");
+        DaysToDieInShade = DataStore.GetFloat("PlantDaysToDieInShade");
+        FullSizeMin = DataStore.GetFloat("PlantFullSizeMin");
+        FullSizeMax = DataStore.GetFloat("PlantFullSizeMax");
+        NodulesPerDay = DataStore.GetInt("PlantNodulesPerDay");
+        NoduleDispersalRange = DataStore.GetFloat("PlantNoduleDispersalRange");
 
         m_LifeColor = GetComponent<Renderer>().material.color;
 
@@ -207,6 +217,44 @@ public class PlantAI : Creature
         {
             m_NodulesSpawnedToday = 0;
             CancelInvoke("EmitNodule");
+        }
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
+
+        if (LifeSpan != DataStore.GetFloat("PlantLifeSpan"))
+        {
+            DataStore.Set("PlantLifeSpan", LifeSpan);
+        }
+        if (DaysBeforeRebirth != DataStore.GetFloat("PlantDaysBeforeRebirth"))
+        {
+            DataStore.Set("PlantDaysBeforeRebirth", DaysBeforeRebirth);
+        }
+        if (DaysToDoubleSize != DataStore.GetFloat("PlantDaysToDoubleSize"))
+        {
+            DataStore.Set("PlantDaysToDoubleSize", DaysToDoubleSize);
+        }
+        if (DaysToDieInShade != DataStore.GetFloat("PlantDaysToDieInShade"))
+        {
+            DataStore.Set("PlantDaysToDieInShade", DaysToDieInShade);
+        }
+        if (FullSizeMin != DataStore.GetFloat("PlantFullSizeMin"))
+        {
+            DataStore.Set("PlantFullSizeMin", FullSizeMin);
+        }
+        if (FullSizeMax != DataStore.GetFloat("PlantFullSizeMax"))
+        {
+            DataStore.Set("PlantFullSizeMax", FullSizeMax);
+        }
+        if (NodulesPerDay != DataStore.GetInt("PlantNodulesPerDay"))
+        {
+            DataStore.Set("PlantNodulesPerDay", NodulesPerDay);
+        }
+        if (NoduleDispersalRange != DataStore.GetFloat("PlantNoduleDispersalRange"))
+        {
+            DataStore.Set("PlantNoduleDispersalRange", NoduleDispersalRange);
         }
     }
 }

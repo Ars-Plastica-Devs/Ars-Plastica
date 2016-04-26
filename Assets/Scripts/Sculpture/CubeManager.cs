@@ -21,6 +21,8 @@ public abstract class CubeManager : NetworkBehaviour, ICommandReceiver
     {
         m_CubeSize = CubePrefab.transform.localScale.x;
 
+        gameObject.tag = isLocalPlayer ? "Player" : "RemotePlayer";
+
         Invoke("RegisterAsReceiver", 1f);
 
         if (!isServer) return;

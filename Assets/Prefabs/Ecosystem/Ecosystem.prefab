@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11479152}
   m_Layer: 0
   m_Name: Ecosystem
-  m_TagString: Untagged
+  m_TagString: Ecosystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,16 +72,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365e4742cab464764a93deffac150e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxNumberPlantsToSpawn: 400
-  MaxNumberHerbivoresToSpawn: 300
-  MaxNumberCarnivoresToSpawn: 100
+  InitialPlantCount: 400
+  InitialHerbivoreCount: 300
+  InitialCarnivoreCount: 100
   NoduleLimit: 800
   PlantLimit: 400
   HerbivoreLimit: 300
   CarnivoreLimit: 100
-  HerbivoresToSpawnOnExtinction: 150
-  CarnivoresToSpawnOnExtinction: 75
-  CreatureSpawnExtent: 1250
+  HerbivoreMinimum: 50
+  CarnivoreMinimum: 25
+  CreatureSpawnExtent: 1500
   m_TotalNodules: 0
   m_TotalPlants: 0
   m_TotalHerbivores: 0

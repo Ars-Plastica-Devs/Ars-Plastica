@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Linq;
+﻿using System.Linq;
+using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 //This behaviour takes the input from the UI and passes it to the local player, 
@@ -16,11 +17,11 @@ public class CommandForwarder : MonoBehaviour
             //we wait as long as possible to where it will be initialized.
             if (_processor != null) return _processor;
 
-            var controllers = GameObject.FindGameObjectsWithTag("Player")
-                .Where(o => o.GetComponent<FirstPersonController>() != null && o.GetComponent<FirstPersonController>().enabled)
-                .Select(o => o.GetComponent<FirstPersonController>());
+            var processor = GameObject.FindGameObjectsWithTag("Player")
+                .First(cp => cp.GetComponent<NetworkIdentity>().isLocalPlayer)
+                .GetComponent<CommandProcessor>();
 
-            _processor = controllers.First().GetComponent<CommandProcessor>();
+            _processor = processor;
             _processor.OnOutputReceived = SetOutput;
             return _processor;
         }
@@ -42,7 +43,7 @@ public class CommandForwarder : MonoBehaviour
             return; //makes sure we don't re-select the input field
         }
 
-        if (Input.GetKeyUp(KeyCode.Return))
+        if (Input.GetKeyUp(KeyCode.Return) && GUI.GetNameOfFocusedControl() == string.Empty)
         {
             SelectOnEnter.ActivateInputField();
             ForwardDisableInput();

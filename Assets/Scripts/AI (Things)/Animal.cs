@@ -51,7 +51,7 @@ public abstract class Animal : Creature
 
     public AIEcosystem Ecosystem;
 
-    protected virtual void Start()
+    protected override void Start()
     {
         Rigidbody = GetComponent<Rigidbody>();
         base.Start();

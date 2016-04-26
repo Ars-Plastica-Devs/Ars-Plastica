@@ -11,11 +11,13 @@ public class NoduleController : NetworkBehaviour
     private void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
-        m_Rigidbody.velocity = new Vector3(0, FloatSpeed, 0);
 
         if (!isServer) return;
 
+        FloatSpeed = DataStore.GetFloat("NoduleFloatSpeed");
+
         RpcPostMovementData(transform.position, m_Rigidbody.velocity);
+        RpcSetFloatSpeed(FloatSpeed);
     }
 
     private void Update()
@@ -36,5 +38,21 @@ public class NoduleController : NetworkBehaviour
     {
         transform.position = pos;
         m_Rigidbody.velocity = vel;
+    }
+
+    [ClientRpc]
+    private void RpcSetFloatSpeed(float floatSpeed)
+    {
+        FloatSpeed = floatSpeed;
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
+
+        if (FloatSpeed != DataStore.GetFloat("NoduleFloatSpeed"))
+        {
+            DataStore.Set("NoduleFloatSpeed", FloatSpeed);
+        }
     }
 }

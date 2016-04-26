@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public class CarnivoreAI : Animal
 {
@@ -18,10 +18,12 @@ public class CarnivoreAI : Animal
     private int m_DaysOfStarvingDamageTaken;
     private int m_HerbivoresEatenWhileFullLife;
 
+    private float m_SensingSphereStartRadius;
+    private SphereCollider m_SensingCollider;
+
     private readonly FSM<BehaviourState> m_BehaviourBrain = new FSM<BehaviourState>();
 
     [SerializeField]
-    [SyncVar]
     private BehaviourState m_CurrentBehaviourState;
 
     public float DaysBetweenReproductions = 3f;
@@ -39,12 +41,33 @@ public class CarnivoreAI : Animal
 
     protected override void Start()
     {
+        if (!isServer && isClient)
+        {
+            base.Start();
+            return;
+        }
+
+        YoungSize = DataStore.GetFloat("CarnYoungSize");
+        TeenSize = DataStore.GetFloat("CarnTeenSize");
+        AdultSizeMin = DataStore.GetFloat("CarnAdultSizeMin");
+        AdultSizeMax = DataStore.GetFloat("CarnAdultSizeMax");
+        DaysAsYoung = DataStore.GetFloat("CarnDaysAsYoung");
+        DaysAsTeen = DataStore.GetFloat("CarnDaysAsTeen");
+        LifeSpan = DataStore.GetFloat("CarnLifeSpan");
+        BaseSpeed = DataStore.GetFloat("CarnBaseSpeed");
+        HuntingPeriodSpeed = DataStore.GetFloat("CarnHuntingPeriodSpeed");
+        DaysBetweenReproductions = DataStore.GetFloat("CarnDaysBetweenReproductions");
+        StarvingDamageAmount = DataStore.GetFloat("CarnStarvingDamageAmount");
+        StructureCollisionDamageAmount = DataStore.GetFloat("CarnStructureCollisionDamageAmount");
+        MaximumHerdSizeToAttack = DataStore.GetInt("CarnMaximumHerdSizeToAttack");
+        HerdApproachDistance = DataStore.GetFloat("CarnHerdApproachDistance");
+
         base.Start();
 
-        if (!isServer)
-            return;
+        m_SensingCollider = GetComponents<SphereCollider>().First(sc => sc.isTrigger);
+        m_SensingSphereStartRadius = m_SensingCollider.radius;
 
-        var collidersInRangeNow = Physics.OverlapSphere(transform.position, GetComponent<SphereCollider>().radius);
+        var collidersInRangeNow = Physics.OverlapSphere(transform.position, m_SensingSphereStartRadius);
         foreach (var coll in collidersInRangeNow)
         {
             if (coll.tag == "Herbivore")
@@ -87,6 +110,9 @@ public class CarnivoreAI : Animal
 
         if (isServer)
         {
+            //Keep the sensing collider from growing as the object grows
+            m_SensingCollider.radius = m_SensingSphereStartRadius / Scale.x;
+
             m_HerbivoresInRange.RemoveWhere(go => go == null);
             m_HerbivoresInRange.RemoveWhere(go => go.name == "null");
 
@@ -246,6 +272,68 @@ public class CarnivoreAI : Animal
         {
             GetComponent<Rigidbody>().velocity = -(coll.contacts[0].point - transform.position).normalized * BaseSpeed;
             Damage(StructureCollisionDamageAmount);
+        }
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
+
+        if (YoungSize != DataStore.GetFloat("CarnYoungSize"))
+        {
+            DataStore.Set("CarnYoungSize", YoungSize);
+        }
+        if (TeenSize != DataStore.GetFloat("CarnTeenSize"))
+        {
+            DataStore.Set("CarnTeenSize", TeenSize);
+        }
+        if (AdultSizeMin != DataStore.GetFloat("CarnAdultSizeMin"))
+        {
+            DataStore.Set("CarnAdultSizeMin", AdultSizeMin);
+        }
+        if (AdultSizeMax != DataStore.GetFloat("CarnAdultSizeMax"))
+        {
+            DataStore.Set("CarnAdultSizeMax", AdultSizeMax);
+        }
+        if (DaysAsYoung != DataStore.GetFloat("CarnDaysAsYoung"))
+        {
+            DataStore.Set("CarnDaysAsYoung", DaysAsYoung);
+        }
+        if (DaysAsTeen != DataStore.GetFloat("CarnDaysAsTeen"))
+        {
+            DataStore.Set("CarnDaysAsTeen", DaysAsTeen);
+        }
+        if (LifeSpan != DataStore.GetFloat("CarnLifeSpan"))
+        {
+            DataStore.Set("CarnLifeSpan", LifeSpan);
+        }
+        if (BaseSpeed != DataStore.GetFloat("CarnBaseSpeed"))
+        {
+            DataStore.Set("CarnBaseSpeed", BaseSpeed);
+        }
+        if (HuntingPeriodSpeed != DataStore.GetFloat("CarnHuntingPeriodSpeed"))
+        {
+            DataStore.Set("CarnHuntingPeriodSpeed", HuntingPeriodSpeed);
+        }
+        if (DaysBetweenReproductions != DataStore.GetFloat("CarnDaysBetweenReproductions"))
+        {
+            DataStore.Set("CarnDaysBetweenReproductions", DaysBetweenReproductions);
+        }
+        if (StarvingDamageAmount != DataStore.GetFloat("CarnStarvingDamageAmount"))
+        {
+            DataStore.Set("CarnStarvingDamageAmount", StarvingDamageAmount);
+        }
+        if (StructureCollisionDamageAmount != DataStore.GetFloat("CarnStructureCollisionDamageAmount"))
+        {
+            DataStore.Set("CarnStructureCollisionDamageAmount", StructureCollisionDamageAmount);
+        }
+        if (MaximumHerdSizeToAttack != DataStore.GetInt("CarnMaximumHerdSizeToAttack"))
+        {
+            DataStore.Set("CarnMaximumHerdSizeToAttack", MaximumHerdSizeToAttack);
+        }
+        if (HerdApproachDistance != DataStore.GetFloat("CarnHerdApproachDistance"))
+        {
+            DataStore.Set("CarnHerdApproachDistance", HerdApproachDistance);
         }
     }
 }
