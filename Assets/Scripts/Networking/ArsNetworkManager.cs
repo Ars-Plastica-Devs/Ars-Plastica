@@ -1,7 +1,10 @@
-﻿using UnityEngine.Networking;
+﻿using System.IO;
+using UnityEngine;
+using UnityEngine.Networking;
 
 public class ArsNetworkManager : NetworkManager
 {
+    private const int PLAYER_LOG_SIZE_LIMIT = 10000000;
     private bool m_ServerRunning;
 	public bool IsDevelopment = true;
 	public bool SelfContainedHost = true;
@@ -24,15 +27,42 @@ public class ArsNetworkManager : NetworkManager
             StartServer();
 			ServerChangeScene (onlineScene);
 			InstantiateServerIdentities();
+            InvokeRepeating("LimitLogFile", 60f, 60f);
 		}
 	}
 
-    public override void OnStartClient (NetworkClient client)
-	{
-		base.OnStartClient (client);
-	}
+    private void LimitLogFile()
+    {
+        //This implementation only works on linux
+        //TODO: Add a windows version for testing purposes
+        if (Application.platform != RuntimePlatform.LinuxPlayer)
+            return;
 
-	public void ArsStartClient() {
+        var path = ".config/unity3d/" + Application.companyName + "/" + Application.productName + "/Player.log";
+
+        //Trash the old data, keep only the most recent 5mb
+        var playerLogFile = new FileInfo(path);
+        if (playerLogFile.Exists && playerLogFile.Length > PLAYER_LOG_SIZE_LIMIT)
+        {
+            var bytes = new byte[5000000];
+
+            //Read the last 5mb
+            using (var br = new BinaryReader(new FileStream(playerLogFile.FullName, FileMode.Open, FileAccess.Read)))
+            {
+                br.BaseStream.Seek(-5000000, SeekOrigin.End);
+                br.Read(bytes, 0, 5000000);
+            }
+
+            //Write the last 5mb
+            using (var bw = new BinaryWriter(new FileStream(playerLogFile.FullName, FileMode.Create, FileAccess.Write)))
+            {
+                bw.Write(bytes);
+            }
+        }
+    }
+
+    public void ArsStartClient()
+    {
 		if (IsDevelopment && SelfContainedHost && !m_ServerRunning)
 		{
 		    m_ServerRunning = true;
@@ -46,7 +76,8 @@ public class ArsNetworkManager : NetworkManager
         }
 	}
 
-	private void InstantiateServerIdentities() {
+	private void InstantiateServerIdentities()
+    {
 
 	}
 }

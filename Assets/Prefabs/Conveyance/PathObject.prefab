@@ -1,40 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &189716
+--- !u!1 &123644
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 481818}
-  - 114: {fileID: 11467324}
-  - 114: {fileID: 11426990}
+  - 4: {fileID: 411320}
+  - 135: {fileID: 13569044}
+  - 114: {fileID: 11490896}
   m_Layer: 0
-  m_Name: ConveyanceManager
-  m_TagString: PathManager
+  m_Name: PathObject
+  m_TagString: PathEndPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &481818
+--- !u!4 &411320
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189716}
+  m_GameObject: {fileID: 123644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11426990
+--- !u!114 &11490896
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189716}
+  m_GameObject: {fileID: 123644}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
@@ -43,39 +43,36 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 141
-    i1: 183
-    i2: 106
-    i3: 182
-    i4: 3
-    i5: 146
-    i6: 224
-    i7: 116
-    i8: 89
-    i9: 236
-    i10: 128
-    i11: 192
-    i12: 122
-    i13: 217
-    i14: 122
-    i15: 61
+    i0: 163
+    i1: 212
+    i2: 64
+    i3: 18
+    i4: 252
+    i5: 96
+    i6: 31
+    i7: 4
+    i8: 10
+    i9: 101
+    i10: 252
+    i11: 194
+    i12: 225
+    i13: 67
+    i14: 132
+    i15: 229
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &11467324
-MonoBehaviour:
+--- !u!135 &13569044
+SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189716}
+  m_GameObject: {fileID: 123644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b0b07f5c5a61ba41b6abb9400acc59c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PathRendererPrefab: {fileID: 146432, guid: d52c4af9eb744e947a50843aa3fee1c9, type: 2}
-  ConveyancePrefab: {fileID: 110018, guid: c413a6a833daaff46832a3345511217c, type: 2}
-  PathObjectPrefab: {fileID: 123644, guid: a3d44012fc601f040a65fcc2e14384e5, type: 2}
-  BeaconPrefab: {fileID: 102740, guid: 65638b867d843a54b8fab0b0b3d50f5b, type: 2}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -85,5 +82,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 189716}
+  m_RootGameObject: {fileID: 123644}
   m_IsPrefabParent: 1

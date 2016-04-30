@@ -7,7 +7,15 @@ public class WorldBoundaryBox : NetworkBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!isServer) return;
+        //There are a few unexplained cases where this is called when the
+        //other collider is still well within the world bounds, so we run
+        //this check
+        if (Mathf.Abs(other.transform.position.x) < Extent &&
+            Mathf.Abs(other.transform.position.y) < Extent &&
+            Mathf.Abs(other.transform.position.z) < Extent)
+        {
+            return;
+        }
 
         var otherPos = other.transform.position;
 

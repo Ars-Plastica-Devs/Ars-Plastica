@@ -11,7 +11,7 @@ public class MotionSync : NetworkBehaviour
 
     public float LerpRate = 10f;
     public float PosThreshold = .5f;
-    public float RotThreshold = 5;
+    public float RotThreshold = 2;
 
     private void Update()
     {

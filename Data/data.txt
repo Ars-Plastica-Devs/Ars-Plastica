@@ -12,6 +12,12 @@ HerbivoreLimit 300
 CarnivoreLimit 100
 
 CreatureSpawnExtent 1500
+WorldExtent 2500
+
+PlantSpawnExtentBuffer 500
+PlantSpawnHeightMin -1100
+PlantSpawnHeightMax -900
+PlantSpawnLayerPercentage .6
 
 //Nodule Options
 NoduleFloatSpeed 1

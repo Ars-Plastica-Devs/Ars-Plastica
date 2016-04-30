@@ -13,9 +13,9 @@ GameObject:
   - 23: {fileID: 2349244}
   - 114: {fileID: 11415240}
   - 114: {fileID: 11491462}
-  - 114: {fileID: 11487652}
+  - 114: {fileID: 11479940}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: SpawnPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,10 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20befcc40514e4ee9bdc0714f2049703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  daysForFullRotation: 4
-  fromRotation: {x: 0, y: 0, z: 0}
-  toRotation: {x: 0, y: 360, z: 0}
---- !u!114 &11487652
+  DaysForFullRotation: 4
+  FromRotation: {x: 0, y: 0, z: 0}
+  ToRotation: {x: 0, y: 360, z: 0}
+--- !u!114 &11479940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,18 +100,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 194740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 813dcb3eb6251324da22891728559160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.25
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 1
-  m_SyncSpin: 0
-  m_MovementTheshold: 1
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
+  LerpRate: 10
+  PosThreshold: 0.01
+  RotThreshold: 1
 --- !u!114 &11491462
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour
 {
@@ -15,19 +17,23 @@ public class HUDManager : MonoBehaviour
         }
     }
 
-    public GameObject ConveyanceDialog;
+    public GameObject BeaconDialog;
     public GameObject InteractionText;
-    public Action ConveyanceSitAction;
+    public Dropdown PathOptionsDropDown;
+    public Action<string> ConveyanceSitAction;
     public Action ConveyanceCancelAction;
 
-    public void ShowConveyanceDialog()
+    public void ShowBeaconDialog(List<string> pathNames)
     {
-        ConveyanceDialog.SetActive(true);
+        PathOptionsDropDown.ClearOptions();
+        PathOptionsDropDown.AddOptions(pathNames);
+
+        BeaconDialog.SetActive(true);
     }
 
-    public void HideConveyanceDialog()
+    public void HideBeaconDialog()
     {
-        ConveyanceDialog.SetActive(false);
+        BeaconDialog.SetActive(false);
         ConveyanceSitAction = null;
         ConveyanceCancelAction = null;
     }
@@ -45,7 +51,9 @@ public class HUDManager : MonoBehaviour
     public void OnConveyanceSit()
     {
         if (ConveyanceSitAction != null)
-            ConveyanceSitAction();
+        {
+            ConveyanceSitAction(PathOptionsDropDown.options[PathOptionsDropDown.value].text);
+        }
     }
 
     public void OnConveyanceCancel()

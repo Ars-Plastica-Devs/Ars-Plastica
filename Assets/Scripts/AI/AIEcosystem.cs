@@ -30,7 +30,14 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     [SyncVar] public int HerbivoreMinimum = 50;
     [SyncVar] public int CarnivoreMinimum = 25;
 
-    public float CreatureSpawnExtent = 1500f;
+    [SyncVar] public float CreatureSpawnExtent = 1500f;
+    [SyncVar] public float WorldExtent = 2500f;
+
+    [SyncVar] public float PlantSpawnExtentBuffer = 500f;
+    [SyncVar] public float PlantSpawnHeightMin = -1100f;
+    [SyncVar] public float PlantSpawnHeightMax = -900f;
+    [SyncVar] public float PlantSpawnLayerPercentage = .6f;
+
 
     public int CurrentNoduleCount
     {
@@ -89,13 +96,28 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         CarnivoreLimit = DataStore.GetInt("CarnivoreLimit");
 
         CreatureSpawnExtent = DataStore.GetFloat("CreatureSpawnExtent");
+        WorldExtent = DataStore.GetFloat("WorldExtent");
+        PlantSpawnExtentBuffer = DataStore.GetFloat("PlantSpawnExtentBuffer");
+        PlantSpawnHeightMin = DataStore.GetFloat("PlantSpawnHeightMin");
+        PlantSpawnHeightMax = DataStore.GetFloat("PlantSpawnHeightMax");
+        PlantSpawnLayerPercentage = DataStore.GetFloat("PlantSpawnLayerPercentage");
 
         if (Plants.Length > 0)
         {
             for (var i = 0; i < InitialPlantCount; i++)
             {
-                var pos = Random.insideUnitSphere * CreatureSpawnExtent;
-                SpawnPlant(pos);
+                var pos = Random.insideUnitSphere * (WorldExtent - PlantSpawnExtentBuffer);
+                if (i < InitialPlantCount * PlantSpawnLayerPercentage)
+                {
+                    
+                    var y = Random.Range(PlantSpawnHeightMin, PlantSpawnHeightMax);
+                    pos.y = y;
+                    SpawnPlant(pos);
+                }
+                else
+                {
+                    SpawnPlant(pos);
+                }
             }
         }
 
@@ -123,14 +145,14 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
     public override void OnStartClient()
     {
         base.OnStartClient();
-        Invoke("RegisterAsReceiver", 1f);
+        Invoke("RegisterAsReceiver", 3f);
         //RegisterAsReceiver();
     }
 
     private void RegisterAsReceiver()
     {
         GameObject.FindGameObjectsWithTag("Player")
-            .First(cp => cp.GetComponent<NetworkIdentity>().isLocalPlayer)
+            .First(cp => cp.GetComponent<NetworkIdentity>() && cp.GetComponent<NetworkIdentity>().isLocalPlayer)
             .GetComponent<CommandProcessor>()
             .RegisterReceiver(gameObject);
     }
@@ -309,7 +331,7 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
 
         while (m_Nodules.Count > NoduleLimit)
         {
-            RemoveNodule(m_Carnivores.First());
+            RemoveNodule(m_Nodules.First());
         }
     }
 
@@ -457,12 +479,15 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
                 switch (tokens[1])
                 {
                     case "plant":
+                        if (!CanAddPlant()) return "Plant max reached - cannot spawn more";
                         SpawnPlant(sender.transform.position + sender.transform.forward * 5);
                         return "Spawned a plant";
                     case "herbivore":
+                        if (!CanAddPlant()) return "Herbivore max reached - cannot spawn more";
                         SpawnHerbivore(sender.transform.position + sender.transform.forward * 5);
                         return "Spawned a herbivore";
                     case "carnivore":
+                        if (!CanAddPlant()) return "Carnivore max reached - cannot spawn more";
                         SpawnCarnivore(sender.transform.position + sender.transform.forward * 5);
                         return "Spawned a carnivore";
                     default:
@@ -521,6 +546,26 @@ public class AIEcosystem : NetworkBehaviour, ICommandReceiver
         if (CreatureSpawnExtent != DataStore.GetFloat("CreatureSpawnExtent"))
         {
             DataStore.Set("CreatureSpawnExtent", CreatureSpawnExtent);
+        }
+        if (WorldExtent != DataStore.GetFloat("WorldExtent"))
+        {
+            DataStore.Set("WorldExtent", WorldExtent);
+        }
+        if (PlantSpawnExtentBuffer != DataStore.GetFloat("PlantSpawnExtentBuffer"))
+        {
+            DataStore.Set("PlantSpawnExtentBuffer", PlantSpawnExtentBuffer);
+        }
+        if (PlantSpawnHeightMin != DataStore.GetFloat("PlantSpawnHeightMin"))
+        {
+            DataStore.Set("PlantSpawnHeightMin", PlantSpawnHeightMin);
+        }
+        if (PlantSpawnHeightMax != DataStore.GetFloat("PlantSpawnHeightMax"))
+        {
+            DataStore.Set("PlantSpawnHeightMax", PlantSpawnHeightMax);
+        }
+        if (PlantSpawnLayerPercentage != DataStore.GetFloat("PlantSpawnLayerPercentage"))
+        {
+            DataStore.Set("PlantSpawnLayerPercentage", PlantSpawnLayerPercentage);
         }
     }
 }

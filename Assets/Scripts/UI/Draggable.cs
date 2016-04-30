@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Draggable : MonoBehaviour
+public class Draggable : MonoBehaviour, IDragHandler
 {
-    public void OnDrag()
+    public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        transform.position = eventData.position;
     }
 }

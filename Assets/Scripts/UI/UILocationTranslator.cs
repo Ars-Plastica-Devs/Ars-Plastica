@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class UILocationTranslator : MonoBehaviour
@@ -10,8 +11,22 @@ public class UILocationTranslator : MonoBehaviour
         {
             if (_player != null) return _player;
 
-            _player = GameObject.FindGameObjectWithTag("Player");
-            return _player;
+            var players = GameObject.FindGameObjectsWithTag("Player");
+            if (players.GetLength(0) == 0) return null;
+
+            for (var i = 0; i < players.GetLength(0); i++)
+            {
+                var p = players[i];
+                if (p != null 
+                    && p.GetComponent<NetworkIdentity>() != null 
+                    && p.GetComponent<NetworkIdentity>().isLocalPlayer)
+                {
+                    _player = p;
+                    return _player;
+                }
+            }
+
+            return null;
         }
     }
     public Text LocationTextElement;

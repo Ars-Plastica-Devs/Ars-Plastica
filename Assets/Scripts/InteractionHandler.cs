@@ -18,10 +18,10 @@ public abstract class InteractionHandler : MonoBehaviour
             if (m_Active == value) return;
 
             m_Active = value;
-            SetActive(m_Active);
+            SetActiveState(m_Active);
         }
     }
 
     public abstract void OnInteract(PlayerInteractionController controller);
-    protected abstract void SetActive(bool state);
+    protected abstract void SetActiveState(bool state);
 }

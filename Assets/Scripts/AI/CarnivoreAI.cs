@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -113,8 +114,17 @@ public class CarnivoreAI : Animal
             //Keep the sensing collider from growing as the object grows
             m_SensingCollider.radius = m_SensingSphereStartRadius / Scale.x;
 
-            m_HerbivoresInRange.RemoveWhere(go => go == null);
-            m_HerbivoresInRange.RemoveWhere(go => go.name == "null");
+            try
+            {
+                m_HerbivoresInRange.RemoveWhere(go => go == null);
+                m_HerbivoresInRange.RemoveWhere(go => go.name == "null");
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e.Message);
+                //Sometimes Unity just fails with this and gives me a NRE for some reason.....
+            }
+
 
             GrowthBrain.Update(Time.deltaTime);
 

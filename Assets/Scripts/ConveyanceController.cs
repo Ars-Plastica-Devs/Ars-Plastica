@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -8,11 +9,14 @@ public class ConveyanceController : NetworkBehaviour
     private Rigidbody m_Rigidbody;
     private List<Vector3> m_Points;
     private int m_NextPoint;
-    private int m_Direction = 1;
-    private int m_AttachedCount;
 
     [SerializeField]
     private string m_CurrentPath;
+    public string CurrentPath {
+        get { return m_CurrentPath; }
+    }
+
+    private bool m_ReversedPath;
 
     public float ProgressDistance = 3f;
     public float Speed = 20f;
@@ -27,14 +31,22 @@ public class ConveyanceController : NetworkBehaviour
     [SyncVar]
     public Vector3 Velocity;
 
+    public int AttachedCount {
+        get { return m_AttachedObjects.Count; }
+    }
+
     private void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
+        
+        if (!isServer) return;
+
+        Manager = GameObject.FindGameObjectWithTag("PathManager").GetComponent<PathManager>();
     }
 
     private void Update ()
     {
-        m_Rigidbody.velocity = Velocity;
+        //m_Rigidbody.velocity = Velocity;
 
         if (isClient)
         {
@@ -50,26 +62,22 @@ public class ConveyanceController : NetworkBehaviour
 	    var toPoint = m_Points[m_NextPoint] - transform.position;
 
         //Can progress to the next point
-	    if (toPoint.sqrMagnitude < (ProgressDistance * ProgressDistance))
-	    {
-	        m_NextPoint += m_Direction;
+        if (toPoint.sqrMagnitude < (ProgressDistance * ProgressDistance))
+        {
+            m_NextPoint++;
 
-	        if (m_NextPoint >= m_Points.Count)
-	        {
-	            m_Direction = -1;
-	            m_NextPoint = m_Points.Count - 2;
-	        }
-            else if (m_NextPoint < 0)
+            if (m_NextPoint >= m_Points.Count)
             {
-                m_Direction = 1;
-                m_NextPoint = 1;
-
-                if (m_AttachedObjects.Count == 0)
-                    Running = false;
+                Running = false;
+                //m_Rigidbody.velocity = Vector3.zero;
+                Manager.NotifyOfConveyanceFinished(this);
             }
-	    }
-
-        m_Rigidbody.velocity = toPoint.normalized * Speed;
+        }
+        else
+        {
+            transform.position += toPoint.normalized * Speed * Time.deltaTime;
+            //m_Rigidbody.velocity = toPoint.normalized * Speed;
+        }
 
         foreach (var obj in m_AttachedObjects)
         {
@@ -77,16 +85,24 @@ public class ConveyanceController : NetworkBehaviour
         }
     }
 
-    public void SetPath(string pathName)
+    public void SetPath(string pathName, bool reversePath)
     {
-        m_Points = Manager.Paths[pathName];
+        m_Points = new List<Vector3>(Manager.Paths[pathName]);
+
+        m_ReversedPath = reversePath;
+        if (m_ReversedPath)
+            m_Points.Reverse();
+
         m_CurrentPath = pathName;
         m_NextPoint = 0;
     }
 
     public void RefreshPath()
     {
-        m_Points = Manager.Paths[m_CurrentPath];
+        m_Points = new List<Vector3>(Manager.Paths[m_CurrentPath]);
+
+        if (m_ReversedPath)
+            m_Points.Reverse();
 
         if (m_NextPoint >= m_Points.Count)
         {
@@ -94,14 +110,31 @@ public class ConveyanceController : NetworkBehaviour
         }
     }
 
+    [Server]
     public void AttachObject(GameObject obj)
     {
         obj.transform.parent = transform;
         obj.transform.localPosition = AttachOffset;
         m_AttachedObjects.Add(obj);
+        RpcAttachObject(obj);
     }
 
+    [ClientRpc]
+    private void RpcAttachObject(GameObject obj)
+    {
+        m_AttachedObjects.Add(obj);
+    }
+
+    [Server]
     public void DetachObject(GameObject obj)
+    {
+        obj.transform.parent = null;
+        m_AttachedObjects.Remove(obj);
+        RpcDetachObject(obj);
+    }
+
+    [ClientRpc]
+    private void RpcDetachObject(GameObject obj)
     {
         obj.transform.parent = null;
         m_AttachedObjects.Remove(obj);

@@ -18,7 +18,7 @@ public class CommandForwarder : MonoBehaviour
             if (_processor != null) return _processor;
 
             var processor = GameObject.FindGameObjectsWithTag("Player")
-                .First(cp => cp.GetComponent<NetworkIdentity>().isLocalPlayer)
+                .First(cp => cp.GetComponent<NetworkIdentity>() && cp.GetComponent<NetworkIdentity>().isLocalPlayer)
                 .GetComponent<CommandProcessor>();
 
             _processor = processor;

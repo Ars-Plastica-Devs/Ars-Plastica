@@ -28,6 +28,8 @@ public class PlayerInteractionController : NetworkBehaviour
 
     public void Update()
     {
+        if (!isLocalPlayer) return;
+
         if (Input.GetKeyUp(KeyCode.F) && InteractInputEnabled)
         {
             OnInteract();
@@ -106,37 +108,69 @@ public class PlayerInteractionController : NetworkBehaviour
         m_Controller.MouseOnly = false;
     }
 
-    public void SitOnConveyance(GameObject obj)
+    public void RequestSeatOnConveyance(string pathName, bool reverse = false)
     {
-        m_ConveyanceAttachedTo = obj;
+        CmdRequestSeatOnConveyance(pathName, reverse);
+
+        //Deactivate these right away so we arent waiting for response from server
         CheckForInteractions = false;
         DeactivateGameInputExceptMouse();
-        m_ConveyanceAttachedTo.GetComponent<ConveyanceController>().AttachObject(gameObject);
-        CmdSitOnConveyance(m_ConveyanceAttachedTo);
+    }
+
+    [ClientRpc]
+    private void RpcSitOnConveyance(GameObject con)
+    {
+        if (!isLocalPlayer) return;
+
+        m_ConveyanceAttachedTo = con;
+
+        m_InteractHandler = m_ConveyanceAttachedTo.GetComponent<InteractionHandler>();
     }
 
     [Command]
-    private void CmdSitOnConveyance(GameObject obj)
+    private void CmdRequestSeatOnConveyance(string pathName, bool reverse)
     {
-        obj.GetComponent<ConveyanceController>().AttachObject(gameObject);
-        obj.GetComponent<ConveyanceController>().ServerStartRunning();
+        //Spawn the conveyance, then call our RPC
+        var pathManager = GameObject.FindGameObjectWithTag("PathManager").GetComponent<PathManager>();
+        var obj = pathManager.SpawnConveyance(pathName, reverse);
+        var con = obj.GetComponent<ConveyanceController>();
+
+        pathManager.NotifyOfAttachToConveyance(this, con);
+        RpcSitOnConveyance(obj);
     }
 
     public void DetachFromConveyance()
     {
         m_InteractHandler.Active = false;
-        m_ConveyanceAttachedTo.GetComponent<ConveyanceController>().DetachObject(gameObject);
+        m_InteractHandler = null;
+        //m_ConveyanceAttachedTo.GetComponent<ConveyanceController>().DetachObject(gameObject);
         EnableGameInput();
+        CheckForInteractions = true;
+
         CmdDetachFromConveyance(m_ConveyanceAttachedTo);
 
-        CheckForInteractions = false;
         m_ConveyanceAttachedTo = null;
+        DoInteractableCheck();
+    }
+
+    [ClientRpc]
+    private void RpcDetachFromConveyance()
+    {
+        DetachFromConveyance();
+    }
+
+    [Server]
+    public void DetachClientsFromConveyance()
+    {
+        RpcDetachFromConveyance();
     }
 
     [Command]
     private void CmdDetachFromConveyance(GameObject obj)
     {
-        obj.GetComponent<ConveyanceController>().DetachObject(gameObject);
+        var pathManager = GameObject.FindGameObjectWithTag("PathManager").GetComponent<PathManager>();
+        pathManager.RemovePlayerFromConveyance(this, obj.GetComponent<ConveyanceController>());
+        m_ConveyanceAttachedTo = null;
     }
 
     private static RaycastHit GetClosestRayHit(IEnumerable<RaycastHit> rayHits)

@@ -11,7 +11,12 @@ public class Player_NetworkSetup : NetworkBehaviour {
 
 	public TextMesh overheadName; //the name to billboard over our head.
 
-	public override void OnStartLocalPlayer ()
+    private void Start()
+    {
+        gameObject.tag = isLocalPlayer ? "Player" : "RemotePlayer";
+    }
+
+    public override void OnStartLocalPlayer ()
 	{
 		foreach (var c in Camera.allCameras) {
 			c.enabled = false;
@@ -27,6 +32,4 @@ public class Player_NetworkSetup : NetworkBehaviour {
 		audioListener.enabled = true;
 
 	}
-
-
 }

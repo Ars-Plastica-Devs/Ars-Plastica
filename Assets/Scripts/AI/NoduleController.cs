@@ -37,6 +37,7 @@ public class NoduleController : NetworkBehaviour
     private void RpcPostMovementData(Vector3 pos, Vector3 vel)
     {
         transform.position = pos;
+        if (m_Rigidbody == null) m_Rigidbody = GetComponent<Rigidbody>();
         m_Rigidbody.velocity = vel;
     }
 
