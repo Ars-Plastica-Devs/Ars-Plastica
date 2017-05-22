@@ -1,0 +1,75 @@
+[33mcommit 3e379b6ceb46c65e38c57c4a22fad2928e80d2d3[m
+Author: deanljohnson <dean@deanljohnson.com>
+Date:   Sat Apr 23 00:52:59 2016 -0700
+
+    All the changes that went into 006, plus basic conveyances.
+
+[33mcommit c4e6f17e74ebc9c4d2ee321345c8000bf5d9dc8f[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Mon Apr 18 03:44:39 2016 -0700
+
+    Added RAIN AI to project, replacing diy ai system.
+
+[33mcommit 3a45c4140326f90eedd0c5335ccc4fa664024251[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Wed Apr 13 23:14:01 2016 -0700
+
+    Fixed syncing between AIEntity on client server.
+
+[33mcommit b13baadc4dc0edda71f2d3b032a853f6d126d280[m
+Merge: 373d59d 6b83930
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Mon Apr 11 02:30:37 2016 -0700
+
+    Merge branch 'master' of github.com:bigredwill/tower-of-light
+
+[33mcommit 373d59d71a5709bd77821b4f84e7c00b25e7bdea[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Mon Apr 11 02:30:34 2016 -0700
+
+    Networked ecosystem. Player Names above players. Day cycles, moving sun. Rudimentary Character selection
+
+[33mcommit 6b8393047cacbbe9b57911115010b7c745026c53[m
+Author: Will Simons <bigredwill@users.noreply.github.com>
+Date:   Sun Mar 27 23:59:38 2016 -0700
+
+    Created Readme.md
+
+[33mcommit abb821fba49bb667dfa398bb018601edb5c3f22f[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Sun Mar 27 23:50:56 2016 -0700
+
+    gitignore
+
+[33mcommit 204d747a65792add663c98443ad5b20c4ef1d568[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Sun Mar 27 23:18:46 2016 -0700
+
+    Added RockDollip scene. Client creates local server if cannot connect to remote.  General cleanup.
+    
+    
+    Former-commit-id: 446f1a9ae4dfa7b0f282ce3a8cbbd21be7d9f743
+
+[33mcommit 0e07a7306bb810c0cab5df3f4441b8cf610ea791[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Wed Mar 23 02:08:06 2016 -0700
+
+    Removed large file
+    
+    
+    Former-commit-id: b1677ad4e156f50ed6672c44d7ee4f2dc1482a36
+
+[33mcommit d3d6965951e71d9ce861d8c5439744bb0165be3f[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Wed Mar 23 01:52:25 2016 -0700
+
+    Project
+    
+    
+    Former-commit-id: 12dca65adcbf1d2e8a09568040023cf0cba8cb23
+
+[33mcommit 119497b310b021982a2d8f706e17da283be81e3d[m
+Author: bigredwill <bigredwill@gmail.com>
+Date:   Wed Mar 23 01:51:24 2016 -0700
+
+    initialized git project

@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 0300c9314f685e342b9ec11f4a99b5c1
+timeCreated: 1462653622
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Blade_BrokenBase
+    100002: BladePiece
+    100004: BladePiece Large
+    100006: BladePiece Large.001
+    100008: BladePiece.001
+    100010: BladePiece.002
+    100012: BladeShard
+    100014: Circle.007
+    100016: Circle.008
+    100018: Circle.009
+    100020: Circle.010
+    100022: Circle.011
+    100024: Circle.012
+    100026: Circle.013
+    100028: Circle.014
+    100030: Circle.022
+    100032: Circle.030
+    100034: //RootNode
+    100036: SolarArrayCOLLMESH
+    400000: Blade_BrokenBase
+    400002: BladePiece
+    400004: BladePiece Large
+    400006: BladePiece Large.001
+    400008: BladePiece.001
+    400010: BladePiece.002
+    400012: BladeShard
+    400014: Circle.007
+    400016: Circle.008
+    400018: Circle.009
+    400020: Circle.010
+    400022: Circle.011
+    400024: Circle.012
+    400026: Circle.013
+    400028: Circle.014
+    400030: Circle.022
+    400032: Circle.030
+    400034: //RootNode
+    400036: SolarArrayCOLLMESH
+    2300000: Blade_BrokenBase
+    2300002: BladePiece
+    2300004: BladePiece Large
+    2300006: BladePiece Large.001
+    2300008: BladePiece.001
+    2300010: BladePiece.002
+    2300012: BladeShard
+    2300014: Circle.007
+    2300016: Circle.008
+    2300018: Circle.009
+    2300020: Circle.010
+    2300022: Circle.011
+    2300024: Circle.012
+    2300026: Circle.013
+    2300028: Circle.014
+    2300030: Circle.022
+    2300032: Circle.030
+    2300034: SolarArrayCOLLMESH
+    3300000: Blade_BrokenBase
+    3300002: BladePiece
+    3300004: BladePiece Large
+    3300006: BladePiece Large.001
+    3300008: BladePiece.001
+    3300010: BladePiece.002
+    3300012: BladeShard
+    3300014: Circle.007
+    3300016: Circle.008
+    3300018: Circle.009
+    3300020: Circle.010
+    3300022: Circle.011
+    3300024: Circle.012
+    3300026: Circle.013
+    3300028: Circle.014
+    3300030: Circle.022
+    3300032: Circle.030
+    3300034: SolarArrayCOLLMESH
+    4300000: Circle.030
+    4300002: Circle.022
+    4300004: Circle.014
+    4300006: BladePiece.002
+    4300008: BladePiece Large.001
+    4300010: BladeShard
+    4300012: BladePiece Large
+    4300014: BladePiece
+    4300016: BladePiece.001
+    4300018: Blade_BrokenBase
+    4300020: Circle.013
+    4300022: Circle.012
+    4300024: Circle.011
+    4300026: Circle.010
+    4300028: Circle.009
+    4300030: Circle.007
+    4300032: Circle.008
+    4300034: SolarArrayCOLLMESH
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

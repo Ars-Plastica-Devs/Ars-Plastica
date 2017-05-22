@@ -7,7 +7,7 @@ public class Object_ID : NetworkBehaviour {
 	[SyncVar] public string ObjectUniqueID;
 	[SyncVar] public string ObjectDescription;
 	[SyncVar] public string ObjectName;
-	private NetworkInstanceId m_ObjectNetID;
+	//private NetworkInstanceId m_ObjectNetID;
 	private Transform m_MyTransform;
 
 	// Use this for initialization
@@ -32,7 +32,7 @@ public class Object_ID : NetworkBehaviour {
 
 	void GetNetIdentity()
     {
-		m_ObjectNetID = GetComponent<NetworkIdentity> ().netId;
+		//m_ObjectNetID = GetComponent<NetworkIdentity> ().netId;
 	}
 
 	void SetIdentity()

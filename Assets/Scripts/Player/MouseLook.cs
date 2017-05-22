@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 /*
  * 
@@ -19,7 +18,6 @@ public class MouseLook
 	public float smoothTime = 5f;
 	public bool lockCursor = true;
 
-
 	private Quaternion m_CharacterTargetRot;
 	private Quaternion m_CameraTargetRot;
 	private bool m_cursorIsLocked = true;
@@ -35,20 +33,20 @@ public class MouseLook
 	{
 	    if (!m_cursorIsLocked) return;
 
-		float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
-		float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+		var yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
+		var xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
 
-		m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
-		m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
+		m_CharacterTargetRot *= Quaternion.Euler(0f, yRot, 0f);
+		m_CameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
 
-		if(clampVerticalRotation)
+        if (clampVerticalRotation)
 			m_CameraTargetRot = ClampRotationAroundXAxis (m_CameraTargetRot);
 
 		if(smooth)
 		{
-			character.localRotation = Quaternion.Slerp (character.localRotation, m_CharacterTargetRot,
+			character.localRotation = Quaternion.Slerp(character.localRotation, m_CharacterTargetRot,
 				smoothTime * Time.deltaTime);
-			camera.localRotation = Quaternion.Slerp (camera.localRotation, m_CameraTargetRot,
+			camera.localRotation = Quaternion.Slerp(camera.localRotation, m_CameraTargetRot,
 				smoothTime * Time.deltaTime);
 		}
 		else
@@ -62,7 +60,7 @@ public class MouseLook
 
     public void SetCursorLock(bool value)
 	{
-		lockCursor = value;
+		m_cursorIsLocked = value;
 		if(!lockCursor)
 		{//we force unlock the cursor if the user disable the cursor locking helper
 			Cursor.lockState = CursorLockMode.None;
@@ -73,7 +71,7 @@ public class MouseLook
 	public void UpdateCursorLock()
 	{
 		//if the user set "lockCursor" we check & properly lock the cursos
-		if (lockCursor)
+		//if (lockCursor)
 			InternalLockUpdate();
 	}
 
@@ -84,10 +82,10 @@ public class MouseLook
 			m_cursorIsLocked = false;
 		}
         //NOTE: IsPointerOverGameObject only works on desktops.
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+        /*if (Input.GetMouseButtonDown(0) && GUI.GetNameOfFocusedControl() == string.Empty)
 	    {
 	        m_cursorIsLocked = true;
-	    }
+	    }*/
 
         if (m_cursorIsLocked)
 		{

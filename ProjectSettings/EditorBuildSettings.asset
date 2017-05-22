@@ -5,11 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
+  - enabled: 0
+    path: Assets/Scenes/arsplastica.unity
+  - enabled: 0
+    path: Assets/Scenes/arsplastica.unity
   - enabled: 0
     path: Assets/Scenes/TestMap(Deprecated).unity
   - enabled: 0
     path: Assets/Scenes/RockDollip(deprecated).unity
+  - enabled: 0
+    path: Assets/Scenes/SculptureScene.unity
   - enabled: 1
-    path: Assets/Scenes/arsplastica.unity
+    path: Assets/Scenes/Menu-WebGL.unity
+  - enabled: 1
+    path: Assets/Scenes/arsplastica-WebGL.unity

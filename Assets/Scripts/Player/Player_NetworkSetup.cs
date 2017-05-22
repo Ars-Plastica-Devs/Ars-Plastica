@@ -9,7 +9,7 @@ public class Player_NetworkSetup : NetworkBehaviour {
 	[SerializeField] Camera FPSCharacterCam;
 	[SerializeField] AudioListener audioListener;
 
-	public TextMesh overheadName; //the name to billboard over our head.
+	public TextMesh OverheadName; //the name to billboard over our head.
 
     private void Start()
     {
@@ -26,10 +26,9 @@ public class Player_NetworkSetup : NetworkBehaviour {
 		GetComponent<FirstPersonController>().enabled = true;
 		GetComponent<CharacterController>().enabled = true;
 
-		overheadName.text = "";
+		OverheadName.text = "";
 
 		FPSCharacterCam.enabled = true;
 		audioListener.enabled = true;
-
 	}
 }

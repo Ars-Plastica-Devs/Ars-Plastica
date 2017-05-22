@@ -9,13 +9,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 431104}
   - 33: {fileID: 3384832}
-  - 65: {fileID: 6542722}
   - 23: {fileID: 2316916}
   - 114: {fileID: 11479358}
   - 114: {fileID: 11450374}
   - 114: {fileID: 11481684}
   - 114: {fileID: 11433994}
   - 114: {fileID: 11484434}
+  - 135: {fileID: 13538908}
   m_Layer: 0
   m_Name: Conveyor
   m_TagString: Conveyance
@@ -30,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.87, z: 0}
-  m_LocalScale: {x: 1, y: 0.2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,19 +67,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110018}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6542722
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110018}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11433994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,12 +91,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 110018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68178fbcc95653a4bb96acc948e0d195, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bbf80e6051222248b0f04dc76ebc22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_CurrentPath: 
   ProgressDistance: 3
-  Speed: 10
+  Speed: 40
   AttachOffset: {x: 0, y: 1, z: 0}
   Running: 0
   Manager: {fileID: 0}
@@ -153,7 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 110018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 006acde999232a34c81f17687d77c95c, type: 3}
+  m_Script: {fileID: 11500000, guid: f50e3340012b51b48ac2852b9891693b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11484434
@@ -170,6 +158,19 @@ MonoBehaviour:
   LerpRate: 10
   PosThreshold: 0.25
   RotThreshold: 2
+  SnapThreshold: 5
+--- !u!135 &13538908
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

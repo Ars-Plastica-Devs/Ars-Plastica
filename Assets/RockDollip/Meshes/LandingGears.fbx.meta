@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: f165f3e614624c341b82ba05bd7a01d3
+timeCreated: 1462006390
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AP_Airlock
+    100002: AP_eng.strut.cylindar
+    100004: AP_eng.strut.vacuum
+    100006: AP_greeble
+    100008: AP_lifePreserver
+    100010: AP_Part
+    100012: AP_Trusswerk
+    100014: Camera
+    100016: Circle
+    100018: Circle.001
+    100020: Circle.002
+    100022: Circle.003
+    100024: Circle.004
+    100026: Circle.005
+    100028: CommArray
+    100030: Control box
+    100032: Cube.001
+    100034: Cube.002
+    100036: Cube.004
+    100038: Cylinder
+    100040: Cylinder.001
+    100042: Cylinder.015
+    100044: Empty
+    100046: Empty.001
+    100048: Empty.002
+    100050: F1 Engine.001
+    100052: HubEmpty
+    100054: Lamp
+    100056: LandingGears
+    100058: //RootNode
+    100060: MainWheel
+    100062: Nozzle hinge ring
+    100064: OutsideCollider
+    100066: Pipe
+    100068: Plane
+    100070: Plane.001
+    100072: Plane.002
+    100074: Ring of Debris
+    100076: Sphere.002
+    100078: Sphere.004
+    100080: Sphere.005
+    100082: Telescope
+    400000: AP_Airlock
+    400002: AP_eng.strut.cylindar
+    400004: AP_eng.strut.vacuum
+    400006: AP_greeble
+    400008: AP_lifePreserver
+    400010: AP_Part
+    400012: AP_Trusswerk
+    400014: Camera
+    400016: Circle
+    400018: Circle.001
+    400020: Circle.002
+    400022: Circle.003
+    400024: Circle.004
+    400026: Circle.005
+    400028: CommArray
+    400030: Control box
+    400032: Cube.001
+    400034: Cube.002
+    400036: Cube.004
+    400038: Cylinder
+    400040: Cylinder.001
+    400042: Cylinder.015
+    400044: Empty
+    400046: Empty.001
+    400048: Empty.002
+    400050: F1 Engine.001
+    400052: HubEmpty
+    400054: Lamp
+    400056: //RootNode
+    400058: LandingGears
+    400060: MainWheel
+    400062: Nozzle hinge ring
+    400064: OutsideCollider
+    400066: Pipe
+    400068: Plane
+    400070: Plane.001
+    400072: Plane.002
+    400074: Ring of Debris
+    400076: Sphere.002
+    400078: Sphere.004
+    400080: Sphere.005
+    400082: Telescope
+    2300000: AP_Airlock
+    2300002: AP_eng.strut.cylindar
+    2300004: AP_eng.strut.vacuum
+    2300006: AP_greeble
+    2300008: AP_lifePreserver
+    2300010: AP_Part
+    2300012: AP_Trusswerk
+    2300014: Circle
+    2300016: Circle.001
+    2300018: Circle.002
+    2300020: Circle.003
+    2300022: Circle.004
+    2300024: Circle.005
+    2300026: CommArray
+    2300028: Control box
+    2300030: Cube.001
+    2300032: Cube.002
+    2300034: Cube.004
+    2300036: Cylinder
+    2300038: Cylinder.001
+    2300040: Cylinder.015
+    2300042: F1 Engine.001
+    2300044: LandingGears
+    2300046: MainWheel
+    2300048: Nozzle hinge ring
+    2300050: OutsideCollider
+    2300052: Pipe
+    2300054: Plane
+    2300056: Plane.001
+    2300058: Plane.002
+    2300060: Ring of Debris
+    2300062: Sphere.002
+    2300064: Sphere.004
+    2300066: Sphere.005
+    2300068: Telescope
+    2300070: //RootNode
+    3300000: AP_Airlock
+    3300002: AP_eng.strut.cylindar
+    3300004: AP_eng.strut.vacuum
+    3300006: AP_greeble
+    3300008: AP_lifePreserver
+    3300010: AP_Part
+    3300012: AP_Trusswerk
+    3300014: Circle
+    3300016: Circle.001
+    3300018: Circle.002
+    3300020: Circle.003
+    3300022: Circle.004
+    3300024: Circle.005
+    3300026: CommArray
+    3300028: Control box
+    3300030: Cube.001
+    3300032: Cube.002
+    3300034: Cube.004
+    3300036: Cylinder
+    3300038: Cylinder.001
+    3300040: Cylinder.015
+    3300042: F1 Engine.001
+    3300044: LandingGears
+    3300046: MainWheel
+    3300048: Nozzle hinge ring
+    3300050: OutsideCollider
+    3300052: Pipe
+    3300054: Plane
+    3300056: Plane.001
+    3300058: Plane.002
+    3300060: Ring of Debris
+    3300062: Sphere.002
+    3300064: Sphere.004
+    3300066: Sphere.005
+    3300068: Telescope
+    3300070: //RootNode
+    4300000: Cube.002
+    4300002: LandingGears
+    4300004: CommArray
+    4300006: Plane.002
+    4300008: Pipe
+    4300010: Circle.004
+    4300012: OutsideCollider
+    4300014: Cube.004
+    4300016: Cylinder
+    4300018: F1 Engine.001
+    4300020: Circle.005
+    4300022: Plane.001
+    4300024: Plane
+    4300026: Cube.001
+    4300028: MainWheel
+    4300030: Circle.003
+    4300032: Ring of Debris
+    4300034: Circle.002
+    4300036: Circle.001
+    4300038: Circle
+    4300040: Sphere.005
+    4300042: Cylinder.015
+    4300044: Sphere.002
+    4300046: Cylinder.001
+    4300048: Control box
+    4300050: Nozzle hinge ring
+    4300052: Sphere.004
+    4300054: AP_Airlock
+    4300056: AP_eng.strut.cylindar
+    4300058: AP_eng.strut.vacuum
+    4300060: AP_greeble
+    4300062: AP_lifePreserver
+    4300064: AP_Part
+    4300066: AP_Trusswerk
+    4300068: Telescope
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

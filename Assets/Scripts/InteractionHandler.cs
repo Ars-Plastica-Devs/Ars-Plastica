@@ -22,6 +22,6 @@ public abstract class InteractionHandler : MonoBehaviour
         }
     }
 
-    public abstract void OnInteract(PlayerInteractionController controller);
+    public abstract void OnInteract(PlayerInteractionController controller, bool clickInteract = false);
     protected abstract void SetActiveState(bool state);
 }

@@ -1,0 +1,1077 @@
+fileFormatVersion: 2
+guid: 099b20a4bf76fed49ac06ae53e155783
+timeCreated: 1463601450
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Bone.005
+    100006: Bone.006
+    100008: Bone.006_end
+    100010: Bone.008
+    100012: Bone.009
+    100014: Bone.009_end
+    100016: Bone.011
+    100018: Bone.012
+    100020: Bone.012_end
+    100022: Cube.003
+    100024: Cube.004
+    100026: Hand_Back
+    100028: Hand_Back_end
+    100030: Hand_Left
+    100032: Hand_Left_end
+    100034: Hand_Right
+    100036: Hand_Right_end
+    100038: Head
+    100040: Jaw_TopBase
+    100042: JawLeftBase
+    100044: JawRightBase
+    100046: Main
+    100048: Main.001
+    100050: Main.002
+    100052: Main.003
+    100054: Main.005
+    100056: Main.007
+    100058: Main.008
+    100060: Neck_Lower
+    100062: Neck_upper
+    100064: //RootNode
+    100066: Tail
+    100068: Tail_end
+    100070: Tounge
+    100072: Tounge_end
+    400000: Armature
+    400002: Body
+    400004: Bone.005
+    400006: Bone.006
+    400008: Bone.006_end
+    400010: Bone.008
+    400012: Bone.009
+    400014: Bone.009_end
+    400016: Bone.011
+    400018: Bone.012
+    400020: Bone.012_end
+    400022: Cube.003
+    400024: Cube.004
+    400026: Hand_Back
+    400028: Hand_Back_end
+    400030: Hand_Left
+    400032: Hand_Left_end
+    400034: Hand_Right
+    400036: Hand_Right_end
+    400038: Head
+    400040: Jaw_TopBase
+    400042: JawLeftBase
+    400044: JawRightBase
+    400046: Main
+    400048: Main.001
+    400050: Main.002
+    400052: Main.003
+    400054: Main.005
+    400056: Main.007
+    400058: Main.008
+    400060: Neck_Lower
+    400062: Neck_upper
+    400064: //RootNode
+    400066: Tail
+    400068: Tail_end
+    400070: Tounge
+    400072: Tounge_end
+    4300000: Cube.003
+    4300002: Cube.004
+    7400000: Armature|SnatcherMoves
+    7400002: Awake
+    7400004: Idle
+    7400006: Yawn
+    7400008: Attack
+    7400010: Ward_Off
+    7400012: Spore_Belcth
+    7400014: Death
+    7400016: OtherIdle
+    9500000: //RootNode
+    13700000: Cube.003
+    13700002: Cube.004
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|SnatcherMoves
+      takeName: Armature|SnatcherMoves
+      firstFrame: 0
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Awake
+      takeName: Armature|SnatcherMoves
+      firstFrame: 0
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|SnatcherMoves
+      firstFrame: 61
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Yawn
+      takeName: Armature|SnatcherMoves
+      firstFrame: 162
+      lastFrame: 221
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Armature|SnatcherMoves
+      firstFrame: 226
+      lastFrame: 330
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ward_Off
+      takeName: Armature|SnatcherMoves
+      firstFrame: 334
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Spore_Belcth
+      takeName: Armature|SnatcherMoves
+      firstFrame: 468
+      lastFrame: 583
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Armature|SnatcherMoves
+      firstFrame: 590
+      lastFrame: 686
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OtherIdle
+      takeName: Armature|SnatcherMoves
+      firstFrame: 60
+      lastFrame: 161
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Body
+        weight: 1
+      - path: Armature/Main/Body/Tail
+        weight: 1
+      - path: Armature/Main/Body/Tail/Tail_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Head/Tounge/Tounge_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/Jaw_TopBase/Bone.005/Bone.006/Bone.006_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawLeftBase/Bone.008/Bone.009/Bone.009_end
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Main/Neck_Lower/Neck_upper/JawRightBase/Bone.011/Bone.012/Bone.012_end
+        weight: 1
+      - path: Armature/Main.001
+        weight: 1
+      - path: Armature/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right
+        weight: 1
+      - path: Armature/Main.001/Main.002/Main.003/Hand_Right/Hand_Right_end
+        weight: 1
+      - path: Armature/Main.005
+        weight: 1
+      - path: Armature/Main.005/Hand_Left
+        weight: 1
+      - path: Armature/Main.005/Hand_Left/Hand_Left_end
+        weight: 1
+      - path: Armature/Main.007
+        weight: 1
+      - path: Armature/Main.007/Main.008
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back
+        weight: 1
+      - path: Armature/Main.007/Main.008/Hand_Back/Hand_Back_end
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

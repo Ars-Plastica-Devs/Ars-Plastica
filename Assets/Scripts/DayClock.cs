@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 
 /*
  * DayClock
@@ -9,38 +10,63 @@
 
 	TODO: Could be attached to empty game object and hold references to multiple directional lights that rotate independently.
     NOTE: Multiple directional lights will not give us the binary star effect we are looking for - only one star will show in the sky.
+    NOTE: The above note might only apply because of the sky-box being used
 
  * */
-public class DayClock : MonoBehaviour
+public class DayClock : NetworkBehaviour
 {
-    private float m_DayStart;
-	public float Daylength = 24f; //aka time in seconds
-	public float Hour;
+    public static DayClock Singleton;
+    private float m_StartTime;
+	[SyncVar] public float Daylength = 24f; //time in seconds
+	[SyncVar] public float Hour;
 
 	public Vector3 FromRotation = new Vector3 (0, 0, 0);
 	public Vector3 ToRotation = new Vector3 (360, 0, 0);
 
+    public delegate void TimeEventDelegate();
+    public event TimeEventDelegate OnNight;
+    public event TimeEventDelegate OnDay;
 
-	// Use this for initialization
-	void Start ()
+    private void Awake()
+    {
+        Singleton = this;
+    }
+
+	private void Start ()
 	{
-	    m_DayStart = Time.time;
-        transform.rotation = Quaternion.Euler(FromRotation);
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		Hour = Time.time - m_DayStart;
-		if (Hour > Daylength) {
-			Hour = 0f;
-		    m_DayStart = Time.time;
-		}
+        m_StartTime = Time.time;
+        //transform.rotation = Quaternion.Euler(FromRotation);
 
-		var r = Quaternion.AngleAxis((ToRotation.x / Daylength) * Time.deltaTime, Vector3.right);
+	    if (!isServer)
+	        return;
 
-		transform.rotation = transform.rotation * r;
-	}
+        Daylength = DataStore.GetFloat(Data.DayLength);
+    }
+
+    private void Update ()
+    {
+		//var r = Quaternion.AngleAxis((ToRotation.x / Daylength) * Time.deltaTime, Vector3.right);
+		//transform.rotation = transform.rotation * r;
+
+        if (!isServer)
+            return;
+
+	    var t = Time.time - m_StartTime;
+	    var secondsOfDay = t % Daylength;
+        var wasDay = IsDay();
+	    Hour = (secondsOfDay / Daylength) * 24f;
+
+        if (wasDay && !IsDay())
+        {
+            if (OnNight != null)
+                OnNight();
+        }
+        else if (!wasDay && IsDay())
+        {
+            if (OnDay != null)
+                OnDay();
+        }
+    }
 
 
     public float GetTimeOfDay()
@@ -50,15 +76,15 @@ public class DayClock : MonoBehaviour
 
     public bool IsDay()
     {
-		return true;
+		return Hour > 6f && Hour < 18f;
 	}
 
 	/*
 	 * Accepts float representation of seconds.
 	 * Returns number of days in given time period.
 	 * */
-	public float SecondsToDays (float time) {
-
+	public float SecondsToDays (float time)
+    {
 		return time / Daylength;
 	}
 
@@ -66,10 +92,19 @@ public class DayClock : MonoBehaviour
 	 * Accepts float representation of cycles.
 	 * Returns days in seconds.
 	 * */
-	public float DaysToSeconds(float days) {
+	public float DaysToSeconds(float days)
+    {
 		return Daylength * days;
 	}
 
+    private void OnValidate()
+    {
+        if (Application.isPlaying || isClient) return;
 
+        if (Daylength != DataStore.GetFloat(Data.DayLength))
+        {
+            DataStore.Set(Data.DayLength, Daylength);
+        }
+    }
 }
 

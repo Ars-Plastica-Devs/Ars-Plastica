@@ -1,0 +1,1956 @@
+fileFormatVersion: 2
+guid: 9857f7046453d044b8f6e14517320f69
+timeCreated: 1464404376
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: HeadFore
+    100006: HeadRear
+    100008: Main
+    100010: Plane
+    100012: TailLeft1
+    100014: TailLeft2
+    100016: TailLeft3
+    100018: TailLeft4
+    100020: TailLeft5
+    100022: Tailleft6
+    100024: TailLeft7
+    100026: TailLeftROOT
+    100028: TailRight1
+    100030: TailRight2
+    100032: TailRight3
+    100034: TailRight4
+    100036: TailRight5
+    100038: TailRight6
+    100040: TailRight7
+    100042: TailRightRoot
+    100044: TaIlRoot
+    100046: TailTop1
+    100048: TailTop2
+    100050: Tailtop3
+    100052: Tailtop4
+    100054: Tailtop5
+    100056: Tailtop6
+    100058: Tailtop7
+    100060: Teeth
+    400000: Armature
+    400002: //RootNode
+    400004: HeadFore
+    400006: HeadRear
+    400008: Main
+    400010: Plane
+    400012: TailLeft1
+    400014: TailLeft2
+    400016: TailLeft3
+    400018: TailLeft4
+    400020: TailLeft5
+    400022: Tailleft6
+    400024: TailLeft7
+    400026: TailLeftROOT
+    400028: TailRight1
+    400030: TailRight2
+    400032: TailRight3
+    400034: TailRight4
+    400036: TailRight5
+    400038: TailRight6
+    400040: TailRight7
+    400042: TailRightRoot
+    400044: TaIlRoot
+    400046: TailTop1
+    400048: TailTop2
+    400050: Tailtop3
+    400052: Tailtop4
+    400054: Tailtop5
+    400056: Tailtop6
+    400058: Tailtop7
+    400060: Teeth
+    4300000: Plane
+    7400000: Rotate_Slow1
+    7400002: LeftTurn
+    7400004: RightTurn
+    7400006: Upturn
+    7400008: DownTurn
+    7400010: Idle2
+    7400012: ForwardMove
+    7400014: Attack
+    7400016: LongSwim
+    7400018: Chewing
+    7400020: Armature|ArmatureAction.001
+    7400022: Armature|ArmatureAction.002
+    7400024: Armature|ArmatureAction.003
+    7400026: Armature|ArmatureAction.004
+    7400028: Armature|ArmatureAction.005
+    7400030: Armature|ArmatureAction.006
+    7400032: Armature|ArmatureAction.007
+    7400034: Armature|ArmatureAction.008
+    7400036: Armature|ArmatureAction.009
+    7400038: Armature|ArmatureAction.010
+    9500000: //RootNode
+    13700000: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rotate_Slow1
+      takeName: Rotate_Slow1
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LeftTurn
+      takeName: LeftTurn
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RightTurn
+      takeName: RightTurn
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Upturn
+      takeName: Upturn
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DownTurn
+      takeName: DownTurn
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle2
+      takeName: Idle2
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ForwardMove
+      takeName: ForwardMove
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Attack
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LongSwim
+      takeName: LongSwim
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Chewing
+      takeName: Chewing
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.002
+      takeName: Armature|ArmatureAction.002
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.003
+      takeName: Armature|ArmatureAction.003
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.004
+      takeName: Armature|ArmatureAction.004
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.005
+      takeName: Armature|ArmatureAction.005
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.006
+      takeName: Armature|ArmatureAction.006
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.007
+      takeName: Armature|ArmatureAction.007
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.008
+      takeName: Armature|ArmatureAction.008
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.009
+      takeName: Armature|ArmatureAction.009
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.010
+      takeName: Armature|ArmatureAction.010
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/HeadRear
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore
+        weight: 1
+      - path: Armature/Main/HeadRear/HeadFore/Teeth
+        weight: 1
+      - path: Armature/Main/TailLeftROOT
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6
+        weight: 1
+      - path: Armature/Main/TailLeftROOT/TailLeft1/TailLeft2/TailLeft3/TailLeft4/TailLeft5/Tailleft6/TailLeft7
+        weight: 1
+      - path: Armature/Main/TailRightRoot
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6
+        weight: 1
+      - path: Armature/Main/TailRightRoot/TailRight1/TailRight2/TailRight3/TailRight4/TailRight5/TailRight6/TailRight7
+        weight: 1
+      - path: Armature/Main/TaIlRoot
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6
+        weight: 1
+      - path: Armature/Main/TaIlRoot/TailTop1/TailTop2/Tailtop3/Tailtop4/Tailtop5/Tailtop6/Tailtop7
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Main
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

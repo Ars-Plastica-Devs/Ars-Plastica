@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 446914}
   - 20: {fileID: 2047176}
-  - 81: {fileID: 8163312}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -231,13 +230,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &8163312
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125590}
-  m_Enabled: 1
 --- !u!114 &11436842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,7 +259,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: audioListener
       value: 
-      objectReference: {fileID: 8163312}
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsActive
       value: 1

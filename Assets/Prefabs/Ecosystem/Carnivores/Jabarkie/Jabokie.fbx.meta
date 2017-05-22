@@ -1,0 +1,1346 @@
+fileFormatVersion: 2
+guid: 54eaceb08f577cb4a872b8dd6d88eb03
+timeCreated: 1464069128
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BodyAft
+    100004: Feather_Fifth_L
+    100006: Feather_Fifth_R
+    100008: Feather_First_L
+    100010: Feather_First_R
+    100012: Feather_Fourth_L
+    100014: Feather_Fourth_R
+    100016: Feather_Second_L
+    100018: Feather_Second_R
+    100020: Feather_Third_L
+    100022: Feather_Third_R
+    100024: Head
+    100026: //RootNode
+    100028: LowerJaw
+    100030: Main
+    100032: Main.001
+    100034: Main.002
+    100036: Main.003
+    100038: Main.004
+    100040: Shoulder_L
+    100042: Shoulder_R
+    100044: Tail1
+    100046: Tail2
+    100048: Tail3
+    100050: Tail4
+    100052: Tail5
+    100054: Tail6
+    100056: Tail7
+    100058: Tail8
+    100060: TailFeathers_L
+    100062: TailFeathers_R
+    100064: TeethIncline
+    100066: Volume4
+    100068: Volume4.001
+    100070: Volume4.003
+    100072: Wing_Vistigal_L
+    100074: Wing_Vistigal_R
+    100076: Wing_Vistigal_reaffeathers_L
+    100078: Wing_Vistigal_reaffeathers_R
+    100080: Wing_Vistigalforefeathers_L
+    100082: Wing_Vistigalforefeathers_R
+    100084: Winglet_L
+    100086: Winglet_R
+    400000: Armature
+    400002: BodyAft
+    400004: Feather_Fifth_L
+    400006: Feather_Fifth_R
+    400008: Feather_First_L
+    400010: Feather_First_R
+    400012: Feather_Fourth_L
+    400014: Feather_Fourth_R
+    400016: Feather_Second_L
+    400018: Feather_Second_R
+    400020: Feather_Third_L
+    400022: Feather_Third_R
+    400024: Head
+    400026: //RootNode
+    400028: LowerJaw
+    400030: Main
+    400032: Main.001
+    400034: Main.002
+    400036: Main.003
+    400038: Main.004
+    400040: Shoulder_L
+    400042: Shoulder_R
+    400044: Tail1
+    400046: Tail2
+    400048: Tail3
+    400050: Tail4
+    400052: Tail5
+    400054: Tail6
+    400056: Tail7
+    400058: Tail8
+    400060: TailFeathers_L
+    400062: TailFeathers_R
+    400064: TeethIncline
+    400066: Volume4
+    400068: Volume4.001
+    400070: Volume4.003
+    400072: Wing_Vistigal_L
+    400074: Wing_Vistigal_R
+    400076: Wing_Vistigal_reaffeathers_L
+    400078: Wing_Vistigal_reaffeathers_R
+    400080: Wing_Vistigalforefeathers_L
+    400082: Wing_Vistigalforefeathers_R
+    400084: Winglet_L
+    400086: Winglet_R
+    4300000: Volume4.001
+    4300002: Volume4
+    4300004: Volume4.003
+    7400000: Static
+    7400002: FlapFlight
+    7400004: Right Turn
+    7400006: StopQuick
+    7400008: Roar
+    7400010: Dive_Bomb
+    7400012: StrikeTarget
+    7400014: Done_Eating
+    7400016: Chewing
+    7400018: LeftTurn
+    7400020: Armature|ArmatureAction
+    7400022: Armature|ArmatureAction.001
+    7400024: Armature|ArmatureAction.002
+    7400026: Armature|ArmatureAction.003
+    7400028: Armature|ArmatureAction.004
+    7400030: Armature|ArmatureAction.005
+    7400032: Armature|ArmatureAction.006
+    7400034: Armature|ArmatureAction.007
+    7400036: Armature|ArmatureAction.008
+    7400038: Armature|ArmatureAction.009
+    9500000: //RootNode
+    13700000: Volume4
+    13700002: Volume4.001
+    13700004: Volume4.003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Static
+      takeName: Static
+      firstFrame: 0
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FlapFlight
+      takeName: FlapFlight
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right Turn
+      takeName: Right Turn
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: StopQuick
+      takeName: StopQuick
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Roar
+      takeName: Roar
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dive_Bomb
+      takeName: Dive_Bomb
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: StrikeTarget
+      takeName: StrikeTarget
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Done_Eating
+      takeName: Done_Eating
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Chewing
+      takeName: Chewing
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LeftTurn
+      takeName: LeftTurn
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BodyAft
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7/Tail8/TailFeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigal_reaffeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_L/Wing_Vistigalforefeathers_L
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigal_reaffeathers_R
+        weight: 1
+      - path: Armature/Main/BodyAft/Wing_Vistigal_R/Wing_Vistigalforefeathers_R
+        weight: 1
+      - path: Armature/Main/Head
+        weight: 1
+      - path: Armature/Main/LowerJaw
+        weight: 1
+      - path: Armature/Main/Main.001
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.003
+        weight: 1
+      - path: Armature/Main/Main.001/Main.002/Main.004
+        weight: 1
+      - path: Armature/Main/Shoulder_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fifth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_First_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Fourth_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Second_L
+        weight: 1
+      - path: Armature/Main/Shoulder_L/Winglet_L/Feather_Third_L
+        weight: 1
+      - path: Armature/Main/Shoulder_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fifth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_First_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Fourth_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Second_R
+        weight: 1
+      - path: Armature/Main/Shoulder_R/Winglet_R/Feather_Third_R
+        weight: 1
+      - path: Armature/Main/TeethIncline
+        weight: 1
+      - path: Volume4
+        weight: 1
+      - path: Volume4.001
+        weight: 1
+      - path: Volume4.003
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Main
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

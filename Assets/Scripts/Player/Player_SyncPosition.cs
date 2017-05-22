@@ -15,6 +15,7 @@ public class Player_SyncPosition : NetworkBehaviour {
 
 	private Vector3 lastPos;
 	private float threshold = 0.5f;
+    private float m_SnapThreshold = 5f;
 
 
 	private NetworkClient nClient;
@@ -35,9 +36,16 @@ public class Player_SyncPosition : NetworkBehaviour {
 	}
 
 	void LerpPosition() {
-		if (!isLocalPlayer) {
-			//lerp players position that is not our local player
-			myTransform.position = Vector3.Lerp (myTransform.position, syncPos, Time.deltaTime * lerpRate);
+		if (!isLocalPlayer)
+        {
+            if (Vector3.Distance(myTransform.position, syncPos) > m_SnapThreshold)
+            {
+                myTransform.position = syncPos;
+                return;
+            }
+
+            //lerp players position that is not our local player
+            myTransform.position = Vector3.Lerp (myTransform.position, syncPos, Time.deltaTime * lerpRate);
 		}
 	}
 

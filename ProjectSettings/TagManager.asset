@@ -15,6 +15,9 @@ TagManager:
   - MainUI
   - RemotePlayer
   - PathEndPoint
+  - Structure
+  - Snatcher
+  - Debug
   layers:
   - Default
   - TransparentFX
@@ -26,10 +29,10 @@ TagManager:
   - 
   - Nodules
   - Unlit
-  - 
-  - 
-  - 
-  - 
+  - Herbivores
+  - Interactable
+  - PlayerObjectMask
+  - InfoSupplier
   - 
   - 
   - 

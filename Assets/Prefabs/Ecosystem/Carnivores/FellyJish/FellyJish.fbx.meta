@@ -1,0 +1,814 @@
+fileFormatVersion: 2
+guid: 5bbb3a53f8f3d444da113ba4b2a05068
+timeCreated: 1464474297
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BS1
+    100004: BS2
+    100006: BS3
+    100008: BS4
+    100010: BS5
+    100012: BS6
+    100014: //RootNode
+    100016: FellyJishBod
+    100018: Main
+    100020: Plane
+    100022: Throat
+    100024: Tooth1
+    100026: Tooth2
+    100028: Tooth3
+    400000: Armature
+    400002: BS1
+    400004: BS2
+    400006: BS3
+    400008: BS4
+    400010: BS5
+    400012: BS6
+    400014: //RootNode
+    400016: FellyJishBod
+    400018: Main
+    400020: Plane
+    400022: Throat
+    400024: Tooth1
+    400026: Tooth2
+    400028: Tooth3
+    4300000: FellyJishBod
+    4300002: Plane
+    7400000: Forward_Body
+    7400002: Attack_Body
+    7400004: Chewing_Body
+    7400006: AfterDinner_Body
+    7400008: Idle_Body
+    7400010: Armature|ArmatureAction
+    7400012: Armature|ArmatureAction.001
+    7400014: Armature|ArmatureAction.002
+    7400016: Armature|ArmatureAction.003
+    7400018: Armature|ArmatureAction.004
+    7400020: Armature|ArmatureAction.005
+    7400022: Armature|Key.001Action
+    9500000: //RootNode
+    13700000: FellyJishBod
+    13700002: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Forward_Body
+      takeName: Forward_Body
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack_Body
+      takeName: Attack_Body
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Chewing_Body
+      takeName: Chewing_Body
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AfterDinner_Body
+      takeName: AfterDinner_Body
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle_Body
+      takeName: Idle_Body
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.002
+      takeName: Armature|ArmatureAction.002
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.003
+      takeName: Armature|ArmatureAction.003
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.004
+      takeName: Armature|ArmatureAction.004
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.005
+      takeName: Armature|ArmatureAction.005
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Key.001Action
+      takeName: Armature|Key.001Action
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/BS1
+        weight: 1
+      - path: Armature/Main/BS1/BS2
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5
+        weight: 1
+      - path: Armature/Main/BS1/BS2/BS3/BS4/BS5/BS6
+        weight: 1
+      - path: Armature/Main/Throat
+        weight: 1
+      - path: Armature/Main/Throat/Tooth1
+        weight: 1
+      - path: Armature/Main/Throat/Tooth2
+        weight: 1
+      - path: Armature/Main/Throat/Tooth3
+        weight: 1
+      - path: FellyJishBod
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Main
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: d5e9872c889348a45844c773b6c91104
+timeCreated: 1465852825
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: AvatarModel
+    100006: AvatarModel.001
+    100008: Foot_L
+    100010: Foot_R
+    100012: FootIK_L
+    100014: FootIK_R
+    100016: FootOuter_L
+    100018: FootOuter_R
+    100020: LowerLeg_L
+    100022: LowerLeg_R
+    100024: Main
+    100026: PoleTarget_L
+    100028: PoleTarget_R
+    100030: Thigh_L
+    100032: Thigh_R
+    100034: Toe_Left
+    100036: Toe_Right
+    100038: UpperLeg_L
+    100040: UpperLeg_R
+    400000: Armature
+    400002: //RootNode
+    400004: AvatarModel
+    400006: AvatarModel.001
+    400008: Foot_L
+    400010: Foot_R
+    400012: FootIK_L
+    400014: FootIK_R
+    400016: FootOuter_L
+    400018: FootOuter_R
+    400020: LowerLeg_L
+    400022: LowerLeg_R
+    400024: Main
+    400026: PoleTarget_L
+    400028: PoleTarget_R
+    400030: Thigh_L
+    400032: Thigh_R
+    400034: Toe_Left
+    400036: Toe_Right
+    400038: UpperLeg_L
+    400040: UpperLeg_R
+    4300000: AvatarModel.001
+    4300002: AvatarModel
+    7400000: Walk Cycle
+    7400002: Run_Cycle
+    7400004: Jump_Cycle
+    7400006: Launch_Flight
+    7400008: Flight
+    7400010: Landing
+    7400012: Idle
+    7400014: Armature|ArmatureAction.001
+    7400016: Armature|ArmatureAction.003
+    7400018: Armature|ArmatureAction.004
+    7400020: Armature|ArmatureAction.006
+    7400022: Armature|ArmatureAction.007
+    7400024: Armature|ArmatureAction.008
+    7400026: Armature|ArmatureAction.009
+    9500000: //RootNode
+    13700000: AvatarModel
+    13700002: AvatarModel.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk Cycle
+      takeName: Walk Cycle
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run_Cycle
+      takeName: Run_Cycle
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump_Cycle
+      takeName: Jump_Cycle
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Launch_Flight
+      takeName: Launch_Flight
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Flight
+      takeName: Flight
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Landing
+      takeName: Landing
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.003
+      takeName: Armature|ArmatureAction.003
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.004
+      takeName: Armature|ArmatureAction.004
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.006
+      takeName: Armature|ArmatureAction.006
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.007
+      takeName: Armature|ArmatureAction.007
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.008
+      takeName: Armature|ArmatureAction.008
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.009
+      takeName: Armature|ArmatureAction.009
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/FootIK_L
+        weight: 1
+      - path: Armature/FootIK_R
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/Thigh_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/FootOuter_L
+        weight: 1
+      - path: Armature/Main/Thigh_L/UpperLeg_L/LowerLeg_L/Foot_L/Toe_Left
+        weight: 1
+      - path: Armature/Main/Thigh_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/FootOuter_R
+        weight: 1
+      - path: Armature/Main/Thigh_R/UpperLeg_R/LowerLeg_R/Foot_R/Toe_Right
+        weight: 1
+      - path: Armature/PoleTarget_L
+        weight: 1
+      - path: Armature/PoleTarget_R
+        weight: 1
+      - path: AvatarModel
+        weight: 1
+      - path: AvatarModel.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Armature
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

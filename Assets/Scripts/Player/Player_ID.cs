@@ -10,45 +10,60 @@ using UnityEngine.Networking;
  * */
 public class Player_ID : NetworkBehaviour
 {
+    public delegate void PlayerInitializedDelegate(GameObject obj);
+    /// <summary>
+    /// Called on the server whenever a player is connected and
+    /// has it's identity set
+    /// </summary>
+    public static event PlayerInitializedDelegate OnPlayerSetupComplete;
+
     private NetworkInstanceId m_PlayerNetID;
 
-    [SyncVar]
+    [SyncVar(hook="OnPlayerIdentitySet")]
     public string PlayerUniqueIdentity;
-    [SyncVar]
-    public string PlayerAvatar; //avatar is synced by name of prefab
+   // [SyncVar]
+   // public string PlayerAvatar; //avatar is synced by name of prefab
 
     public override void OnStartLocalPlayer()
     {
-        GetNetIdentity();
+        m_PlayerNetID = GetNetIdentity();
         SetIdentity();
-
     }
 
     private void Start()
     {
-        SetAvatar();
+        //SetAvatar();
+        SetIdentity();
+
+        if (isLocalPlayer)
+        {
+            var t = transform.Find("Name");
+            if (t != null)
+            {
+                t.GetComponent<MeshRenderer>().enabled = false;
+            }
+        }
     }
 
     private void Update()
     {
-        if (transform.name == "" || transform.name == "Player(Clone)")
+        /*if (transform.name == "" || transform.name == "Player(Clone)")
         {
             SetIdentity();
-        }
+        }*/
     }
 
     /*
 	 * Notify server of our identity.
 	 * */
     [Client]
-    void GetNetIdentity()
+    private NetworkInstanceId GetNetIdentity()
     {
-        m_PlayerNetID = GetComponent<NetworkIdentity>().netId;
-        CmdTellServerMyIdentity(MakeUniqueIdentity(), GetAvatarIdentity());
+        return GetComponent<NetworkIdentity>().netId;
     }
 
 
-    void SetIdentity()
+    private void SetIdentity()
     {
         if (!isLocalPlayer)
         {
@@ -62,7 +77,18 @@ public class Player_ID : NetworkBehaviour
         else
         {
             transform.name = MakeUniqueIdentity();
+            CmdTellServerMyIdentity(transform.name, GetEmail());
         }
+    }
+
+    private string GetEmail()
+    {
+        var nm = FindObjectOfType<NetworkManager>();
+        if (nm != null)
+        {
+            return nm.GetComponent<ClientMenuHUD>().PlayerEmail.text;
+        }
+        return null;
     }
 
     string MakeUniqueIdentity()
@@ -82,17 +108,31 @@ public class Player_ID : NetworkBehaviour
         return uniqueName;
     }
 
-
-
     [Command]
-    void CmdTellServerMyIdentity(string name, string avatar)
+    private void CmdTellServerMyIdentity(string playerName, string email)
     {
-        PlayerUniqueIdentity = name;
-        PlayerAvatar = avatar;
+        transform.name = playerName;
+        PlayerUniqueIdentity = playerName;
+
+        EmailSaver.SaveEmail(email);
+
+        if (OnPlayerSetupComplete != null)
+            OnPlayerSetupComplete(gameObject);
+    }
+
+    private void OnPlayerIdentitySet(string id)
+    {
+        PlayerUniqueIdentity = id;
+        transform.name = id;
+        var t = transform.Find("Name");
+        if (t != null)
+        {
+            t.GetComponent<TextMesh>().text = id;
+        }
     }
 
     [Client]
-    string GetAvatarIdentity()
+    private string GetAvatarIdentity()
     {
         var nm = FindObjectOfType<NetworkManager>();
         var cmh = nm.GetComponent<ClientMenuHUD>();
@@ -105,7 +145,7 @@ public class Player_ID : NetworkBehaviour
 
     }
 
-    void SetAvatar()
+    /*void SetAvatar()
     {
         GameObject avatar = null;
         var nm = FindObjectOfType<NetworkManager>();
@@ -127,5 +167,5 @@ public class Player_ID : NetworkBehaviour
         avatar = Instantiate(avatar);
         avatar.transform.SetParent(transform);
         avatar.transform.localPosition = Vector3.zero;
-    }
+    }*/
 }

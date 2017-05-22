@@ -30,19 +30,19 @@ public class FirstPersonController : MonoBehaviour
 	[SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
 	[SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 	//Flying Stuff
-	[SerializeField] private bool m_flying;
-	[SerializeField] private bool m_ascending;
-	[SerializeField] private bool m_descending;
+	[SerializeField] private bool m_Flying;
+	[SerializeField] private bool m_Ascending;
+	[SerializeField] private bool m_Descending;
 	[SerializeField] private float m_AscendSpeed;
 	[SerializeField] private float m_DescendSpeed;
 	[SerializeField] private float m_FlySpeed;
-
 
 	private Camera m_Camera;
 	private bool m_Jump;
 	private float m_YRotation;
 	private Vector2 m_Input;
 	private Vector3 m_MoveDir = Vector3.zero;
+    private Vector3 m_LastMoveDir = Vector3.zero;
 	private CharacterController m_CharacterController;
 	private CollisionFlags m_CollisionFlags;
 	private bool m_PreviouslyGrounded;
@@ -53,6 +53,16 @@ public class FirstPersonController : MonoBehaviour
 	private AudioSource m_AudioSource;
 
 	private bool m_PreviouslyFlying; //were we flying last update
+
+    public delegate void PlayerEventDelegate();
+    public delegate void PlayerMovementDelegate(Vector3 movement);
+
+    public event PlayerEventDelegate OnJump;
+    public event PlayerEventDelegate OnLand;
+    public event PlayerEventDelegate OnStartFlying;
+    public event PlayerEventDelegate OnStartRunning;
+    public event PlayerEventDelegate OnStopRunning;
+    public event PlayerMovementDelegate OnMove;
 
     public bool MouseOnly = false;
 
@@ -70,9 +80,10 @@ public class FirstPersonController : MonoBehaviour
 		m_AudioSource = GetComponent<AudioSource>();
 		m_MouseLook.Init(transform , m_Camera.transform);
 		//added flying flags
-		m_flying = false;
-		m_descending = false;
-		m_ascending = false;
+		m_Flying = false;
+	    m_PreviouslyFlying = false;
+		m_Descending = false;
+		m_Ascending = false;
 	}
 
 
@@ -85,16 +96,28 @@ public class FirstPersonController : MonoBehaviour
 	        return;
 
 		// the jump state needs to read here to make sure it is not missed
-		if (!m_Jump)
+		if (!m_Jump && !Cursor.visible)
 		{
 			m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
 		}
-		
-		m_ascending = CrossPlatformInputManager.GetButton ("Ascend");
-		m_descending = CrossPlatformInputManager.GetButton ("Descend");
 
-        if (m_ascending || m_descending) {
-			m_flying = true;
+	    if (Cursor.visible)
+	    {
+	        m_Ascending = false;
+	        m_Descending = false;
+        }
+        else
+        {
+            m_Ascending = CrossPlatformInputManager.GetButton("Ascend");
+            m_Descending = CrossPlatformInputManager.GetButton("Descend");
+        }
+
+        if (m_Ascending || m_Descending)
+        {
+            if (!m_PreviouslyFlying && OnStartFlying != null)
+                OnStartFlying();
+
+			m_Flying = true;
 			m_PreviouslyFlying = true;
 		}
 			
@@ -107,16 +130,19 @@ public class FirstPersonController : MonoBehaviour
 		if (!m_CharacterController.isGrounded) {
 			m_Jump = false;
 		} else {
-			m_flying = false;
+			m_Flying = false;
 		}
 
 		if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
 		{
+		    if (OnLand != null)
+		        OnLand();
+
 			StartCoroutine(m_JumpBob.DoBobCycle());
 			PlayLandingSound();
 			m_MoveDir.y = 0f;
 			m_Jumping = false;
-			m_flying = false;
+			m_Flying = false;
 			m_PreviouslyFlying = false;
 		}
 			
@@ -139,13 +165,19 @@ public class FirstPersonController : MonoBehaviour
         return m_Camera.transform.position;
     }
 
+    public void LockMouse(bool lockMouse)
+    {
+        m_MouseLook.SetCursorLock(lockMouse);
+    }
+
     private void PlayLandingSound()
 	{
-		if (m_LandSound) {
+        //Hack way of disabling this. Hate all this code anyways
+		/*if (m_LandSound) {
 			m_AudioSource.clip = m_LandSound;
 			m_AudioSource.Play ();
 			m_NextStep = m_StepCycle + .5f;
-		}
+		}*/
 	}
 
 
@@ -154,7 +186,7 @@ public class FirstPersonController : MonoBehaviour
 		float speed;
 		GetInput(out speed);
 		// always move along the camera forward as it is the direction that it being aimed at
-		Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+		var desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
 
 		// get a normal for the surface that is being touched to move along it
 		RaycastHit hitInfo;
@@ -165,42 +197,57 @@ public class FirstPersonController : MonoBehaviour
 		m_MoveDir.x = desiredMove.x*speed;
 		m_MoveDir.z = desiredMove.z*speed;
 
-
 		//Added flying check
-		if (m_CharacterController.isGrounded  && !m_ascending) {
-			
+		if (m_CharacterController.isGrounded  && !m_Ascending)
+        {
 			m_MoveDir.y = -m_StickToGroundForce;
 
-			if (m_Jump) {
+			if (m_Jump)
+			{
 				m_MoveDir.y = m_JumpSpeed;
 				PlayJumpSound ();
 				m_Jump = false;
 				m_Jumping = true;
-			}
-		} else {
+
+                if (OnJump != null)
+                    OnJump();
+            }
+		}
+        else
+        {
 			//Move in correct direction based on flags set.
-			if (m_ascending) {
+			if (m_Ascending) {
 				if(m_MoveDir.y < 0) m_MoveDir.y = 0;
 				m_MoveDir += transform.up * m_AscendSpeed * Time.fixedDeltaTime;
-			} else if (m_descending) {
+			} else if (m_Descending) {
 				m_MoveDir -= transform.up * m_DescendSpeed * Time.fixedDeltaTime;
 			} else if (!m_PreviouslyFlying) {
 				m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
 			} else {
 				//if no flags set, we are flying, but not ascending/descending
 				//lerp to smooth stop (up/down only)
-				float diff = 0 - m_MoveDir.y;
+				var diff = 0 - m_MoveDir.y;
 				if (Math.Abs (diff) < 1) {
 					m_MoveDir.y = 0f;
 				} else {
 					m_MoveDir.y += diff * Time.fixedDeltaTime;
 				}
 			}
-				
 		}
-		m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
 
-		ProgressStepCycle(speed);
+	    
+
+        if (m_LastMoveDir.sqrMagnitude > 0 && m_MoveDir.sqrMagnitude == 0 && OnStopRunning != null && !m_Flying)
+	        OnStopRunning();
+        else if (m_LastMoveDir.sqrMagnitude == 0 && m_MoveDir.sqrMagnitude > 0 && OnStartRunning != null && !m_Flying)
+            OnStartRunning();
+
+        m_CollisionFlags = m_CharacterController.Move(m_MoveDir*Time.fixedDeltaTime);
+        if (OnMove != null && m_LastMoveDir != m_MoveDir)
+            OnMove(m_MoveDir);
+        m_LastMoveDir = m_MoveDir;
+
+        ProgressStepCycle(speed);
 		UpdateCameraPosition(speed);
 
 		m_MouseLook.UpdateCursorLock();
@@ -276,12 +323,18 @@ public class FirstPersonController : MonoBehaviour
 
 	private void GetInput(out float speed)
 	{
-		// Read input
-		float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-		float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+	    if (Cursor.visible)
+	    {
+            m_Input = new Vector2(0f, 0f);
+	        speed = 0f;
+	        return;
+	    }
+	    // Read input
+		var horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
+		var vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
 
-		bool waswalking = m_IsWalking;
+		var waswalking = m_IsWalking;
 
 		#if !MOBILE_INPUT
 		// On standalone builds, walk/run speed is modified by a key press.
@@ -290,9 +343,9 @@ public class FirstPersonController : MonoBehaviour
 		#endif
 		// set the desired speed to be walking or running
 
-		speed = m_flying ? m_FlySpeed : m_WalkSpeed;
+		speed = m_Flying ? m_FlySpeed : m_WalkSpeed;
 
-        if (!m_IsWalking) speed *= m_SprintMultiplier;
+        if (!m_IsWalking) speed *= m_SprintMultiplier * (CrossPlatformInputManager.GetButton("Sprint2") ? 5f : 1f);
 
         m_Input = new Vector2(horizontal, vertical);
 
@@ -314,7 +367,7 @@ public class FirstPersonController : MonoBehaviour
 
 	private void RotateView()
 	{
-		m_MouseLook.LookRotation (transform, m_Camera.transform);
+		m_MouseLook.LookRotation(transform, m_Camera.transform);
 	}
 
 

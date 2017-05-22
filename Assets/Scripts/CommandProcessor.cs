@@ -6,6 +6,8 @@ using UnityEngine.Networking;
 
 public class CommandProcessor : NetworkBehaviour, ICommandReceiver
 {
+    public static HashSet<GameObject> PendingReceivers = new HashSet<GameObject>(); 
+
     //TODO: Cache the FirstPersonConotroller
     private readonly HashSet<GameObject> m_Receivers = new HashSet<GameObject>();
     private bool m_SentCommand;
@@ -16,21 +18,28 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
     private void Start()
     {
         enabled = isLocalPlayer;
-
-        if (isLocalPlayer)
-        {
-            RegisterAsReceiver();
-        }
-
-        if (isServer)
-        {
-            m_StartingPosition = transform.position;
-        }
     }
 
-    private void RegisterAsReceiver()
+    public override void OnStartServer()
+    {
+        m_StartingPosition = transform.position;
+    }
+
+    public override void OnStartLocalPlayer()
     {
         RegisterReceiver(gameObject);
+    }
+
+    private void Update()
+    {
+        if (PendingReceivers.Count == 0)
+            return;
+
+        foreach (var pendingReceiver in PendingReceivers)
+        {
+            RegisterReceiver(pendingReceiver);
+        }
+        PendingReceivers.Clear();
     }
 
     public void DeactivateGameInput()
@@ -51,7 +60,7 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
     {
         if (!isLocalPlayer) return;
 
-        EnableInput();
+        //EnableInput();
 
         Debug.Log(cmd);
         m_SentCommand = true;
@@ -61,12 +70,30 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
     [Command]
     private void Cmd_ProcessCommand(string cmd, GameObject sender)
     {
-        foreach (var receiver in m_Receivers.Where(rec => rec != null).Select(go => go.GetComponent<ICommandReceiver>()))
+        if (cmd.StartsWith("data "))
         {
-            if (receiver.IsCommandRelevant(cmd))
+            var tokens = cmd.Split(' ');
+            DataStore.Set(tokens[1], tokens[2]);
+            return;
+        }
+
+        m_Receivers.RemoveWhere(go => go == null);
+
+        foreach (var receiver in m_Receivers.Where(rec => rec != null).SelectMany(go => go.GetComponents<ICommandReceiver>()))
+        {
+            if (receiver.IsCommandRelevant(cmd, sender))
             {
-                var result = receiver.RunCommand(cmd, sender);
-                RpcReceiveOutput(result);
+                try
+                {
+                    Debug.Log("Running " + cmd);
+                    var result = receiver.RunCommand(cmd, sender);
+                    RpcReceiveOutput(result);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError(e);
+                    RpcReceiveOutput("The command '" + cmd + "' threw an exception: " + e.Message + "\n\t" + e.StackTrace);
+                }
                 return;
             }
         }
@@ -87,7 +114,7 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
         }
     }
 
-    public void RegisterReceiver(GameObject rec)
+    private void RegisterReceiver(GameObject rec)
     {
         CmdRegisterReceiver(rec);
     }
@@ -98,13 +125,16 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
         m_Receivers.Add(rec);
     }
 
-    public bool IsCommandRelevant(string cmd)
+    public bool IsCommandRelevant(string cmd, GameObject sender = null)
     {
-        return cmd.StartsWith("set-loc") || cmd.StartsWith("home");
+        return (sender == gameObject) && (cmd.StartsWith("set-loc") || cmd.StartsWith("home"));
     }
 
     public string RunCommand(string cmd, GameObject sender)
     {
+        if (sender != gameObject)
+            return "";
+
         var tokens = cmd.Split(' ');
 
         if (tokens[0] == "home")

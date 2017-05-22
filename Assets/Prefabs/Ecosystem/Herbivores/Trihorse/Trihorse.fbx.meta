@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: 163482575effa834fb146712138e5e63
+timeCreated: 1466028253
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Head
+    100004: LargeFin_L
+    100006: LargeFin_R
+    100008: LargeFinBottom
+    100010: MainBod
+    100012: NeckBase
+    100014: NeckMiddle
+    100016: NeckTop
+    100018: SmallFin_Left
+    100020: SmallFin_Right
+    100022: SmallFinTop
+    100024: Snout
+    100026: Tail_L
+    100028: Tail_R
+    100030: TailTop
+    100032: //RootNode
+    100034: UpperBod
+    100036: Volume4
+    400000: Armature
+    400002: Head
+    400004: LargeFin_L
+    400006: LargeFin_R
+    400008: LargeFinBottom
+    400010: MainBod
+    400012: NeckBase
+    400014: NeckMiddle
+    400016: NeckTop
+    400018: SmallFin_Left
+    400020: SmallFin_Right
+    400022: SmallFinTop
+    400024: Snout
+    400026: Tail_L
+    400028: Tail_R
+    400030: TailTop
+    400032: //RootNode
+    400034: UpperBod
+    400036: Volume4
+    4300000: Volume4
+    7400000: Forward
+    7400002: Idle1
+    7400004: Eating
+    7400006: Armature|ArmatureAction
+    7400008: Armature|ArmatureAction.001
+    7400010: Armature|ArmatureAction.002
+    7400012: Armature|ArmatureAction.003
+    9500000: //RootNode
+    13700000: Volume4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Forward
+      takeName: Forward
+      firstFrame: 0
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle1
+      takeName: Idle1
+      firstFrame: 0
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eating
+      takeName: Eating
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.002
+      takeName: Armature|ArmatureAction.002
+      firstFrame: 0
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.003
+      takeName: Armature|ArmatureAction.003
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainBod
+        weight: 1
+      - path: Armature/MainBod/LargeFin_L
+        weight: 1
+      - path: Armature/MainBod/LargeFin_R
+        weight: 1
+      - path: Armature/MainBod/LargeFinBottom
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Left
+        weight: 1
+      - path: Armature/MainBod/SmallFin_Right
+        weight: 1
+      - path: Armature/MainBod/SmallFinTop
+        weight: 1
+      - path: Armature/MainBod/Tail_L
+        weight: 1
+      - path: Armature/MainBod/Tail_R
+        weight: 1
+      - path: Armature/MainBod/TailTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head
+        weight: 1
+      - path: Armature/MainBod/UpperBod/NeckBase/NeckMiddle/NeckTop/Head/Snout
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: MainBod
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

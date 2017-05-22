@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1507044392653916}
+  m_IsPrefabParent: 1
+--- !u!1 &1507044392653916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4631978469865478}
+  - component: {fileID: 114571595978192806}
+  - component: {fileID: 114424450747983872}
+  - component: {fileID: 114272883892681556}
+  - component: {fileID: 114619787885189372}
+  - component: {fileID: 114228541701614604}
+  - component: {fileID: 114063916379679586}
+  - component: {fileID: 114889577210517886}
+  - component: {fileID: 114942855118641068}
+  - component: {fileID: 114582960265372550}
+  - component: {fileID: 114178697133041218}
+  - component: {fileID: 114448413404632334}
+  - component: {fileID: 114855834258096114}
+  m_Layer: 0
+  m_Name: Ecosystem
+  m_TagString: Ecosystem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4631978469865478
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114063916379679586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81663eba74b6a145924c09de2d5f8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BloodPrefab: {fileID: 144596, guid: 414177ed67387b04f9a848e49e537b6e, type: 2}
+--- !u!114 &114178697133041218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ccd050de78b9648b24e3ff98798b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 2
+  Extent: 1400
+  Draw: 0
+  UpdateRate: 0.5
+--- !u!114 &114228541701614604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd256c136ca9f3243a75855ef1d32648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JabarkiePrefab: {fileID: 125482, guid: b2232070f39d32e498c9d384e7216096, type: 2}
+  GnomehatzPrefab: {fileID: 187882, guid: f50386a8cdb68cd4881f35d584854094, type: 2}
+  FellyJishPrefab: {fileID: 126476, guid: 7dc1ae73168b29643b0decad903c4fb8, type: 2}
+--- !u!114 &114272883892681556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72411a75085c6042983e936c718a90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GenericPlantPrefab: {fileID: 190672, guid: 0e5f8b0ff209e5d48b12f4125f1ba3f5, type: 2}
+  EmbeddedSnatcherPrefab: {fileID: 143360, guid: 178a622b59df5554a827dafaf195e025,
+    type: 2}
+  FloatingSnatcherPrefab: {fileID: 158962, guid: 50df7e3905af61547974e209fed80700,
+    type: 2}
+  FloatGrassLargeClusterPrefab: {fileID: 155664, guid: 552830b863df7af458ff1e9228de02a0,
+    type: 2}
+  FloatGrassSmallClusterPrefab: {fileID: 198488, guid: 612264d9f3fcd61429d9ee515022ca21,
+    type: 2}
+  FloatGrassLargeBladePrefab: {fileID: 129762, guid: ba22ef26c7c1bef47a2b1c12662f234b,
+    type: 2}
+  FloatGrassSmallBladePrefab: {fileID: 134994, guid: c7db7f1605be45a4b89a20c36c4746f9,
+    type: 2}
+  FloatGrassLargeColonyPrefab: {fileID: 126506, guid: 6bd6d718008b24643bcfb719ac85b97a,
+    type: 2}
+  FloatGrassSmallColonyPrefab: {fileID: 173682, guid: 03ac73a15fbb24a4baf4f8361a756c02,
+    type: 2}
+  FungiBPrefab: {fileID: 113584, guid: 0283726714925aa4b9d313cf4222aa2b, type: 2}
+  SporeGunPrefab: {fileID: 133802, guid: 6df965bfafb41b648a7ee51fab0a7fbc, type: 2}
+  AirPlantPrefab: {fileID: 153088, guid: 8a78f681b7fd2f74b8a1e04b90758138, type: 2}
+--- !u!114 &114424450747983872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 78
+    i1: 239
+    i2: 3
+    i3: 84
+    i4: 105
+    i5: 9
+    i6: 247
+    i7: 228
+    i8: 121
+    i9: 107
+    i10: 91
+    i11: 27
+    i12: 15
+    i13: 147
+    i14: 109
+    i15: 24
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114448413404632334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ccd050de78b9648b24e3ff98798b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 1
+  Extent: 1400
+  Draw: 0
+  UpdateRate: 0.5
+--- !u!114 &114571595978192806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365e4742cab464764a93deffac150e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialFGLColonycount: 2
+  InitialHerbivoreCount: 100
+  InitialCarnivoreCount: 50
+  NoduleLimit: 400
+  HerbivoreLimit: 100
+  CarnivoreLimit: 50
+  HerbivoreMinimum: 0
+  CarnivoreMinimum: 25
+  CreatureSpawnExtent: 1500
+  WorldExtent: 2500
+  PlantSpawnExtentBuffer: 500
+--- !u!114 &114582960265372550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ccd050de78b9648b24e3ff98798b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 3
+  Extent: 1400
+  Draw: 0
+  UpdateRate: 0.5
+--- !u!114 &114619787885189372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f3ec2609746974bb88782b8560ed7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BrushHeadPrefab: {fileID: 153836, guid: c5c27d4bd3f810f49a097c31540d1870, type: 2}
+  TortillaPerfab: {fileID: 150842, guid: f361ddd714d2e174ca62d72d5c4a0b9a, type: 2}
+  HerbistarPrefab: {fileID: 111064, guid: 81783c219cb6f3843ae665deef8e8ea3, type: 2}
+  TriHorsePrefab: {fileID: 177154, guid: 87dd9ca2b3beb5248864020cc1a0f388, type: 2}
+  DownDownPrefab: {fileID: 129428, guid: 06bc5129184800b4e8c49241a6e1e6e2, type: 2}
+--- !u!114 &114855834258096114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ccd050de78b9648b24e3ff98798b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  Extent: 1400
+  Draw: 0
+  UpdateRate: 0.5
+--- !u!114 &114889577210517886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1585cfddcb70664cbf7ec8d9842163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvoidCubesPrefab: {fileID: 138250, guid: 6113d7ba79d29d94b88b935dface415f, type: 2}
+  ShrinkCubesPrefab: {fileID: 148686, guid: 1265ef2049772be46be57903a070311c, type: 2}
+  TransparentCubesPrefab: {fileID: 173362, guid: b9c58fd636ded2c4db2499f6d104098f,
+    type: 2}
+  PixelBoardPrefab: {fileID: 137732, guid: 52cdc3828558f544fbb270fd92e4f389, type: 2}
+  TextureZoomScollPrefab: {fileID: 122120, guid: 9607e5f841c607d4db46ef5dab2dd097,
+    type: 2}
+  PrimitiveSwarmPrefab: {fileID: 191332, guid: 79aebe4b1a363704e8793dba36e80506, type: 2}
+--- !u!114 &114942855118641068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507044392653916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3485a9cdbcc078c42b1854d7df51784f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FloatingNodulePrefab: {fileID: 172042, guid: 1d680ce408ed256478655f473b6e6f24, type: 2}
+  SnatcherNodulePrefab: {fileID: 189400, guid: 467e2a5917934ea4f84b617edcdb2db3, type: 2}
+  SporeGunNodulePrefab: {fileID: 169608, guid: 4735eab359f000c4dab66571506ee8f6, type: 2}

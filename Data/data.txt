@@ -1,26 +1,34 @@
+ServerAddress spanglerlabs.net
+
 //Environment Options
-HerbivoreMinimum 50
-CarnivoreMinimum 25
+DayLength 20
 
-InitialPlantCount 400
-InitialHerbivoreCount 300
-InitialCarnivoreCount 100
+EcoHerbivoreMinimum 0
+EcoCarnivoreMinimum 25
 
-NoduleLimit 800
-PlantLimit 400
-HerbivoreLimit 300
-CarnivoreLimit 100
+EcoInitialPlantCount 400
+EcoInitialFGLColonyCount 2
+EcoInitialHerbivoreCount 150
+EcoInitialCarnivoreCount 40
 
-CreatureSpawnExtent 1500
-WorldExtent 2500
+EcoNoduleLimit 400
+EcoPlantLimit 400
+EcoHerbivoreLimit 150
+EcoCarnivoreLimit 40
 
-PlantSpawnExtentBuffer 500
-PlantSpawnHeightMin -1100
-PlantSpawnHeightMax -900
-PlantSpawnLayerPercentage .6
+EcoCreatureSpawnExtent 1500
+EcoWorldExtent 1500
+
+EcoPlantSpawnExtentBuffer 500
+EcoPlantSpawnHeightMin -1100
+EcoPlantSpawnHeightMax -900
+EcoPlantSpawnLayerPercentage .6
+
+EcoPredation on
 
 //Nodule Options
-NoduleFloatSpeed 1
+NoduleFloatingFloatSpeed 3
+NoduleFloatingSendRate 8
 
 //Plant Options
 PlantLifeSpan 10
@@ -32,21 +40,143 @@ PlantFullSizeMax 17.25
 PlantNodulesPerDay 20
 PlantNoduleDispersalRange 3
 
-//Herbivore Options
-HerbYoungSize 2
-HerbTeenSize 4
-HerbAdultSizeMin 8
-HerbAdultSizeMax 11
-HerbDaysAsYoung 5
-HerbDaysAsTeen 3
-HerbLifeSpan 100
-HerbBaseSpeed 20
-HerbDaysBeforeReproducing 5
-HerbDaysBetweenReproductions 3
-HerbStarvingDamageAmount 30
-HerbStructureCollisionDamageAmount 10
-HerbMinFlockDispersion 10
-HerbMaxFlockDispersion 80
+//Snatcher Options
+SnatcherTendrilLength 8
+SnatcherTendrilSpeed 10
+SnatcherNoduleDistance 10
+SnatcherNoduleRespawnDelay 60
+SnatcherChildDelay 60
+SnatcherDaysToGrown 1
+SnatcherInitialScale 0.2
+SnatcherFullScaleMin 8
+SnatcherFullScaleMax 11
+SnatcherDaysBeforeVulnerable 5
+SnatcherFloatSpeed 1
+SnatcherRotationSpeed 0.05
+
+//Float Grass Large Options
+FloatGLColonyMinClusterCount 5
+FloatGLColonyMaxClusterCount 7
+FloatGLColonySpawnHorizontalRange 600
+FloatGLColonySpawnVerticalRange 400
+FloatGLClusterFloatSpeed 1
+FloatGLClusterFloatRange 15
+FloatGLClusterMinBladeCount 20
+FloatGLClusterMaxBladeCount 30
+FloatGLClusterSpawnHorizontalRange 75
+FloatGLClusterSpawnVerticalRange 30
+FloatGLBladeFloatSpeed 1
+FloatGLBladeFloatRange 15
+FloatGLBladePlayerCheckRate 1
+FloatGLBladePlayerCheckRange 20
+FloatGLBladeColorVariation 0.8
+FloatGLBladeInitialYScale 6
+FloatGLBladeFinalYScaleMin 10
+FloatGLBladeFinalYScaleMax 15
+FloatGLBladeDaysToGrown 5
+FloatGLBladeNodulesPerDay 15
+FloatGLBladeNoduleDispersalRange 5
+
+//Float Grass Small Options
+FloatGSColonyMinClusterCount 25
+FloatGSColonyMaxClusterCount 30
+FloatGSColonySpawnHorizontalRange 500
+FloatGSColonySpawnVerticalRange 150
+FloatGSClusterFloatSpeed 1
+FloatGSClusterFloatRange 15
+FloatGSClusterMinBladeCount 45
+FloatGSClusterMaxBladeCount 55
+FloatGSClusterSpawnHorizontalRange 75
+FloatGSClusterSpawnVerticalRange 30
+FloatGSBladeFloatSpeed 1
+FloatGSBladeFloatRange 15
+FloatGSBladeColorVariation 0.8
+FloatGSBladeInitialYScale 0.25
+FloatGSBladeFinalYScaleMin 2.5
+FloatGSBladeFinalYScaleMax 4
+FloatGSBladeDaysToGrown 5
+FloatGSBladeNodulesPerNight 4
+FloatGSBladeNoduleDispersalRange 5
+
+//Brush Head Options
+BrushHeadInitialScale 1
+BrushHeadFinalScaleMin 2
+BrushHeadFinalScaleMax 3
+BrushHeadDaysToGrown 5
+BrushHeadLifeSpan 100
+BrushHeadBaseSpeed 18
+BrushHeadDaysBeforeReproducing 5
+BrushHeadDaysBetweenReproductions 1
+BrushHeadStarvingDamageAmount 30
+BrushHeadStructureCollisionDamageAmount 10
+BrushHeadMinFlockDispersion 15
+BrushHeadMaxFlockDispersion 30
+BrushHeadSensingRadius 100
+BrushHeadWanderRadius 2.5
+BrushHeadWanderDistance 100
+BrushHeadWanderJitter 0.5
+BrushHeadWanderWeight 1
+BrushHeadAlignWeight 0.25
+
+//TriHorse Options
+TriHorseInitialScale 1
+TriHorseFinalScaleMin 2
+TriHorseFinalScaleMax 3
+TriHorseDaysToGrown 5
+TriHorseLifeSpan 100
+TriHorseBaseSpeed 18
+TriHorseDaysBeforeReproducing 5
+TriHorseDaysBetweenReproductions 1
+TriHorseStarvingDamageAmount 30
+TriHorseStructureCollisionDamageAmount 10
+TriHorseMinFlockDispersion 15
+TriHorseMaxFlockDispersion 30
+TriHorseSensingRadius 100
+TriHorseWanderRadius 2.5
+TriHorseWanderDistance 100
+TriHorseWanderJitter 0.5
+TriHorseWanderWeight 1
+TriHorseAlignWeight 0.25
+
+//DownDown Options
+DownDownInitialScale 1
+DownDownFinalScaleMin 2
+DownDownFinalScaleMax 3
+DownDownDaysToGrown 5
+DownDownLifeSpan 100
+DownDownBaseSpeed 12
+DownDownDaysBeforeReproducing 5
+DownDownDaysBetweenReproductions 1
+DownDownStarvingDamageAmount 30
+DownDownStructureCollisionDamageAmount 10
+DownDownMinFlockDispersion 30
+DownDownMaxFlockDispersion 15
+DownDownSensingRadius 100
+DownDownWanderRadius 2.5
+DownDownWanderDistance 300
+DownDownWanderJitter 0.5
+DownDownWanderWeight 1
+DownDownAlignWeight 0.25
+
+//Tortilla Options
+TortillaInitialScale 1
+TortillaFinalScaleMin 2
+TortillaFinalScaleMax 3
+TortillaDaysToGrown 5
+TortillaLifeSpan 100
+TortillaBaseSpeed 18
+TortillaDaysBeforeReproducing 5
+TortillaDaysBetweenReproductions 1
+TortillaStarvingDamageAmount 30
+TortillaStructureCollisionDamageAmount 10
+TortillaMinFlockDispersion 15
+TortillaMaxFlockDispersion 30
+TortillaSensingRadius 100
+TortillaWanderRadius 2.5
+TortillaWanderDistance 100
+TortillaWanderJitter 0.5
+TortillaWanderWeight 1
+TortillaAlignWeight 0.25
 
 //Carnivore Options
 CarnYoungSize 6
@@ -63,3 +193,82 @@ CarnStarvingDamageAmount 34
 CarnStructureCollisionDamageAmount 10
 CarnMaximumHerdSizeToAttack 10
 CarnHerdApproachDistance 40
+CarnSensingRadius 100
+
+//Jabarkie Options
+JabarkieInitialScale 1
+JabarkieFinalScaleMin 3
+JabarkieFinalScaleMax 4
+JabarkieDaysToGrown 5
+JabarkieLifeSpan 200
+JabarkieBaseSpeed 30
+JabarkieHuntingPeriodSpeed 23
+JabarkieDaysBetweenReproductions 3
+JabarkieStarvingDamageAmount 34
+JabarkieStructureCollisionDamageAmount 10
+JabarkieMaximumHerdSizeToAttack 10
+JabarkieHerdApproachDistance 40
+JabarkieSensingRadius 50
+
+//Gnomehatz Options
+GnomehatzInitialScale 1
+GnomehatzFinalScaleMin 3
+GnomehatzFinalScaleMax 4
+GnomehatzDaysToGrown 5
+GnomehatzLifeSpan 200
+GnomehatzBaseSpeed 20
+GnomehatzHuntingPeriodSpeed 23
+GnomehatzDaysBetweenReproductions 3
+GnomehatzStarvingDamageAmount 34
+GnomehatzStructureCollisionDamageAmount 10
+GnomehatzMaximumHerdSizeToAttack 10
+GnomehatzHerdApproachDistance 40
+GnomehatzSensingRadius 50
+
+//FellyJish Options
+FellyJishInitialScale 1
+FellyJishFinalScaleMin 3
+FellyJishFinalScaleMax 4
+FellyJishDaysToGrown 5
+FellyJishLifeSpan 200
+FellyJishBaseSpeed 20
+FellyJishHuntingPeriodSpeed 23
+FellyJishDaysBetweenReproductions 3
+FellyJishStarvingDamageAmount 34
+FellyJishStructureCollisionDamageAmount 10
+FellyJishMaximumHerdSizeToAttack 10
+FellyJishHerdApproachDistance 40
+FellyJishSensingRadius 50
+
+//SporeGun Options
+SporeGunLifeSpan 0
+SporeGunDaysToGrown 0
+SporeGunInitialScale 4
+SporeGunFinalScaleMin 7
+SporeGunFinalScaleMax 8
+SporeGunNodulesPerDay 4
+SporeGunNoduleFiringSpread 15
+
+//AirPlant Options
+AirPlantLifeSpan 25
+AirPlantDaysToGrown 5
+AirPlantInitialScale .5
+AirPlantFinalScaleMin 1.5
+AirPlantFinalScaleMax 2
+
+//Herbistar Options
+HerbistarInitialScale 75
+HerbistarFinalScaleMin 125
+HerbistarFinalScaleMax 150
+HerbistarBaseSpeed 6
+HerbistarLifeSpan 100
+HerbistarDaysToGrown 5
+HerbistarWanderRadius 20
+HerbistarWanderDistance 400
+HerbistarWanderJitter 1
+
+//SporeGun Nodule Options
+SporeGunNoduleSpeed 3
+
+//FungiB Options
+FungiBScaleFactor 1

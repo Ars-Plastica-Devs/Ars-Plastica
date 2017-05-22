@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: 7ee976bd0e8a742468840ca239db1499
+timeCreated: 1464207887
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AftTail1_L
+    100002: AftTail1_R
+    100004: AftTail2_L
+    100006: AftTail2_R
+    100008: AftTail3_L
+    100010: AftTail3_L.001
+    100012: AftTail3_R
+    100014: AftTail3_R.001
+    100016: AftTail4_L
+    100018: AftTail4_R
+    100020: AftTail5_l
+    100022: AftTail5_r
+    100024: Armature
+    100026: //RootNode
+    100028: brushhead
+    100030: Claw_L
+    100032: Claw_R
+    100034: forehead1
+    100036: Main
+    100038: Mouth
+    100040: Plane.000
+    100042: Plane.005
+    100044: Plane.007
+    100046: snout2
+    100048: SnouthRear
+    100050: TailWing_L
+    100052: Tailwing_R
+    100054: Tenicle2
+    100056: Tentacle1
+    100058: tenticleSyphon1
+    100060: Tenticlesypnon2
+    100062: Volume4
+    100064: Wing_R
+    100066: WingMain_L
+    100068: WingSmall_Left
+    100070: Wingsmall_R
+    400000: AftTail1_L
+    400002: AftTail1_R
+    400004: AftTail2_L
+    400006: AftTail2_R
+    400008: AftTail3_L
+    400010: AftTail3_L.001
+    400012: AftTail3_R
+    400014: AftTail3_R.001
+    400016: AftTail4_L
+    400018: AftTail4_R
+    400020: AftTail5_l
+    400022: AftTail5_r
+    400024: Armature
+    400026: //RootNode
+    400028: brushhead
+    400030: Claw_L
+    400032: Claw_R
+    400034: forehead1
+    400036: Main
+    400038: Mouth
+    400040: Plane.000
+    400042: Plane.005
+    400044: Plane.007
+    400046: snout2
+    400048: SnouthRear
+    400050: TailWing_L
+    400052: Tailwing_R
+    400054: Tenicle2
+    400056: Tentacle1
+    400058: tenticleSyphon1
+    400060: Tenticlesypnon2
+    400062: Volume4
+    400064: Wing_R
+    400066: WingMain_L
+    400068: WingSmall_Left
+    400070: Wingsmall_R
+    2300000: Plane.005
+    3300000: Plane.005
+    4300000: Plane.005
+    4300002: Plane.000
+    4300004: Volume4
+    4300006: Plane.007
+    7400000: Move1
+    7400002: Look Around
+    7400004: Eating
+    7400006: Death
+    7400008: Armature|ArmatureAction
+    7400010: Armature|ArmatureAction.001
+    7400012: Armature|ArmatureAction.002
+    7400014: Armature|ArmatureAction.003
+    7400016: Armature|ArmatureAction.004
+    7400018: Armature|ArmatureAction.005
+    7400020: Armature|ArmatureAction.006
+    7400022: Armature|ArmatureAction.007
+    7400024: Armature|SphereAction
+    9500000: //RootNode
+    13700000: Plane.000
+    13700002: Plane.007
+    13700004: Volume4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Move1
+      takeName: Move1
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/AftTail1_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L/AftTail5_l
+        weight: 1
+      - path: Armature/Main/AftTail1_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R/AftTail5_r
+        weight: 1
+      - path: Armature/Main/Claw_L
+        weight: 1
+      - path: Armature/Main/Claw_R
+        weight: 1
+      - path: Armature/Main/forehead1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1/Tenicle2
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1/Tenticlesypnon2
+        weight: 1
+      - path: Armature/Main/Mouth
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear/snout2
+        weight: 1
+      - path: Armature/Main/Plane.005
+        weight: 1
+      - path: Armature/Main/TailWing_L
+        weight: 1
+      - path: Armature/Main/Tailwing_R
+        weight: 1
+      - path: Armature/Main/Wing_R
+        weight: 1
+      - path: Armature/Main/WingMain_L
+        weight: 1
+      - path: Armature/Main/WingSmall_Left
+        weight: 1
+      - path: Armature/Main/Wingsmall_R
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      - path: Plane.007
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Look Around
+      takeName: Look Around
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/AftTail1_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L/AftTail5_l
+        weight: 1
+      - path: Armature/Main/AftTail1_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R/AftTail5_r
+        weight: 1
+      - path: Armature/Main/Claw_L
+        weight: 1
+      - path: Armature/Main/Claw_R
+        weight: 1
+      - path: Armature/Main/forehead1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1/Tenicle2
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1/Tenticlesypnon2
+        weight: 1
+      - path: Armature/Main/Mouth
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear/snout2
+        weight: 1
+      - path: Armature/Main/Plane.005
+        weight: 1
+      - path: Armature/Main/TailWing_L
+        weight: 1
+      - path: Armature/Main/Tailwing_R
+        weight: 1
+      - path: Armature/Main/Wing_R
+        weight: 1
+      - path: Armature/Main/WingMain_L
+        weight: 1
+      - path: Armature/Main/WingSmall_Left
+        weight: 1
+      - path: Armature/Main/Wingsmall_R
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      - path: Plane.007
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eating
+      takeName: Eating
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/AftTail1_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L/AftTail5_l
+        weight: 1
+      - path: Armature/Main/AftTail1_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R/AftTail5_r
+        weight: 1
+      - path: Armature/Main/Claw_L
+        weight: 1
+      - path: Armature/Main/Claw_R
+        weight: 1
+      - path: Armature/Main/forehead1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1/Tenicle2
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1/Tenticlesypnon2
+        weight: 1
+      - path: Armature/Main/Mouth
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear/snout2
+        weight: 1
+      - path: Armature/Main/Plane.005
+        weight: 1
+      - path: Armature/Main/TailWing_L
+        weight: 1
+      - path: Armature/Main/Tailwing_R
+        weight: 1
+      - path: Armature/Main/Wing_R
+        weight: 1
+      - path: Armature/Main/WingMain_L
+        weight: 1
+      - path: Armature/Main/WingSmall_Left
+        weight: 1
+      - path: Armature/Main/Wingsmall_R
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      - path: Plane.007
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Death
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Main
+        weight: 1
+      - path: Armature/Main/AftTail1_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L
+        weight: 1
+      - path: Armature/Main/AftTail1_L/AftTail2_L/AftTail3_L/AftTail3_L.001/AftTail4_L/AftTail5_l
+        weight: 1
+      - path: Armature/Main/AftTail1_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R
+        weight: 1
+      - path: Armature/Main/AftTail1_R/AftTail2_R/AftTail3_R/AftTail3_R.001/AftTail4_R/AftTail5_r
+        weight: 1
+      - path: Armature/Main/Claw_L
+        weight: 1
+      - path: Armature/Main/Claw_R
+        weight: 1
+      - path: Armature/Main/forehead1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/Tentacle1/Tenicle2
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1
+        weight: 1
+      - path: Armature/Main/forehead1/brushhead/tenticleSyphon1/Tenticlesypnon2
+        weight: 1
+      - path: Armature/Main/Mouth
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear
+        weight: 1
+      - path: Armature/Main/Mouth/SnouthRear/snout2
+        weight: 1
+      - path: Armature/Main/Plane.005
+        weight: 1
+      - path: Armature/Main/TailWing_L
+        weight: 1
+      - path: Armature/Main/Tailwing_R
+        weight: 1
+      - path: Armature/Main/Wing_R
+        weight: 1
+      - path: Armature/Main/WingMain_L
+        weight: 1
+      - path: Armature/Main/WingSmall_Left
+        weight: 1
+      - path: Armature/Main/Wingsmall_R
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      - path: Plane.007
+        weight: 1
+      - path: Volume4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

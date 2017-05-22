@@ -1,0 +1,1796 @@
+Network State at Time 8.882655
+# Spawned Objects: 6651
+Num Connections: 1
+
+Network State at Time 13.89434
+# Spawned Objects: 6651
+Num Connections: 1
+
+Network State at Time 18.89332
+# Spawned Objects: 6651
+Num Connections: 1
+
+ at Time 19.12116
+# Spawned Objects: 6649
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 24.12232
+# Spawned Objects: 6646
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 29.14537
+# Spawned Objects: 6645
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 64
+
+Network State at Time 34.13428
+# Spawned Objects: 6645
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 68
+
+Network State at Time 39.13325
+# Spawned Objects: 6642
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 69
+
+Network State at Time 44.1303
+# Spawned Objects: 6639
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 68
+
+Network State at Time 49.1239
+# Spawned Objects: 6565
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 70
+
+Network State at Time 54.13267
+# Spawned Objects: 6565
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 70
+
+Network State at Time 59.13539
+# Spawned Objects: 6562
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 69
+
+Network State at Time 64.12029
+# Spawned Objects: 6561
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 67
+
+Network State at Time 69.12164
+# Spawned Objects: 6561
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 66
+
+Network State at Time 74.12318
+# Spawned Objects: 6560
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 66
+
+Network State at Time 79.12307
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 67
+
+Network State at Time 84.12666
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 63
+
+Network State at Time 89.12887
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 94.12847
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 61
+
+Network State at Time 99.12543
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 104.1259
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 109.1251
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 114.1255
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 119.1254
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 124.1249
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 129.1259
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 134.1269
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 139.1269
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 144.1263
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 149.126
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 154.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 159.1248
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 164.1264
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 169.1267
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 174.1277
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 179.1317
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 184.1262
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 189.1259
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 194.1252
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 199.1262
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 204.1268
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 209.1367
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 214.1256
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 219.1294
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 60
+
+Network State at Time 224.1314
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 229.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 234.1287
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 239.1272
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 244.1299
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 249.1292
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 254.1255
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 259.1275
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 264.1279
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 269.1254
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 274.1272
+# Spawned Objects: 6479
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 61
+
+Network State at Time 279.128
+# Spawned Objects: 6479
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 14
+
+Network State at Time 284.1259
+# Spawned Objects: 6478
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 14
+
+Network State at Time 289.1251
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 79
+
+Network State at Time 294.1256
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 299.1261
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 50
+
+Network State at Time 304.1273
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 42
+
+Network State at Time 309.1283
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 33
+
+Network State at Time 314.1263
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 30
+
+Network State at Time 319.1263
+# Spawned Objects: 6478
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 24
+
+Network State at Time 324.1259
+# Spawned Objects: 6478
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 19
+
+Network State at Time 329.1254
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 17
+
+Network State at Time 334.1266
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 14
+
+Network State at Time 339.1274
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 11
+
+Network State at Time 344.1269
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 10
+
+Network State at Time 349.1277
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 8
+
+Network State at Time 354.1263
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 6
+
+Network State at Time 359.126
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 5
+
+Network State at Time 364.1264
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 369.1267
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 374.126
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 379.1278
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 384.126
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 389.1241
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 394.1284
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 6
+
+Network State at Time 399.1293
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 8
+
+Network State at Time 404.1258
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 9
+
+Network State at Time 409.1274
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 12
+
+Network State at Time 414.1276
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 16
+
+Network State at Time 419.122
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 15
+
+Network State at Time 424.1273
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 15
+
+Network State at Time 429.1262
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 15
+
+Network State at Time 434.1265
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 14
+
+Network State at Time 439.1241
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 11
+
+Network State at Time 444.1267
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 8
+
+Network State at Time 449.1207
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 8
+
+Network State at Time 454.1263
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 6
+
+Network State at Time 459.1257
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 5
+
+Network State at Time 464.1246
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 469.1285
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 474.1273
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 479.1263
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 484.1265
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 489.1258
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 494.1319
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 499.1291
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 504.1326
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 509.1267
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 514.1277
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 519.1255
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 524.1269
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 529.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 534.1252
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 4
+
+Network State at Time 539.1275
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 544.1265
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 549.1277
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 2
+
+Network State at Time 554.1281
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 559.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 564.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 569.1276
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 1
+
+Network State at Time 574.1267
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 579.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 584.1283
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 589.1283
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 594.1293
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 599.1277
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 604.1288
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 609.1272
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 614.1417
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 619.1285
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 624.1266
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 629.1281
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 634.1304
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 639.1283
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 644.1293
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 649.1291
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 654.1278
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 659.1284
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 664.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 669.1288
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 674.1269
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 679.1298
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 684.1295
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 689.1296
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 694.1299
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 699.1259
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 704.1291
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 709.1284
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 714.1296
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 719.1288
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 724.1279
+# Spawned Objects: 6477
+Num Connections: 2
+
+Network State at Time 729.129
+# Spawned Objects: 6477
+Num Connections: 2
+
+Network State at Time 734.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 739.1287
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 744.128
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 749.137
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 754.1287
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 759.1283
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 764.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 769.1279
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 774.129
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 779.1279
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 784.1287
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 789.1268
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 794.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 799.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 804.1279
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 809.1275
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 814.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 819.1292
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 824.1285
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 829.1287
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 834.1282
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 839.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 844.1275
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 849.129
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 854.1299
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 859.1248
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 864.1276
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 869.1285
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 874.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 879.1283
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 884.1276
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 889.128
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 894.1267
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 899.129
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 904.129
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 909.1287
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 914.1249
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 919.1292
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 924.1265
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 929.1279
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 934.1271
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 939.1281
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 944.1224
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 949.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 954.1266
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 959.1271
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 964.1276
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 969.1273
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 974.1471
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 979.1266
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 984.1268
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 989.1282
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 994.1277
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 999.1278
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1004.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1009.128
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1014.128
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1019.129
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1024.13
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1029.127
+# Spawned Objects: 6476
+Num Connections: 2
+
+Network State at Time 1034.127
+# Spawned Objects: 6476
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 0
+
+Network State at Time 1039.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 3
+
+Network State at Time 1044.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1049.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1054.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1059.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1064.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1069.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1074.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 1079.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 54
+
+Network State at Time 1084.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1089.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 59
+
+Network State at Time 1094.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1099.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1104.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1109.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1114.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1119.133
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1124.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1129.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1134.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1139.125
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1144.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1149.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1154.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1159.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1164.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1169.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1174.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1179.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1184.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1189.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1194.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1199.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1204.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1209.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1214.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1219.131
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1224.132
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 58
+
+Network State at Time 1229.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1234.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1239.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1244.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1249.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1254.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1259.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1264.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1269.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1274.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1279.14
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1284.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1289.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1294.132
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1299.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 54
+
+Network State at Time 1304.139
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 53
+
+Network State at Time 1309.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1314.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 56
+
+Network State at Time 1319.129
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1324.127
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1329.13
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1334.128
+# Spawned Objects: 6477
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
+Network State at Time 1339.131
+# Spawned Objects: 6478
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 57
+
+Network State at Time 1344.131
+# Spawned Objects: 6478
+Num Connections: 2
+::ffff:127.0.0.1
+RTT: 0
+Msg Out: 0 	Bytes Out: 0
+Send Rate: 55
+
