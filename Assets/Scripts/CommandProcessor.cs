@@ -62,6 +62,18 @@ public class CommandProcessor : NetworkBehaviour, ICommandReceiver
 
         //EnableInput();
 
+        if (cmd.StartsWith("set-loc "))
+        {
+            var tokens = cmd.Split(' ');
+            var x = float.Parse(tokens[1]);
+            var y = float.Parse(tokens[2]);
+            var z = float.Parse(tokens[3]);
+            var pos = new Vector3(x, y, z);
+
+            gameObject.transform.position = pos;
+            return;
+        }
+
         Debug.Log(cmd);
         m_SentCommand = true;
         Cmd_ProcessCommand(cmd, gameObject);

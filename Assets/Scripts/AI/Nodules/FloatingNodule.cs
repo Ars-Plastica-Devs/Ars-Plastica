@@ -16,7 +16,7 @@ public class FloatingNodule : Nodule
     {
         Type = NoduleType.Floating;
 
-        if (!isServer) return;
+        //if (!isServer) return;
 
         var speed = DataStore.GetFloat(Data.NoduleFloatingFloatSpeed);
         FloatSpeed = speed + (Random.Range(-.05f * speed, .05f * speed));
@@ -24,7 +24,7 @@ public class FloatingNodule : Nodule
         SendRate += (Random.Range(-.05f * SendRate, .05f * SendRate)); //Add variability so that send times diverge
 
         m_Velocity = new Vector3(0, FloatSpeed, 0);
-        RpcPostMovementData(transform.position/*, m_Velocity*/);
+        //RpcPostMovementData(transform.position/*, m_Velocity*/);
     }
 
     public override void OnStartClient()
@@ -34,13 +34,13 @@ public class FloatingNodule : Nodule
 
     private void Update()
     {
-        if (!isServer) return;
+        //if (!isServer) return;
 
         m_Counter += Time.deltaTime;
         if (m_Counter > SendRate)
         {
             m_Counter = 0f;
-            RpcPostMovementData(transform.position/*, m_Velocity*/);
+            //RpcPostMovementData(transform.position/*, m_Velocity*/);
         }
     }
 
@@ -69,7 +69,7 @@ public class FloatingNodule : Nodule
 
     private void OnValidate()
     {
-        if (Application.isPlaying || isClient) return;
+        //if (Application.isPlaying || isClient) return;
 
         DataStore.SetIfDifferent(Data.NoduleFloatingFloatSpeed, FloatSpeed);
         DataStore.SetIfDifferent(Data.NoduleFloatingSendRate, SendRate);

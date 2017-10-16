@@ -7,17 +7,17 @@ EcoHerbivoreMinimum 0
 EcoCarnivoreMinimum 25
 
 EcoInitialPlantCount 400
-EcoInitialFGLColonyCount 2
-EcoInitialHerbivoreCount 150
-EcoInitialCarnivoreCount 40
+EcoInitialFGLColonyCount 1
+EcoInitialHerbivoreCount 100
+EcoInitialCarnivoreCount 100
 
-EcoNoduleLimit 400
+EcoNoduleLimit 800
 EcoPlantLimit 400
-EcoHerbivoreLimit 150
-EcoCarnivoreLimit 40
+EcoHerbivoreLimit 400
+EcoCarnivoreLimit 100
 
 EcoCreatureSpawnExtent 1500
-EcoWorldExtent 1500
+EcoWorldExtent 2500
 
 EcoPlantSpawnExtentBuffer 500
 EcoPlantSpawnHeightMin -1100
